@@ -1,0 +1,1069 @@
+// ============================================================
+// ProgrammoCeuticals eCTD Platform — Prisma Schema
+// Source: ECTD_BACKEND_IMPLEMENTATION.md § 7
+// ============================================================
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ============================================================
+// ORGANIZATION / ACCESS CONTROL
+// ============================================================
+
+model Organization {
+  id          String  @id @default(uuid())
+  name        String
+  code        String? @unique
+  type        String?
+  address     String?
+  countryCode String?
+  email       String?
+  phone       String?
+  website     String?
+  status      String  @default("ACTIVE")
+
+  users           User[]
+  products        Product[]
+  applications    RegulatoryApplication[]
+  senderCodeLists SenderCodeList[]
+  auditEvents     AuditEvent[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([name])
+  @@index([status])
+}
+
+model User {
+  id             String  @id @default(uuid())
+  organizationId String?
+  name           String
+  email          String
+  passwordHash   String?
+  status         String  @default("ACTIVE")
+  isSuperAdmin   Boolean @default(false)
+
+  organization  Organization?  @relation(fields: [organizationId], references: [id], onDelete: SetNull)
+  roles         UserRole[]
+  sessions      Session[]
+  refreshTokens RefreshToken[]
+  auditEvents   AuditEvent[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([organizationId, email])
+  @@index([email])
+  @@index([organizationId])
+  @@index([isSuperAdmin])
+}
+
+model Role {
+  id          String  @id @default(uuid())
+  name        String  @unique
+  description String?
+  scope       String  @default("ORGANIZATION")
+  active      Boolean @default(true)
+
+  permissions RolePermission[]
+  users       UserRole[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Permission {
+  id          String  @id @default(uuid())
+  code        String  @unique
+  description String?
+  active      Boolean @default(true)
+
+  roles RolePermission[]
+
+  createdAt DateTime @default(now())
+}
+
+model RolePermission {
+  id           String @id @default(uuid())
+  roleId       String
+  permissionId String
+
+  role       Role       @relation(fields: [roleId], references: [id], onDelete: Cascade)
+  permission Permission @relation(fields: [permissionId], references: [id], onDelete: Cascade)
+
+  @@unique([roleId, permissionId])
+  @@index([roleId])
+  @@index([permissionId])
+}
+
+model UserRole {
+  id     String @id @default(uuid())
+  userId String
+  roleId String
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  role Role @relation(fields: [roleId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+
+  @@unique([userId, roleId])
+  @@index([userId])
+  @@index([roleId])
+}
+
+model RefreshToken {
+  id        String    @id @default(uuid())
+  userId    String
+  tokenHash String    @unique
+  expiresAt DateTime
+  revokedAt DateTime?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+  @@index([expiresAt])
+}
+
+model Session {
+  id           String    @id @default(uuid())
+  userId       String
+  sessionToken String    @unique
+  ipAddress    String?
+  userAgent    String?
+  expiresAt    DateTime
+  revokedAt    DateTime?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+  @@index([expiresAt])
+}
+
+// ============================================================
+// PRODUCTS / AUTHORITIES / REGIONS
+// ============================================================
+
+model Product {
+  id                    String  @id @default(uuid())
+  organizationId        String
+  productName           String
+  genericName           String?
+  brandName             String?
+  activeIngredient      String?
+  dosageForm            String?
+  strength              String?
+  routeOfAdministration String?
+  productCode           String?
+  status                String  @default("ACTIVE")
+
+  organization Organization           @relation(fields: [organizationId], references: [id], onDelete: Restrict)
+  applications RegulatoryApplication[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([organizationId])
+  @@index([productName])
+  @@index([status])
+}
+
+model RegulatoryAuthority {
+  id          String  @id @default(uuid())
+  name        String
+  code        String  @unique
+  countryCode String?
+  website     String?
+  active      Boolean @default(true)
+
+  applications           RegulatoryApplication[]
+  regionalSpecifications RegionalSpecification[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([name])
+}
+
+model RegulatoryRegion {
+  id          String  @id @default(uuid())
+  name        String
+  code        String  @unique
+  countryCode String?
+  active      Boolean @default(true)
+
+  applications           RegulatoryApplication[]
+  regionalSpecifications RegionalSpecification[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([name])
+}
+
+// ============================================================
+// REGULATORY STANDARD / PACKAGE REGISTRY
+// ============================================================
+
+model EctdStandard {
+  id                          String    @id @default(uuid())
+  name                        String
+  version                     String
+  implementationGuideVersion  String?
+  controlledVocabularyVersion String?
+  status                      String    @default("ACTIVE")
+  effectiveFrom               DateTime?
+  effectiveUntil              DateTime?
+  implementationGuideId       String?
+
+  implementationGuide       ImplementationGuide?       @relation(fields: [implementationGuideId], references: [id], onDelete: Restrict)
+  controlledVocabularyLinks RegulatoryStandardCvLink[]
+  applications              RegulatoryApplication[]
+  regionalSpecifications    RegionalSpecification[]
+  validationProfiles        ValidationProfile[]
+  validationRules           ValidationRule[]
+  submissionUnits           SubmissionUnit[]
+  ctdStructurePackages      CtdStructurePackage[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([name, version])
+  @@index([status])
+}
+
+model ImplementationGuide {
+  id               String  @id @default(uuid())
+  name             String
+  version          String
+  sourceUri        String?
+  checksum         String?
+  status           String  @default("ACTIVE")
+  sourceArtifactId String? @unique
+
+  standards      EctdStandard[]
+  sourceArtifact RegulatoryArtifact? @relation(fields: [sourceArtifactId], references: [id], onDelete: Restrict)
+
+  createdAt DateTime @default(now())
+
+  @@unique([name, version])
+}
+
+model ControlledVocabularyPackage {
+  id               String  @id @default(uuid())
+  name             String
+  version          String
+  sourceUri        String?
+  checksum         String?
+  status           String  @default("ACTIVE")
+  sourceArtifactId String? @unique
+
+  standards      RegulatoryStandardCvLink[]
+  codeLists      CodeList[]
+  sourceArtifact RegulatoryArtifact? @relation(fields: [sourceArtifactId], references: [id], onDelete: Restrict)
+
+  createdAt DateTime @default(now())
+
+  @@unique([name, version])
+}
+
+model RegulatoryStandardCvLink {
+  id                            String @id @default(uuid())
+  ectdStandardId                String
+  controlledVocabularyPackageId String
+
+  ectdStandard                EctdStandard                @relation(fields: [ectdStandardId], references: [id], onDelete: Restrict)
+  controlledVocabularyPackage ControlledVocabularyPackage @relation(fields: [controlledVocabularyPackageId], references: [id], onDelete: Restrict)
+
+  @@unique([ectdStandardId, controlledVocabularyPackageId])
+  @@index([ectdStandardId])
+  @@index([controlledVocabularyPackageId])
+}
+
+model RegulatoryArtifact {
+  id             String   @id @default(uuid())
+  artifactType   String
+  name           String
+  version        String
+  sourceUri      String?
+  sourceFilename String?
+  checksum       String
+  storageKey     String?
+  importedAt     DateTime @default(now())
+  importedById   String?
+  status         String   @default("IMPORTED")
+  metadata       Json?
+
+  implementationGuide         ImplementationGuide?
+  controlledVocabularyPackage ControlledVocabularyPackage?
+
+  @@index([artifactType])
+  @@index([name, version])
+  @@index([checksum])
+}
+
+model CodeSystem {
+  id          String  @id @default(uuid())
+  oid         String  @unique
+  name        String
+  ownerType   String?
+  description String?
+  active      Boolean @default(true)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model CodeList {
+  id                            String  @id @default(uuid())
+  controlledVocabularyPackageId String
+  name                          String
+  oid                           String?
+  ownerType                     String?
+  description                   String?
+
+  controlledVocabularyPackage ControlledVocabularyPackage @relation(fields: [controlledVocabularyPackageId], references: [id], onDelete: Restrict)
+  versions                    CodeListVersion[]
+
+  createdAt DateTime @default(now())
+
+  @@index([controlledVocabularyPackageId])
+}
+
+model CodeListVersion {
+  id         String @id @default(uuid())
+  codeListId String
+  version    String
+  status     String @default("ACTIVE")
+
+  codeList CodeList        @relation(fields: [codeListId], references: [id], onDelete: Restrict)
+  values   CodeListValue[]
+
+  createdAt DateTime @default(now())
+
+  @@unique([codeListId, version])
+  @@index([codeListId])
+}
+
+model CodeListValue {
+  id                String  @id @default(uuid())
+  codeListVersionId String
+  code              String
+  displayName       String
+  definition        String?
+  status            String?
+  order             Int?
+
+  codeListVersion CodeListVersion @relation(fields: [codeListVersionId], references: [id], onDelete: Restrict)
+
+  @@unique([codeListVersionId, code])
+  @@index([codeListVersionId])
+}
+
+model RegionalSpecification {
+  id             String    @id @default(uuid())
+  name           String
+  version        String
+  regionId       String
+  authorityId    String?
+  ectdStandardId String
+  status         String    @default("ACTIVE")
+  effectiveFrom  DateTime?
+  effectiveUntil DateTime?
+
+  region               RegulatoryRegion        @relation(fields: [regionId], references: [id], onDelete: Restrict)
+  authority            RegulatoryAuthority?    @relation(fields: [authorityId], references: [id], onDelete: Restrict)
+  ectdStandard         EctdStandard            @relation(fields: [ectdStandardId], references: [id], onDelete: Restrict)
+  applications         RegulatoryApplication[]
+  validationProfiles   ValidationProfile[]
+  validationRules      ValidationRule[]
+  submissionUnits      SubmissionUnit[]
+  ctdStructurePackages CtdStructurePackage[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([regionId, authorityId, name, version])
+  @@index([regionId])
+  @@index([authorityId])
+  @@index([ectdStandardId])
+}
+
+// ============================================================
+// APPLICATION / SUBMISSION MODEL
+// ============================================================
+
+model RegulatoryApplication {
+  id                      String  @id @default(uuid())
+  uuid                    String  @unique
+  organizationId          String
+  productId               String
+  authorityId             String
+  regionId                String
+  ectdStandardId          String
+  regionalSpecificationId String
+  applicationNumber       String?
+  applicationType         String?
+  status                  String  @default("DRAFT")
+  regionalMetadata        Json?
+
+  organization          Organization          @relation(fields: [organizationId], references: [id], onDelete: Restrict)
+  product               Product               @relation(fields: [productId], references: [id], onDelete: Restrict)
+  authority             RegulatoryAuthority   @relation(fields: [authorityId], references: [id], onDelete: Restrict)
+  region                RegulatoryRegion      @relation(fields: [regionId], references: [id], onDelete: Restrict)
+  ectdStandard          EctdStandard          @relation(fields: [ectdStandardId], references: [id], onDelete: Restrict)
+  regionalSpecification RegionalSpecification @relation(fields: [regionalSpecificationId], references: [id], onDelete: Restrict)
+  submissions           Submission[]
+  keywordDefinitions    KeywordDefinition[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([organizationId])
+  @@index([productId])
+  @@index([authorityId])
+  @@index([regionId])
+  @@index([applicationNumber])
+}
+
+model Submission {
+  id             String  @id @default(uuid())
+  uuid           String  @unique
+  applicationId  String
+  submissionType String?
+  description    String?
+  status         String  @default("DRAFT")
+  metadata       Json?
+
+  application     RegulatoryApplication    @relation(fields: [applicationId], references: [id], onDelete: Restrict)
+  submissionUnits SubmissionSubmissionUnit[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([applicationId])
+  @@index([status])
+}
+
+model SubmissionUnit {
+  id                      String  @id @default(uuid())
+  uuid                    String  @unique
+  sequenceNumber          Int
+  priorityNumber          Int?
+  ectdStandardId          String
+  regionalSpecificationId String?
+  ctdStructurePackageId   String?
+  status                  String  @default("DRAFT")
+  metadata                Json?
+
+  ectdStandard          EctdStandard           @relation(fields: [ectdStandardId], references: [id], onDelete: Restrict)
+  regionalSpecification RegionalSpecification? @relation(fields: [regionalSpecificationId], references: [id], onDelete: Restrict)
+  ctdStructurePackage   CtdStructurePackage?   @relation(fields: [ctdStructurePackageId], references: [id], onDelete: Restrict)
+  submissions           SubmissionSubmissionUnit[]
+  contextsOfUse         ContextOfUse[]
+  lifecycleOperations   LifecycleOperation[]
+  snapshots             SubmissionUnitSnapshot[]
+  packages              SubmissionPackage[]
+  xmlGenerationRuns     XmlGenerationRun[]
+  validationRuns        ValidationRun[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([sequenceNumber])
+  @@index([ectdStandardId])
+  @@index([regionalSpecificationId])
+  @@index([status])
+}
+
+model SubmissionSubmissionUnit {
+  id               String  @id @default(uuid())
+  submissionId     String
+  submissionUnitId String
+  relationshipType String?
+
+  submission     Submission     @relation(fields: [submissionId], references: [id], onDelete: Restrict)
+  submissionUnit SubmissionUnit @relation(fields: [submissionUnitId], references: [id], onDelete: Restrict)
+
+  createdAt DateTime @default(now())
+
+  @@unique([submissionId, submissionUnitId])
+  @@index([submissionId])
+  @@index([submissionUnitId])
+}
+
+// ============================================================
+// CTD STRUCTURE
+// ============================================================
+
+model CtdStructurePackage {
+  id                      String  @id @default(uuid())
+  name                    String
+  version                 String
+  standardId              String?
+  regionalSpecificationId String?
+  sourceUri               String?
+  checksum                String?
+  status                  String  @default("ACTIVE")
+
+  standard              EctdStandard?          @relation(fields: [standardId], references: [id], onDelete: Restrict)
+  regionalSpecification RegionalSpecification? @relation(fields: [regionalSpecificationId], references: [id], onDelete: Restrict)
+  modules               CtdModule[]
+  contextDefinitions    ContextDefinition[]
+  submissionUnits       SubmissionUnit[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([name, version])
+  @@index([standardId])
+  @@index([regionalSpecificationId])
+}
+
+model CtdModule {
+  id           String @id @default(uuid())
+  packageId    String
+  moduleNumber String
+  title        String
+  displayOrder Int
+
+  package  CtdStructurePackage @relation(fields: [packageId], references: [id], onDelete: Restrict)
+  sections CtdSection[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([packageId, moduleNumber])
+  @@index([packageId])
+}
+
+model CtdSection {
+  id           String @id @default(uuid())
+  moduleId     String
+  parentId     String?
+  sectionCode  String
+  title        String
+  level        Int
+  displayOrder Int
+
+  module             CtdModule          @relation(fields: [moduleId], references: [id], onDelete: Restrict)
+  parent             CtdSection?        @relation("CtdSectionTree", fields: [parentId], references: [id], onDelete: Restrict)
+  children           CtdSection[]       @relation("CtdSectionTree")
+  contextDefinitions ContextDefinition[]
+  contextsOfUse      ContextOfUse[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([moduleId, sectionCode])
+  @@index([moduleId])
+  @@index([parentId])
+}
+
+model ContextDefinition {
+  id                 String @id @default(uuid())
+  structurePackageId String
+  ctdSectionId       String
+  code               String
+  codeSystem         String
+  name               String
+  description        String?
+
+  structurePackage CtdStructurePackage @relation(fields: [structurePackageId], references: [id], onDelete: Restrict)
+  ctdSection       CtdSection          @relation(fields: [ctdSectionId], references: [id], onDelete: Restrict)
+  contextsOfUse    ContextOfUse[]
+
+  @@unique([structurePackageId, code, codeSystem])
+  @@index([ctdSectionId])
+}
+
+// ============================================================
+// DOCUMENTS / REFERENCES
+// ============================================================
+
+model Document {
+  id               String  @id @default(uuid())
+  uuid             String  @unique
+  title            String
+  filename         String
+  mimeType         String
+  language         String?
+  currentVersionId String? @unique
+
+  versions              DocumentVersion[]      @relation("DocumentVersions")
+  currentVersion        DocumentVersion?       @relation("CurrentDocumentVersion", fields: [currentVersionId], references: [id], onDelete: Restrict)
+  contextsOfUse         ContextOfUse[]
+  outgoingRelationships DocumentRelationship[] @relation("SourceDocumentRelationship")
+  incomingRelationships DocumentRelationship[] @relation("TargetDocumentRelationship")
+  outgoingReferences    DocumentReference[]    @relation("SourceDocumentReference")
+  incomingReferences    DocumentReference[]    @relation("TargetDocumentReference")
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([title])
+  @@index([mimeType])
+}
+
+model DocumentVersion {
+  id                String @id @default(uuid())
+  documentId        String
+  versionNumber     Int
+  filename          String
+  storageKey        String
+  mimeType          String?
+  language          String?
+  fileSize          BigInt
+  checksum          String
+  checksumAlgorithm String
+  createdById       String?
+
+  document   Document  @relation("DocumentVersions", fields: [documentId], references: [id], onDelete: Restrict)
+  currentFor Document? @relation("CurrentDocumentVersion")
+  links      DocumentLink[]
+
+  createdAt DateTime @default(now())
+
+  @@unique([documentId, versionNumber])
+  @@index([documentId])
+  @@index([checksum])
+}
+
+model ContextOfUse {
+  id                  String  @id @default(uuid())
+  uuid                String  @unique
+  submissionUnitId    String
+  documentId          String
+  contextDefinitionId String
+  ctdSectionId        String?
+  priorityNumber      Int?
+  status              String  @default("ACTIVE")
+
+  submissionUnit    SubmissionUnit    @relation(fields: [submissionUnitId], references: [id], onDelete: Restrict)
+  document          Document          @relation(fields: [documentId], references: [id], onDelete: Restrict)
+  contextDefinition ContextDefinition @relation(fields: [contextDefinitionId], references: [id], onDelete: Restrict)
+  ctdSection        CtdSection?       @relation(fields: [ctdSectionId], references: [id], onDelete: Restrict)
+
+  keywords            ContextKeyword[]
+  lifecycleOperations LifecycleOperation[]
+  sourceRelationships ContextOfUseRelationship[] @relation("SourceContext")
+  targetRelationships ContextOfUseRelationship[] @relation("TargetContext")
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([submissionUnitId])
+  @@index([documentId])
+  @@index([contextDefinitionId])
+  @@index([status])
+}
+
+model DocumentRelationship {
+  id               String @id @default(uuid())
+  sourceDocumentId String
+  targetDocumentId String
+  relationshipType String
+  metadata         Json?
+
+  sourceDocument Document @relation("SourceDocumentRelationship", fields: [sourceDocumentId], references: [id], onDelete: Restrict)
+  targetDocument Document @relation("TargetDocumentRelationship", fields: [targetDocumentId], references: [id], onDelete: Restrict)
+
+  createdAt DateTime @default(now())
+
+  @@index([sourceDocumentId])
+  @@index([targetDocumentId])
+  @@index([relationshipType])
+}
+
+model DocumentReference {
+  id               String  @id @default(uuid())
+  sourceDocumentId String
+  targetDocumentId String
+  referenceType    String?
+  location         String?
+  description      String?
+
+  sourceDocument Document @relation("SourceDocumentReference", fields: [sourceDocumentId], references: [id], onDelete: Restrict)
+  targetDocument Document @relation("TargetDocumentReference", fields: [targetDocumentId], references: [id], onDelete: Restrict)
+
+  createdAt DateTime @default(now())
+
+  @@index([sourceDocumentId])
+  @@index([targetDocumentId])
+}
+
+model DocumentLink {
+  id                      String  @id @default(uuid())
+  sourceDocumentVersionId String
+  targetType              String
+  targetDocumentId        String?
+  targetUri               String?
+  pageNumber              Int?
+  anchorText              String?
+  status                  String  @default("UNVALIDATED")
+  metadata                Json?
+
+  sourceDocumentVersion DocumentVersion @relation(fields: [sourceDocumentVersionId], references: [id], onDelete: Restrict)
+
+  createdAt DateTime @default(now())
+
+  @@index([sourceDocumentVersionId])
+  @@index([targetDocumentId])
+  @@index([status])
+}
+
+model EctdReference {
+  id               String  @id @default(uuid())
+  referenceType    String
+  root             String?
+  extension        String?
+  sourceEntityType String
+  sourceEntityId   String
+  metadata         Json?
+
+  createdAt DateTime @default(now())
+
+  @@index([referenceType])
+  @@index([root])
+  @@index([sourceEntityType, sourceEntityId])
+}
+
+// ============================================================
+// LIFECYCLE / KEYWORDS
+// ============================================================
+
+model LifecycleOperation {
+  id               String  @id @default(uuid())
+  submissionUnitId String
+  contextOfUseId   String
+  operationType    String
+  reason           String?
+  createdById      String?
+
+  submissionUnit SubmissionUnit @relation(fields: [submissionUnitId], references: [id], onDelete: Restrict)
+  contextOfUse   ContextOfUse   @relation(fields: [contextOfUseId], references: [id], onDelete: Restrict)
+
+  createdAt DateTime @default(now())
+
+  @@index([submissionUnitId])
+  @@index([contextOfUseId])
+  @@index([operationType])
+}
+
+model ContextOfUseRelationship {
+  id               String @id @default(uuid())
+  sourceContextId  String
+  targetContextId  String
+  relationshipType String
+  metadata         Json?
+
+  sourceContext ContextOfUse @relation("SourceContext", fields: [sourceContextId], references: [id], onDelete: Restrict)
+  targetContext ContextOfUse @relation("TargetContext", fields: [targetContextId], references: [id], onDelete: Restrict)
+
+  createdAt DateTime @default(now())
+
+  @@index([sourceContextId])
+  @@index([targetContextId])
+  @@index([relationshipType])
+}
+
+model KeywordDefinition {
+  id            String  @id @default(uuid())
+  applicationId String
+  code          String
+  name          String
+  description   String?
+  dataType      String
+  allowedValues Json?
+
+  application RegulatoryApplication @relation(fields: [applicationId], references: [id], onDelete: Restrict)
+  keywords    ContextKeyword[]
+
+  createdAt DateTime @default(now())
+
+  @@unique([applicationId, code])
+  @@index([applicationId])
+}
+
+model ContextKeyword {
+  id                  String @id @default(uuid())
+  contextOfUseId      String
+  keywordDefinitionId String
+  value               String
+
+  contextOfUse      ContextOfUse      @relation(fields: [contextOfUseId], references: [id], onDelete: Restrict)
+  keywordDefinition KeywordDefinition @relation(fields: [keywordDefinitionId], references: [id], onDelete: Restrict)
+
+  createdAt DateTime @default(now())
+
+  @@unique([contextOfUseId, keywordDefinitionId])
+  @@index([contextOfUseId])
+  @@index([keywordDefinitionId])
+}
+
+model SenderCodeList {
+  id             String  @id @default(uuid())
+  organizationId String
+  applicationId  String?
+  name           String
+  oid            String?
+  description    String?
+
+  organization Organization        @relation(fields: [organizationId], references: [id], onDelete: Restrict)
+  values       SenderCodeListValue[]
+
+  createdAt DateTime @default(now())
+
+  @@index([organizationId])
+  @@index([applicationId])
+}
+
+model SenderCodeListValue {
+  id          String  @id @default(uuid())
+  codeListId  String
+  code        String
+  displayName String
+  definition  String?
+
+  codeList SenderCodeList @relation(fields: [codeListId], references: [id], onDelete: Restrict)
+
+  createdAt DateTime @default(now())
+
+  @@unique([codeListId, code])
+  @@index([codeListId])
+}
+
+// ============================================================
+// VALIDATION
+// ============================================================
+
+model ValidationProfile {
+  id                      String  @id @default(uuid())
+  name                    String
+  version                 String
+  description             String?
+  ectdStandardId          String
+  regionalSpecificationId String?
+  rulesetVersion          String
+  active                  Boolean @default(true)
+
+  ectdStandard          EctdStandard           @relation(fields: [ectdStandardId], references: [id], onDelete: Restrict)
+  regionalSpecification RegionalSpecification? @relation(fields: [regionalSpecificationId], references: [id], onDelete: Restrict)
+  validationRuns        ValidationRun[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([name, version])
+  @@index([ectdStandardId])
+  @@index([regionalSpecificationId])
+}
+
+model ValidationRule {
+  id                      String  @id @default(uuid())
+  ruleCode                String
+  name                    String
+  description             String?
+  severity                String
+  scope                   String
+  source                  String
+  version                 String
+  ruleDefinition          Json
+  standardId              String?
+  regionalSpecificationId String?
+  active                  Boolean @default(true)
+
+  ectdStandard          EctdStandard?          @relation(fields: [standardId], references: [id], onDelete: Restrict)
+  regionalSpecification RegionalSpecification? @relation(fields: [regionalSpecificationId], references: [id], onDelete: Restrict)
+  results               ValidationResult[]
+  sources               RegulatoryRuleSource[]
+
+  createdAt DateTime @default(now())
+
+  @@unique([ruleCode, version])
+  @@index([standardId])
+  @@index([regionalSpecificationId])
+  @@index([source])
+}
+
+model RegulatoryRuleSource {
+  id               String  @id @default(uuid())
+  validationRuleId String
+  authority        String
+  documentName     String
+  documentVersion  String
+  sectionReference String?
+  sourceUri        String?
+
+  validationRule ValidationRule @relation(fields: [validationRuleId], references: [id], onDelete: Restrict)
+
+  createdAt DateTime @default(now())
+
+  @@index([validationRuleId])
+}
+
+model ValidationRun {
+  id                  String    @id @default(uuid())
+  submissionUnitId    String
+  validationProfileId String
+  snapshotId          String?   // spec §26 — every run must preserve exact regulatory provenance
+  status              String
+  startedAt           DateTime  @default(now())
+  completedAt         DateTime?
+  engineVersion       String?
+  profileVersion      String?
+
+  submissionUnit    SubmissionUnit    @relation(fields: [submissionUnitId], references: [id], onDelete: Restrict)
+  validationProfile ValidationProfile @relation(fields: [validationProfileId], references: [id], onDelete: Restrict)
+  results           ValidationResult[]
+
+  @@index([submissionUnitId])
+  @@index([validationProfileId])
+  @@index([snapshotId])
+  @@index([status])
+}
+
+model ValidationResult {
+  id              String  @id @default(uuid())
+  validationRunId String
+  ruleId          String
+  severity        String
+  status          String
+  message         String
+  entityType      String?
+  entityId        String?
+  location        String?
+  evidence        Json?
+  remediation     String?
+
+  validationRun ValidationRun  @relation(fields: [validationRunId], references: [id], onDelete: Restrict)
+  rule          ValidationRule @relation(fields: [ruleId], references: [id], onDelete: Restrict)
+
+  createdAt DateTime @default(now())
+
+  @@index([validationRunId])
+  @@index([ruleId])
+  @@index([entityType, entityId])
+  @@index([severity, status])
+}
+
+// ============================================================
+// SNAPSHOT / XML / PUBLISHING
+// ============================================================
+
+model SubmissionUnitSnapshot {
+  id                      String  @id @default(uuid())
+  submissionUnitId        String
+  snapshotVersion         Int
+  payload                 Json
+  ectdStandardId          String?
+  regionalSpecificationId String?
+  ctdStructurePackageId   String?
+  createdById             String?
+  createdAt               DateTime @default(now())
+
+  submissionUnit SubmissionUnit @relation(fields: [submissionUnitId], references: [id], onDelete: Restrict)
+
+  @@unique([submissionUnitId, snapshotVersion])
+  @@index([submissionUnitId])
+}
+
+model XmlGenerationRun {
+  id                          String  @id @default(uuid())
+  submissionUnitId            String
+  standardId                  String?
+  implementationGuideVersion  String?
+  controlledVocabularyVersion String?
+  schemaPackageChecksum       String?
+  generatorVersion            String
+  status                      String
+  outputStorageKey            String?
+
+  submissionUnit SubmissionUnit @relation(fields: [submissionUnitId], references: [id], onDelete: Restrict)
+
+  createdAt DateTime @default(now())
+
+  @@index([submissionUnitId])
+  @@index([status])
+}
+
+model SubmissionPackage {
+  id                 String   @id @default(uuid())
+  submissionUnitId   String
+  packageVersion     Int
+  storageKey         String
+  fileSize           BigInt
+  checksum           String
+  checksumAlgorithm  String
+  validationRunId    String?
+  xmlGenerationRunId String?
+  generatorVersion   String?
+  status             String
+  generatedById      String?
+  generatedAt        DateTime @default(now())
+
+  submissionUnit SubmissionUnit @relation(fields: [submissionUnitId], references: [id], onDelete: Restrict)
+
+  @@unique([submissionUnitId, packageVersion])
+  @@index([submissionUnitId])
+  @@index([checksum])
+  @@index([status])
+}
+
+// ============================================================
+// BACKGROUND JOBS / AUDIT
+// ============================================================
+
+model Job {
+  id             String    @id @default(uuid())
+  jobType        String
+  status         String
+  payload        Json?
+  progress       Int       @default(0)
+  currentStep    String?
+  attempts       Int       @default(0)
+  errorCode      String?
+  errorMessage   String?
+  idempotencyKey String?   @unique
+  correlationId  String?
+  createdAt      DateTime  @default(now())
+  startedAt      DateTime?
+  completedAt    DateTime?
+
+  @@index([jobType])
+  @@index([status])
+  @@index([createdAt])
+  @@index([correlationId])
+}
+
+model AuditEvent {
+  id             String   @id @default(uuid())
+  organizationId String
+  userId         String?
+  eventType      String
+  entityType     String
+  entityId       String
+  oldValue       Json?
+  newValue       Json?
+  metadata       Json?
+  correlationId  String?
+  timestamp      DateTime @default(now())
+
+  organization Organization @relation(fields: [organizationId], references: [id], onDelete: Restrict)
+  user         User?        @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  @@index([organizationId])
+  @@index([entityType, entityId])
+  @@index([timestamp])
+  @@index([correlationId])
+}

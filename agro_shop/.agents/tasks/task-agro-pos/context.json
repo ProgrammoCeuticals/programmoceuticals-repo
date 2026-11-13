@@ -1,0 +1,22 @@
+{
+  "project_type": "Vite + React 18 SPA, plain CSS, no TypeScript",
+  "language": "JavaScript (JSX)",
+  "build_system": "Vite 5. vite.config.js uses @vitejs/plugin-react. npm scripts: dev (port 5173), build, preview.",
+  "test_framework": "None configured. Verification is done by running npm run build and npm run dev.",
+  "build_command": "npm run build",
+  "test_command": "npm run build",
+  "verification_instructions": "1. cd /Users/macbookpro/Desktop/ProgrammoCeuticals/agro_shop 2. npm install 3. npm run build (must exit 0 with no errors) 4. npm run dev (must start on localhost:5173, app must load, all 11 routes must be navigable, mock data must populate every page)",
+  "snapshot_or_generated_files": null,
+  "environment_constraints": "No .env file needed for mock mode. When VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY are absent or equal 'your-supabase-url'/'your-supabase-anon-key', useMock=true and all pages use in-memory data. Do NOT require real Supabase credentials for the app to run.",
+  "contribution_requirements": "Port the GLSI design faithfully. Read /Users/macbookpro/Desktop/ProgrammoCeuticals/glsi/src/App.css and copy its CSS tokens and class definitions verbatim into src/styles/globals.css. Do not introduce Tailwind, CSS modules, styled-components, or any icon library. Use inline SVG for icons.",
+  "key_patterns": "GLSI App.css patterns: --brand:#193441 color token, .btn/.btn-accent/.btn-danger/.btn-ghost/.btn-ok button classes, .results-table with brand thead, .stat-grid/.stat-card with .stat-val/.stat-lbl, .tab-bar/.tab-btn, .section-title, .pagination/.pag-btn, .flag-chip variants, .search-input, .card. border-radius:0 everywhere. Fixed top .nav bar (52px). System font stack. Mobile breakpoint at 768px.",
+  "relevant_files": [
+    "/Users/macbookpro/Desktop/ProgrammoCeuticals/glsi/src/App.css",
+    "/Users/macbookpro/Desktop/ProgrammoCeuticals/glsi/src/components/Login.js",
+    "/Users/macbookpro/Desktop/ProgrammoCeuticals/glsi/src/components/Home.js",
+    "/Users/macbookpro/Desktop/ProgrammoCeuticals/glsi/src/components/Vetter.js",
+    "/Users/macbookpro/Desktop/ProgrammoCeuticals/glsi/src/App.js",
+    "/Users/macbookpro/Desktop/ProgrammoCeuticals/agro_shop/.agents/tasks/plan.md"
+  ],
+  "directory_structure": "agro_shop/ -- root. src/styles/ (3 CSS files). src/lib/ (supabase.js, mock.js). src/store/ (authStore.js, posStore.js). src/components/layout/ (AppShell, Navbar, Sidebar, ProtectedRoute). src/components/ui/ (StatCard, Modal, Badge, Pagination, EmptyState). src/components/pos/ (ProductSearch, Cart, Receipt). src/pages/ (Login, Dashboard, Inventory, POS, Sales, Purchasing, Suppliers, Customers, Expenses, Reports, Settings). supabase/ (schema.sql, seed.sql). Root: package.json, vite.config.js, index.html, .env.example, .gitignore, README.md."
+}

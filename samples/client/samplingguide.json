@@ -1,0 +1,329 @@
+{
+  "source": "NAFDAC Laboratory Sampling Guide 2023",
+  "pagesCovered": [1, 2, 3, 4, 6],
+  "products": [
+    {
+      "section": "drugs",
+      "productType": "Tablets",
+      "sizes": [
+        { "size": "1 x 1 tab", "retention": 200, "total": 300 },
+        { "size": "1 x 2 tabs", "retention": 100, "total": 150 },
+        { "size": "1 x 3 tabs", "retention": 66, "total": 100 },
+        { "size": "1 x 4 tabs", "retention": 50, "total": 75 },
+        { "size": "1 x 5 tabs", "retention": 40, "total": 60 },
+        { "size": "1 x 6 tabs", "retention": 33, "total": 50 },
+        { "size": "1 x 7 tabs", "retention": 30, "total": 45 },
+        { "size": "1 x 8 tabs", "retention": 25, "total": 38 },
+        { "size": "1 x 9 tabs", "retention": 22, "total": 34 },
+        { "size": "1 x 10 tabs", "retention": 20, "total": 30 },
+        { "size": "1 x 12 tabs", "retention": 16, "total": 25 },
+        { "size": "1 x 14 tabs", "retention": 14, "total": 22 },
+        { "size": "1 x 18 tabs", "retention": 11, "total": 17 },
+        { "size": "1 x 24 tabs", "retention": 8, "total": 13 },
+        { "size": "1 x 30 tabs", "retention": 6, "total": 10 },
+        { "size": "1 x 50 tabs", "retention": 4, "total": 6 },
+        { "size": "1 x 60 tabs", "retention": 3, "total": 5 },
+        { "size": "1 x 90 tabs", "retention": 2, "total": 4 },
+        { "size": "1 x 100 tabs", "retention": 2, "total": 3 },
+        { "size": "1 x 120 tabs", "retention": 2, "total": 3 },
+        { "size": "1 x 500 tabs", "retention": 1, "total": 2 },
+        { "size": "1 x 1000 tabs", "retention": 1, "total": 2 }
+      ]
+    },
+    {
+      "section": "drugs",
+      "productType": "Capsules",
+      "sizes": [
+        { "size": "1 x 1 caps", "retention": 148, "total": 222 },
+        { "size": "1 x 3 caps", "retention": 50, "total": 75 },
+        { "size": "1 x 10 caps", "retention": 16, "total": 24 },
+        { "size": "1 x 14 caps", "retention": 11, "total": 17 },
+        { "size": "1 x 30 caps", "retention": 6, "total": 9 },
+        { "size": "1 x 100 caps", "retention": 2, "total": 3 },
+        { "size": "1 x 500 caps", "retention": 1, "total": 2 },
+        { "size": "1 x 1000 caps", "retention": 1, "total": 2 }
+      ]
+    },
+    {
+      "section": "drugs",
+      "productType": "Bolus",
+      "sizes": [
+        { "size": "All sizes", "retention": 70, "total": 150 }
+      ]
+    },
+    {
+      "section": "drugs",
+      "productType": "Molasses / Block",
+      "sizes": [
+        { "size": "All sizes", "retention": 1, "total": 3 }
+      ]
+    },
+    {
+      "section": "drugs",
+      "productType": "Veterinary Powder for Suspension",
+      "sizes": [
+        { "size": "<100 g", "retention": 6, "total": 12 },
+        { "size": "100 g - 200 g", "retention": 4, "total": 10 },
+        { "size": ">200 g - 500 g", "retention": 4, "total": 8 },
+        { "size": ">500 g - 1000 g", "retention": 2, "total": 6 },
+        { "size": ">1000 g - 2000 g", "retention": 2, "total": 5 },
+        { "size": ">2000 g", "retention": 1, "total": 3 }
+      ]
+    },
+    {
+      "section": "drugs",
+      "productType": "Granules",
+      "sizes": [
+        { "size": "<5 g", "retention": 200, "total": 300 },
+        { "size": "5 g - <15 g", "retention": 110, "total": 160 },
+        { "size": "15 g - <25 g", "retention": 80, "total": 120 },
+        { "size": "25 g - <200 g", "retention": 40, "total": 60 },
+        { "size": "200 g - <400 g", "retention": 20, "total": 30 },
+        { "size": ">400 g", "retention": 10, "total": 15 }
+      ]
+    },
+    {
+      "section": "drugs",
+      "productType": "Oral Powder",
+      "sizes": [
+        { "size": "1 x 1 sachet", "retention": 60, "total": 120 },
+        { "size": "1 x 3 - 1 x 6 sachets", "retention": 80, "total": 120 },
+        { "size": ">6 sachets", "retention": 60, "total": 90 }
+      ]
+    },
+    {
+      "section": "drugs",
+      "productType": "Ointments / Creams / Pastes",
+      "sizes": [
+        { "size": "<50 g", "retention": 8, "total": 12 },
+        { "size": "50 g - 100 g", "retention": 4, "total": 10 },
+        { "size": ">100 g - <500 g", "retention": 4, "total": 8 },
+        { "size": ">500 g", "retention": 3, "total": 6 }
+      ]
+    },
+    {
+      "section": "drugs",
+      "productType": "Syrup / Elixir / Suspension",
+      "sizes": [
+        { "size": "<=30 ml", "retention": 10, "total": 15 },
+        { "size": ">30 ml - 200 ml", "retention": 6, "total": 10 },
+        { "size": ">200 ml - 250 ml", "retention": 4, "total": 8 },
+        { "size": ">250 ml - 500 ml", "retention": 2, "total": 6 },
+        { "size": ">500 ml", "retention": 3, "total": 5 }
+      ]
+    },
+    {
+      "section": "drugs",
+      "productType": "Ear / Eye / Nose Drops",
+      "sizes": [
+        { "size": "<2 ml", "retention": 10, "total": 20 },
+        { "size": ">2 ml", "retention": 10, "total": 15 }
+      ]
+    },
+    {
+      "section": "drugs",
+      "productType": "Mouthwash / Spirit",
+      "sizes": [
+        { "size": "<5 ml", "retention": 10, "total": 15 },
+        { "size": "5 ml - <50 ml", "retention": 5, "total": 10 },
+        { "size": "50 ml - 500 ml", "retention": 3, "total": 6 },
+        { "size": ">500 ml", "retention": 3, "total": 6 }
+      ]
+    },
+    {
+      "section": "drugs",
+      "productType": "Infusions",
+      "sizes": [
+        { "size": "<400 ml", "retention": 10, "total": 15 },
+        { "size": ">400 ml - 1000 ml", "retention": 8, "total": 12 },
+        { "size": ">1000 ml", "retention": 4, "total": 8 }
+      ]
+    },
+    {
+      "section": "drugs",
+      "productType": "Sprays",
+      "sizes": [
+        { "size": "<100 ml", "retention": 8, "total": 12 },
+        { "size": ">100 ml - 250 ml", "retention": 6, "total": 10 },
+        { "size": ">250 ml - 500 ml", "retention": 4, "total": 8 },
+        { "size": ">500 ml", "retention": 3, "total": 6 }
+      ]
+    },
+    {
+      "section": "drugs",
+      "productType": "Inhalations",
+      "sizes": [
+        { "size": "<200 actuations", "retention": 10, "total": 15 },
+        { "size": "200 - 400 actuations", "retention": 8, "total": 12 },
+        { "size": "<=5 ml or g", "retention": 15, "total": 30 },
+        { "size": ">5 ml or g", "retention": 10, "total": 20 }
+      ]
+    },
+    {
+      "section": "drugs",
+      "productType": "Mentholated Inhalers",
+      "sizes": [
+        { "size": "All sizes", "retention": 10, "total": 20 }
+      ]
+    },
+    {
+      "section": "drugs",
+      "productType": "Injectables",
+      "sizes": [
+        { "size": "1 ml - 5 ml ampoules", "retention": 15, "total": 30 },
+        { "size": ">5 ml ampoules", "retention": 10, "total": 20 },
+        { "size": "<100 ml", "retention": 8, "total": 12 },
+        { "size": "100 ml - 200 ml", "retention": 5, "total": 10 },
+        { "size": ">200 ml - 300 ml", "retention": 4, "total": 8 },
+        { "size": ">300 ml", "retention": 3, "total": 5 },
+        { "size": "<0.5 g", "retention": 10, "total": 20 },
+        { "size": "0.5 g - 2 g vials", "retention": 10, "total": 15 },
+        { "size": ">2 g", "retention": 5, "total": 10 }
+      ]
+    },
+    {
+      "section": "drugs",
+      "productType": "Lozenges",
+      "sizes": [
+        { "size": "1 x 1", "retention": 148, "total": 222 },
+        { "size": "1 x 3", "retention": 50, "total": 75 },
+        { "size": "1 x 10", "retention": 16, "total": 24 },
+        { "size": "1 x 30", "retention": 6, "total": 9 },
+        { "size": "1 x 100", "retention": 2, "total": 3 },
+        { "size": "1 x 500", "retention": 1, "total": 2 },
+        { "size": "1 x 1000", "retention": 1, "total": 2 }
+      ]
+    },
+    {
+      "section": "drugs",
+      "productType": "Liniments",
+      "sizes": [
+        { "size": "<500 g", "retention": 5, "total": 10 },
+        { "size": "500 g", "retention": 3, "total": 5 },
+        { "size": ">500 g - 1000 g", "retention": 2, "total": 3 },
+        { "size": ">1000 g", "retention": 2, "total": 3 }
+      ]
+    },
+    {
+      "section": "drugs",
+      "productType": "Powder for Oral Suspension",
+      "sizes": [
+        { "size": "<=30 ml", "retention": 10, "total": 15 },
+        { "size": ">30 ml - 100 ml", "retention": 6, "total": 10 },
+        { "size": ">100 ml", "retention": 4, "total": 8 }
+      ]
+    },
+    {
+      "section": "drugs",
+      "productType": "Drug Device Implant / Pessaries",
+      "sizes": [
+        { "size": "All sizes", "retention": 10, "total": 20 }
+      ]
+    },
+    {
+      "section": "drugs",
+      "productType": "ORS",
+      "sizes": [
+        { "size": "All sizes", "retention": 5, "total": 10 }
+      ]
+    },
+    {
+      "section": "drugs",
+      "productType": "Pastilles",
+      "sizes": [
+        { "size": "1 x 1", "retention": 148, "total": 222 },
+        { "size": "1 x 3", "retention": 50, "total": 75 },
+        { "size": "1 x 10", "retention": 16, "total": 23 },
+        { "size": "1 x 30", "retention": 6, "total": 8 },
+        { "size": "1 x 100", "retention": 2, "total": 3 },
+        { "size": "1 x 500", "retention": 1, "total": 2 },
+        { "size": "1 x 1000", "retention": 1, "total": 2 },
+        { "size": "1000 g", "retention": 1, "total": 2 },
+        { "size": "2000 g", "retention": 1, "total": 2 }
+      ]
+    },
+    {
+      "section": "drugs",
+      "productType": "Suppositories / Vaginal Tablets",
+      "sizes": [
+        { "size": "1 x 1", "retention": 148, "total": 222 },
+        { "size": "1 x 3", "retention": 50, "total": 75 },
+        { "size": "1 x 10", "retention": 16, "total": 23 },
+        { "size": "1 x 30", "retention": 6, "total": 8 },
+        { "size": "1 x 100", "retention": 2, "total": 3 },
+        { "size": "1 x 500", "retention": 1, "total": 2 },
+        { "size": "1 x 1000", "retention": 1, "total": 2 },
+        { "size": "1000 g", "retention": 1, "total": 2 },
+        { "size": "2000 g", "retention": 1, "total": 2 }
+      ]
+    },
+    {
+      "section": "drugs",
+      "productType": "Water for Injection",
+      "sizes": [
+        { "size": "10 ml", "retention": 10, "total": 20 }
+      ]
+    },
+    {
+      "section": "herbalProducts",
+      "productType": "Herbal Mixtures / Bitters",
+      "sizes": [
+        { "size": "<100 ml", "retention": 8, "total": 12 },
+        { "size": "100 ml - 400 ml", "retention": 3, "total": 7 },
+        { "size": ">400 ml - 1000 ml", "retention": 2, "total": 5 }
+      ]
+    },
+    {
+      "section": "herbalProducts",
+      "productType": "Herbal Powder / Granules / Pellets / Seeds",
+      "sizes": [
+        { "size": "<50 g", "retention": 5, "total": 10 },
+        { "size": "50 g - 100 g", "retention": 4, "total": 8 },
+        { "size": ">100 g - 400 g", "retention": 3, "total": 6 },
+        { "size": ">400 g", "retention": 2, "total": 5 }
+      ]
+    },
+    {
+      "section": "herbalProducts",
+      "productType": "Herbal Tea / Bars",
+      "sizes": [
+        { "size": "All sizes", "retention": 4, "total": 8 }
+      ]
+    },
+    {
+      "section": "herbalProducts",
+      "productType": "Herbal Balms / Ointments",
+      "sizes": [
+        { "size": "<=12 g or ml", "retention": 8, "total": 12 },
+        { "size": ">12 g or ml", "retention": 4, "total": 8 }
+      ]
+    },
+    {
+      "section": "herbalProducts",
+      "productType": "Herbal Soaps",
+      "sizes": [
+        { "size": "All sizes", "retention": 3, "total": 6 }
+      ]
+    },
+    {
+      "section": "herbalProducts",
+      "productType": "Transdermal Patches",
+      "sizes": [
+        { "size": "All sizes", "retention": 4, "total": 8 }
+      ]
+    },
+    {
+      "section": "herbalProducts",
+      "productType": "Herbal Suppositories / Capsules",
+      "sizes": [
+        { "size": "1 x 1 caps", "retention": 148, "total": 222 },
+        { "size": "1 x 3 caps", "retention": 50, "total": 75 },
+        { "size": "1 x 10 caps", "retention": 16, "total": 24 },
+        { "size": "1 x 30 caps", "retention": 6, "total": 9 },
+        { "size": "1 x 100 caps", "retention": 2, "total": 3 },
+        { "size": "1 x 500 caps", "retention": 1, "total": 2 },
+        { "size": "1 x 1000 caps", "retention": 1, "total": 2 }
+      ]
+    }
+  ]
+}

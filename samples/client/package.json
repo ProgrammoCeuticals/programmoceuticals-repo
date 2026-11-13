@@ -1,0 +1,31 @@
+{
+  "name": "samples-client",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "prepare:sampling-guide": "node scripts/syncSamplingGuide.js",
+    "start": "npm run prepare:sampling-guide && FAST_REFRESH=false react-scripts start",
+    "dev": "npm run prepare:sampling-guide && FAST_REFRESH=false react-scripts start",
+    "build": "npm run prepare:sampling-guide && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "^5.0.1",
+    "xlsx": "^0.18.5"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

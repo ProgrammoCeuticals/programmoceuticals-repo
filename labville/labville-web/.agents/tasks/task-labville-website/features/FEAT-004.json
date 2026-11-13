@@ -1,0 +1,31 @@
+{
+  "id": "FEAT-004",
+  "type": "chore",
+  "description": "Final build verification, lint pass, responsive/accessibility audit, and cross-FEAT integration check. Depends on FEAT-001, FEAT-002, FEAT-003 all being complete. This FEAT produces no new features — it ensures the full site builds cleanly, lints cleanly, and all cross-FEAT seams (hero 3D wiring, service template 3D wiring, shared sections reuse) work correctly end-to-end.",
+  "status": "pending",
+  "steps": [
+    "1. Run npm run build. Fix any TypeScript errors that surfaced from cross-FEAT integration. Common fixes: (a) three.js types — in 3D components, ensure refs typed as THREE.Mesh | null or THREE.Group | null, e.g. useRef<THREE.Group>(null). Import * as THREE from 'three' at top of every 3D component. (b) R3F useFrame callback receives (state: RootState, delta: number) — ensure correct destructuring. (c) dynamic() return type — wrap in React.ComponentType cast if TypeScript complains about dynamic-imported component props. (d) next/dynamic with Suspense — confirm all 3D dynamic imports are inside a component function body, not at module scope before a conditional.",
+    "2. Run npm run lint. Fix any ESLint warnings. Expected: react-hooks/exhaustive-deps for useFrame closures (add eslint-disable-next-line or fix deps), no-explicit-any in form handlers (type them properly with ContactFormData from @/types).",
+    "3. Responsive audit — in browser devtools at 375px viewport: (a) Hero: H1 clamps to ~56px, buttons stack (flex-col sm:flex-row already in BookingCTASection — confirm Hero CTAs also do this). (b) HealthConcerns cards: grid-cols-1 → single column. (c) DiagnosticSolutions: grid-cols-1 → single column. (d) ServicesGrid: grid-cols-1 → single column. (e) ServicePageTemplate sub-services: grid-cols-1 → single column. (f) BookingWizard: step 1 service grid grid-cols-2 → works at 375px. (g) FAQSection: full width. Fix any overflow-x issues.",
+    "4. Accessibility pass: (a) Check all interactive elements have visible focus-visible outline (globals.css defines :focus-visible — confirm custom buttons/cards don't override it accidentally). (b) All icon-only buttons must have aria-label. (c) All SVG decorative elements must have aria-hidden='true'. (d) Form inputs must have associated <label htmlFor> matching input id. (e) Accordion buttons in FAQSection must have aria-expanded and aria-controls. (f) BookingWizard step indicators — add aria-current='step' to active step pill.",
+    "5. Verify prefers-reduced-motion: In each 3D useFrame callback, add early return: `const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)'); if (mediaQuery.matches) return;`. Note: this must be inside useFrame, not at module scope. Alternatively, use a ref initialized outside useFrame: `const prefersReduced = useRef(typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches)`.",
+    "6. Run npm run build one final time to confirm everything is clean. Record the build output (page sizes, chunk sizes) in FEAT-004 findings."
+  ],
+  "acceptance_criteria": [
+    "npm run build exits 0 with no TypeScript errors and no warnings",
+    "npm run lint exits 0 with no errors",
+    "All pages render at 375px viewport without horizontal overflow",
+    "All form inputs have associated labels",
+    "All icon-only buttons have aria-label attributes",
+    "FAQ accordion has aria-expanded and aria-controls",
+    "3D animations respect prefers-reduced-motion",
+    "No browser console errors on any page at localhost:3000"
+  ],
+  "verification": [
+    "cd /Users/macbookpro/Desktop/ProgrammoCeuticals/labville/labville-web && npm run build && npm run lint",
+    "npm run dev — check browser console on /, /services/laboratory, /contact, /book-a-test for zero errors",
+    "Devtools responsive mode at 375px on /, /services, /contact, /book-a-test"
+  ],
+  "blocked_reason": null,
+  "findings": ""
+}

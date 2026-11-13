@@ -1,0 +1,2158 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// RIMS — Regulatory Information Management System
+// Prisma Schema
+//
+// Design principles:
+//   • All PKs are UUIDs via @default(uuid())
+//   • All table names use snake_case via @@map
+//   • All column names use snake_case via @map
+//   • All tenant-owned tables carry tenantId for RLS
+//   • Timestamps stored as UTC
+// ─────────────────────────────────────────────────────────────────────────────
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../node_modules/.prisma/client"
+}
+
+datasource db {
+  provider          = "postgresql"
+  url               = env("DATABASE_URL")
+  shadowDatabaseUrl = env("DATABASE_MIGRATION_URL")
+}
+
+// ─── Enums ───────────────────────────────────────────────────────────────────
+
+enum UserStatus {
+  PENDING_VERIFICATION
+  ACTIVE
+  SUSPENDED
+  DEACTIVATED
+
+  @@map("user_status")
+}
+
+enum TenantStatus {
+  ACTIVE
+  SUSPENDED
+  TRIAL
+  EXPIRED
+  ARCHIVED
+
+  @@map("tenant_status")
+}
+
+enum EmployeeStatus {
+  ACTIVE
+  ON_LEAVE
+  SUSPENDED
+  TERMINATED
+  ARCHIVED
+
+  @@map("employee_status")
+}
+
+enum SubscriptionStatus {
+  ACTIVE
+  PAST_DUE
+  CANCELLED
+  EXPIRED
+  TRIALING
+
+  @@map("subscription_status")
+}
+
+enum InvitationStatus {
+  PENDING
+  ACCEPTED
+  EXPIRED
+  REVOKED
+
+  @@map("invitation_status")
+}
+
+enum InvitationType {
+  STAFF
+  ADMIN
+  EMPLOYEE
+
+  @@map("invitation_type")
+}
+
+enum PermissionScope {
+  SYSTEM
+  TENANT
+
+  @@map("permission_scope")
+}
+
+enum AuditOutcome {
+  SUCCESS
+  FAILURE
+  PARTIAL
+
+  @@map("audit_outcome")
+}
+
+enum DepartmentStatus {
+  ACTIVE
+  ARCHIVED
+
+  @@map("department_status")
+}
+
+enum TeamStatus {
+  ACTIVE
+  ARCHIVED
+
+  @@map("team_status")
+}
+
+enum RoleScope {
+  SYSTEM
+  TENANT
+
+  @@map("role_scope")
+}
+
+enum ResearchProjectStatus {
+  DRAFT
+  PENDING_APPROVAL
+  APPROVED
+  ACTIVE
+  ON_HOLD
+  COMPLETED
+  CANCELLED
+  ARCHIVED
+
+  @@map("research_project_status")
+}
+
+enum TaskStatus {
+  NOT_STARTED
+  IN_PROGRESS
+  BLOCKED
+  IN_REVIEW
+  COMPLETED
+  CANCELLED
+
+  @@map("task_status")
+}
+
+enum TaskPriority {
+  LOW
+  MEDIUM
+  HIGH
+  CRITICAL
+
+  @@map("task_priority")
+}
+
+enum MilestoneStatus {
+  PENDING
+  IN_PROGRESS
+  COMPLETED
+  MISSED
+
+  @@map("milestone_status")
+}
+
+enum PerformanceCycleStatus {
+  DRAFT
+  ACTIVE
+  CLOSED
+  LOCKED
+
+  @@map("performance_cycle_status")
+}
+
+enum KpiResultStatus {
+  DRAFT
+  SUBMITTED
+  RETURNED
+  APPROVED
+  LOCKED
+
+  @@map("kpi_result_status")
+}
+
+enum KpiMeasurementType {
+  NUMERIC
+  PERCENTAGE
+  BOOLEAN
+  MILESTONE
+  RATING_SCALE
+  DATE_BASED
+  QUALITY_ASSESSMENT
+
+  @@map("kpi_measurement_type")
+}
+
+enum KpiDirectionality {
+  HIGHER_IS_BETTER
+  LOWER_IS_BETTER
+  TARGET_RANGE
+  COMPLETION
+
+  @@map("kpi_directionality")
+}
+
+enum ManuscriptStatus {
+  DRAFT
+  INTERNAL_REVIEW
+  READY_FOR_SUBMISSION
+  SUBMITTED
+  UNDER_REVIEW
+  REVISION_REQUIRED
+  ACCEPTED
+  REJECTED
+  PUBLISHED
+  WITHDRAWN
+  @@map("manuscript_status")
+}
+
+enum BudgetApprovalStatus {
+  PENDING
+  APPROVED
+  REJECTED
+  @@map("budget_approval_status")
+}
+
+enum QualityReviewStatus {
+  SCHEDULED
+  IN_PROGRESS
+  COMPLETED
+  CANCELLED
+  @@map("quality_review_status")
+}
+
+enum FindingStatus {
+  OPEN
+  IN_PROGRESS
+  CLOSED
+  DISPUTED
+  @@map("finding_status")
+}
+
+enum CorrectiveActionStatus {
+  OPEN
+  IN_PROGRESS
+  PENDING_VERIFICATION
+  CLOSED
+  OVERDUE
+  @@map("corrective_action_status")
+}
+
+enum DocumentStatus {
+  DRAFT
+  UNDER_REVIEW
+  APPROVED
+  ARCHIVED
+  @@map("document_status")
+}
+
+// ─── Tenants ─────────────────────────────────────────────────────────────────
+
+model Tenant {
+  id        String       @id @default(uuid())
+  name      String
+  slug      String       @unique
+  status    TenantStatus @default(TRIAL)
+  logoUrl   String?      @map("logo_url")
+  createdAt DateTime     @default(now()) @map("created_at")
+  updatedAt DateTime     @updatedAt @map("updated_at")
+
+  domains               TenantDomain[]
+  settings              TenantSettings?
+  moduleEntitlements    TenantModuleEntitlement[]
+  subscriptions         Subscription[]
+  users                 User[]
+  userTenantMemberships UserTenantMembership[]
+  sessions              Session[]
+  roles                 Role[]
+  invitations           Invitation[]
+  institution           Institution?
+  departments           Department[]
+  teams                 Team[]
+  employees             Employee[]
+  auditEvents           AuditEvent[]
+  researchProjects      ResearchProject[]
+  performanceCycles     PerformanceCycle[]
+  manuscripts           Manuscript[]
+  fundingSources        FundingSource[]
+  projectBudgets        ProjectBudget[]
+  projectTeams          ProjectTeam[]
+  expenses              Expense[]
+  qualityReviews        QualityReview[]
+  qualityFindings       QualityFinding[]
+  correctiveActions     CorrectiveAction[]
+  documents             Document[]
+  documentFolders       DocumentFolder[]
+  usageRecords          UsageRecord[]
+  integrationConnections IntegrationConnection[]
+  notifications         Notification[]
+  notificationPreferences NotificationPreference[]
+  analyticsSnapshots      AnalyticsSnapshot[]
+  institutionWebsite      InstitutionWebsite?
+  mfaMethods              MfaMethod[]
+  performanceEvaluations  PerformanceEvaluation[]
+  improvementPlans        ImprovementPlan[]
+  strategicObjectives     StrategicObjective[]
+
+  @@map("tenants")
+}
+
+model TenantDomain {
+  id        String   @id @default(uuid())
+  tenantId  String   @map("tenant_id")
+  domain    String   @unique
+  verified  Boolean  @default(false)
+  createdAt DateTime @default(now()) @map("created_at")
+
+  tenant Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId])
+  @@map("tenant_domains")
+}
+
+model TenantSettings {
+  id                    String   @id @default(uuid())
+  tenantId              String   @unique @map("tenant_id")
+  defaultLocale         String   @default("en") @map("default_locale")
+  defaultTimezone       String   @default("UTC") @map("default_timezone")
+  mfaRequired           Boolean  @default(false) @map("mfa_required")
+  sessionTimeoutMinutes Int      @default(480) @map("session_timeout_minutes")
+  allowedIpRanges       String[] @map("allowed_ip_ranges")
+  updatedAt             DateTime @updatedAt @map("updated_at")
+
+  tenant Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  @@map("tenant_settings")
+}
+
+model TenantModuleEntitlement {
+  id         String   @id @default(uuid())
+  tenantId   String   @map("tenant_id")
+  moduleCode String   @map("module_code")
+  enabled    Boolean  @default(true)
+  enabledAt  DateTime @default(now()) @map("enabled_at")
+
+  tenant Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  @@unique([tenantId, moduleCode])
+  @@map("tenant_module_entitlements")
+}
+
+// ─── Subscriptions ────────────────────────────────────────────────────────────
+
+model SubscriptionPlan {
+  id          String   @id @default(uuid())
+  name        String   @unique
+  description String?
+  priceMonthly Decimal? @map("price_monthly") @db.Decimal(10, 2)
+  priceAnnual  Decimal? @map("price_annual") @db.Decimal(10, 2)
+  maxUsers    Int?     @map("max_users")
+  featuresJson Json?   @map("features_json")
+  isActive    Boolean  @default(true) @map("is_active")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  subscriptions Subscription[]
+
+  @@map("subscription_plans")
+}
+
+model Subscription {
+  id         String             @id @default(uuid())
+  tenantId   String             @map("tenant_id")
+  planId     String             @map("plan_id")
+  status     SubscriptionStatus @default(TRIALING)
+  startDate  DateTime           @map("start_date")
+  endDate    DateTime?          @map("end_date")
+  renewsAt   DateTime?          @map("renews_at")
+  cancelledAt DateTime?         @map("cancelled_at")
+  createdAt  DateTime           @default(now()) @map("created_at")
+  updatedAt  DateTime           @updatedAt @map("updated_at")
+
+  tenant Tenant           @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  plan   SubscriptionPlan @relation(fields: [planId], references: [id], onDelete: Restrict)
+
+  @@index([tenantId, status])
+  @@map("subscriptions")
+}
+
+// ─── Users ───────────────────────────────────────────────────────────────────
+
+model User {
+  id           String     @id @default(uuid())
+  email        String     @unique
+  passwordHash String     @map("password_hash")
+  firstName    String     @map("first_name")
+  lastName     String     @map("last_name")
+  status       UserStatus @default(PENDING_VERIFICATION)
+  tenantId     String     @map("tenant_id")
+  createdAt    DateTime   @default(now()) @map("created_at")
+  updatedAt    DateTime   @updatedAt @map("updated_at")
+
+  tenant           Tenant                 @relation(fields: [tenantId], references: [id], onDelete: Restrict)
+  memberships      UserTenantMembership[]
+  sessions         Session[]
+  roleAssignments  UserRoleAssignment[]
+  invitationsSent  Invitation[]           @relation("InvitedByUser")
+  employees        Employee[]
+  auditEventsActed AuditEvent[]           @relation("AuditActor")
+  taskComments         TaskComment[]
+  projectStatusUpdates ProjectStatusUpdate[]
+  kpiResultsSubmitted  KpiResult[]            @relation("KpiResultSubmitter")
+  kpiResultsReviewed   KpiResult[]            @relation("KpiResultReviewer")
+  kpiResultsApproved   KpiResult[]            @relation("KpiResultApprover")
+  notifications        Notification[]
+  notificationPreferences NotificationPreference[]
+  mfaMethods              MfaMethod[]
+
+  @@index([tenantId, status])
+  @@map("users")
+}
+
+model UserTenantMembership {
+  id         String    @id @default(uuid())
+  userId     String    @map("user_id")
+  tenantId   String    @map("tenant_id")
+  joinedAt   DateTime  @default(now()) @map("joined_at")
+  revokedAt  DateTime? @map("revoked_at")
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tenant Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, tenantId])
+  @@map("user_tenant_memberships")
+}
+
+model Session {
+  id         String    @id @default(uuid())
+  userId     String    @map("user_id")
+  tenantId   String    @map("tenant_id")
+  tokenHash  String    @map("token_hash")
+  expiresAt  DateTime  @map("expires_at")
+  revokedAt  DateTime? @map("revoked_at")
+  ipAddress  String?   @map("ip_address")
+  userAgent  String?   @map("user_agent")
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tenant Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  @@index([userId, tenantId])
+  @@index([tokenHash])
+  @@map("sessions")
+}
+
+// ─── RBAC ────────────────────────────────────────────────────────────────────
+
+model Role {
+  id       String    @id @default(uuid())
+  tenantId String    @map("tenant_id")
+  name     String
+  scope    RoleScope @default(TENANT)
+  isSystem Boolean   @default(false) @map("is_system")
+
+  tenant          Tenant               @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  rolePermissions RolePermission[]
+  userAssignments UserRoleAssignment[]
+
+  @@unique([tenantId, name])
+  @@index([tenantId])
+  @@map("roles")
+}
+
+model Permission {
+  id          String          @id @default(uuid())
+  code        String          @unique
+  description String?
+  scope       PermissionScope @default(TENANT)
+
+  rolePermissions RolePermission[]
+
+  @@map("permissions")
+}
+
+model RolePermission {
+  id           String @id @default(uuid())
+  roleId       String @map("role_id")
+  permissionId String @map("permission_id")
+
+  role       Role       @relation(fields: [roleId], references: [id], onDelete: Cascade)
+  permission Permission @relation(fields: [permissionId], references: [id], onDelete: Cascade)
+
+  @@unique([roleId, permissionId])
+  @@map("role_permissions")
+}
+
+model UserRoleAssignment {
+  id           String    @id @default(uuid())
+  userId       String    @map("user_id")
+  roleId       String    @map("role_id")
+  assignedAt   DateTime  @default(now()) @map("assigned_at")
+  expiresAt    DateTime? @map("expires_at")
+  scopeType    String    @default("INSTITUTION") @map("scope_type")
+  scopeId      String?   @map("scope_id")
+  assignedById String?   @map("assigned_by_id")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  role Role @relation(fields: [roleId], references: [id], onDelete: Cascade)
+
+  @@index([userId, roleId])
+  @@map("user_role_assignments")
+}
+
+// ─── Invitations ─────────────────────────────────────────────────────────────
+
+model Invitation {
+  id              String          @id @default(uuid())
+  tenantId        String          @map("tenant_id")
+  email           String
+  token           String          @unique
+  tokenHash       String          @map("token_hash")
+  type            InvitationType  @default(STAFF)
+  status          InvitationStatus @default(PENDING)
+  expiresAt       DateTime        @map("expires_at")
+  usedAt          DateTime?       @map("used_at")
+  invitedByUserId String          @map("invited_by_user_id")
+
+  tenant          Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  invitedByUser   User   @relation("InvitedByUser", fields: [invitedByUserId], references: [id], onDelete: Restrict)
+
+  @@index([tenantId, type])
+  @@index([tokenHash])
+  @@map("invitations")
+}
+
+// ─── Institution ─────────────────────────────────────────────────────────────
+
+model Institution {
+  id       String  @id @default(uuid())
+  tenantId String  @unique @map("tenant_id")
+  name     String
+  type     String?
+  address  String?
+  phone    String?
+  website  String?
+
+  tenant      Tenant       @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  departments Department[]
+
+  @@map("institutions")
+}
+
+// ─── Organisation Hierarchy ──────────────────────────────────────────────────
+
+model Department {
+  id          String           @id @default(uuid())
+  tenantId    String           @map("tenant_id")
+  name        String
+  parentId    String?          @map("parent_id")
+  status      DepartmentStatus @default(ACTIVE)
+  archivedAt  DateTime?        @map("archived_at")
+  institutionId String?        @map("institution_id")
+  createdAt   DateTime         @default(now()) @map("created_at")
+  updatedAt   DateTime         @updatedAt @map("updated_at")
+
+  tenant      Tenant        @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  institution Institution?  @relation(fields: [institutionId], references: [id])
+  parent      Department?   @relation("DepartmentParent", fields: [parentId], references: [id])
+  children    Department[]  @relation("DepartmentParent")
+  teams       Team[]
+  employees   Employee[]
+  researchProjects ResearchProject[]
+
+  @@index([tenantId, status])
+  @@map("departments")
+}
+
+model Team {
+  id           String     @id @default(uuid())
+  tenantId     String     @map("tenant_id")
+  departmentId String     @map("department_id")
+  name         String
+  status       TeamStatus @default(ACTIVE)
+  createdAt    DateTime   @default(now()) @map("created_at")
+  updatedAt    DateTime   @updatedAt @map("updated_at")
+
+  tenant     Tenant     @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  department Department @relation(fields: [departmentId], references: [id], onDelete: Cascade)
+  employees  Employee[]
+
+  @@index([tenantId, departmentId])
+  @@map("teams")
+}
+
+model Position {
+  id          String   @id @default(uuid())
+  tenantId    String   @map("tenant_id")
+  title       String
+  gradeLevel  String?  @map("grade_level")
+  description String?
+  isActive    Boolean  @default(true) @map("is_active")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  employees Employee[]
+
+  @@index([tenantId])
+  @@map("positions")
+}
+
+// ─── Employees ────────────────────────────────────────────────────────────────
+
+model Employee {
+  id           String         @id @default(uuid())
+  tenantId     String         @map("tenant_id")
+  userId       String?        @map("user_id")
+  firstName    String         @map("first_name")
+  lastName     String         @map("last_name")
+  status       EmployeeStatus @default(ACTIVE)
+  departmentId String?        @map("department_id")
+  teamId       String?        @map("team_id")
+  positionId   String?        @map("position_id")
+  hireDate     DateTime?      @map("hire_date") @db.Date
+  archivedAt   DateTime?      @map("archived_at")
+  createdAt    DateTime       @default(now()) @map("created_at")
+  updatedAt    DateTime       @updatedAt @map("updated_at")
+
+  reportingManagerId String?        @map("reporting_manager_id")
+
+  tenant           Tenant                   @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  user             User?                    @relation(fields: [userId], references: [id])
+  department       Department?              @relation(fields: [departmentId], references: [id])
+  team             Team?                    @relation(fields: [teamId], references: [id])
+  position         Position?                @relation(fields: [positionId], references: [id])
+  reportingManager Employee?                @relation("ReportingManager", fields: [reportingManagerId], references: [id])
+  directReports    Employee[]               @relation("ReportingManager")
+  qualifications   EmployeeQualification[]
+  certifications   EmployeeCertification[]
+  skills           EmployeeSkill[]
+  employmentRecords EmploymentRecord[]
+  researchProjectsAsPi       ResearchProject[]       @relation("PI")
+  researchProjectMemberships ResearchProjectMember[]
+  projectTeamMemberships     ProjectTeamMember[]
+  projectTeamsLed            ProjectTeam[]           @relation("TeamLeader")
+  tasksAssigned              ProjectTask[]           @relation("TaskAssignee")
+  manuscriptAuthorships      ManuscriptAuthor[]
+  improvementPlans           ImprovementPlan[]
+
+  @@index([tenantId, status, departmentId])
+  @@map("employees")
+}
+
+model EmployeeCertification {
+  id            String    @id @default(uuid())
+  employeeId    String    @map("employee_id")
+  name          String
+  issuingBody   String?   @map("issuing_body")
+  licenceNumber String?   @map("licence_number")
+  issuedAt      DateTime? @map("issued_at") @db.Date
+  expiresAt     DateTime? @map("expires_at") @db.Date
+  documentRef   String?   @map("document_ref")
+  createdAt     DateTime  @default(now()) @map("created_at")
+
+  employee Employee @relation(fields: [employeeId], references: [id], onDelete: Cascade)
+
+  @@index([employeeId])
+  @@map("employee_certifications")
+}
+
+model EmployeeQualification {
+  id           String   @id @default(uuid())
+  employeeId   String   @map("employee_id")
+  name         String
+  institution  String?
+  yearObtained Int?     @map("year_obtained")
+  documentRef  String?  @map("document_ref")
+  createdAt    DateTime @default(now()) @map("created_at")
+
+  employee Employee @relation(fields: [employeeId], references: [id], onDelete: Cascade)
+
+  @@map("employee_qualifications")
+}
+
+model EmployeeSkill {
+  id         String   @id @default(uuid())
+  employeeId String   @map("employee_id")
+  skill      String
+  level      String?
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  employee Employee @relation(fields: [employeeId], references: [id], onDelete: Cascade)
+
+  @@map("employee_skills")
+}
+
+model EmploymentRecord {
+  id           String    @id @default(uuid())
+  employeeId   String    @map("employee_id")
+  eventType    String    @map("event_type")
+  description  String?
+  effectiveDate DateTime @map("effective_date") @db.Date
+  recordedAt   DateTime  @default(now()) @map("recorded_at")
+  recordedById String?   @map("recorded_by_id")
+
+  employee Employee @relation(fields: [employeeId], references: [id], onDelete: Cascade)
+
+  @@index([employeeId])
+  @@map("employment_records")
+}
+
+// ─── Audit ────────────────────────────────────────────────────────────────────
+
+model AuditEvent {
+  id           String       @id @default(uuid())
+  tenantId     String       @map("tenant_id")
+  actorId      String?      @map("actor_id")
+  action       String
+  resourceType String       @map("resource_type")
+  resourceId   String?      @map("resource_id")
+  outcome      AuditOutcome @default(SUCCESS)
+  beforeState  Json?        @map("before_state")
+  afterState   Json?        @map("after_state")
+  ipAddress    String?      @map("ip_address")
+  userAgent    String?      @map("user_agent")
+  requestId    String?      @map("request_id")
+  createdAt    DateTime     @default(now()) @map("created_at")
+
+  tenant Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  actor  User?  @relation("AuditActor", fields: [actorId], references: [id])
+
+  @@index([tenantId, resourceType, createdAt])
+  @@map("audit_events")
+}
+
+// ─── Research Projects ────────────────────────────────────────────────────────
+
+model ResearchProject {
+  id                      String                @id @default(uuid())
+  tenantId                String                @map("tenant_id")
+  title                   String
+  summary                 String?
+  researchArea            String?               @map("research_area")
+  methodology             String?
+  status                  ResearchProjectStatus @default(DRAFT)
+  principalInvestigatorId String?               @map("principal_investigator_id")
+  departmentId            String?               @map("department_id")
+  startDate               DateTime?             @map("start_date") @db.Date
+  endDate                 DateTime?             @map("end_date") @db.Date
+  ethicsApprovalStatus    String?               @map("ethics_approval_status")
+  ethicsReferenceNo       String?               @map("ethics_reference_no")
+  closureSummary          String?               @map("closure_summary")
+  createdById             String?               @map("created_by_id")
+  createdAt               DateTime              @default(now()) @map("created_at")
+  updatedAt               DateTime              @updatedAt @map("updated_at")
+
+  tenant                Tenant                    @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  principalInvestigator Employee?                 @relation("PI", fields: [principalInvestigatorId], references: [id])
+  department            Department?               @relation(fields: [departmentId], references: [id])
+  members               ResearchProjectMember[]
+  projectTeams          ProjectTeam[]
+  milestones            ProjectMilestone[]
+  deliverables          ProjectDeliverable[]
+  tasks                 ProjectTask[]
+  statusUpdates         ProjectStatusUpdate[]
+  approvals             ResearchApproval[]
+  manuscripts           Manuscript[]
+  budgets               ProjectBudget[]
+
+  @@index([tenantId, status])
+  @@map("research_projects")
+}
+
+model ResearchProjectMember {
+  id                String   @id @default(uuid())
+  researchProjectId String   @map("research_project_id")
+  employeeId        String   @map("employee_id")
+  role              String   @default("MEMBER")
+  joinedAt          DateTime @default(now()) @map("joined_at")
+
+  researchProject ResearchProject @relation(fields: [researchProjectId], references: [id], onDelete: Cascade)
+  employee        Employee        @relation(fields: [employeeId], references: [id])
+
+  @@unique([researchProjectId, employeeId])
+  @@map("research_project_members")
+}
+
+model ResearchApproval {
+  id                String    @id @default(uuid())
+  researchProjectId String    @map("research_project_id")
+  approvalType      String    @map("approval_type")
+  status            String    @default("PENDING")
+  referenceNo       String?   @map("reference_no")
+  approvedAt        DateTime? @map("approved_at")
+  notes             String?
+  createdAt         DateTime  @default(now()) @map("created_at")
+
+  researchProject ResearchProject @relation(fields: [researchProjectId], references: [id], onDelete: Cascade)
+
+  @@map("research_approvals")
+}
+
+model ProjectMilestone {
+  id                String          @id @default(uuid())
+  tenantId          String          @map("tenant_id")
+  researchProjectId String?         @map("research_project_id")
+  title             String
+  description       String?
+  dueDate           DateTime?       @map("due_date") @db.Date
+  completedAt       DateTime?       @map("completed_at")
+  status            MilestoneStatus @default(PENDING)
+  createdAt         DateTime        @default(now()) @map("created_at")
+  updatedAt         DateTime        @updatedAt @map("updated_at")
+
+  researchProject ResearchProject? @relation(fields: [researchProjectId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId, status])
+  @@map("project_milestones")
+}
+
+model ProjectDeliverable {
+  id                String    @id @default(uuid())
+  tenantId          String    @map("tenant_id")
+  researchProjectId String    @map("research_project_id")
+  title             String
+  description       String?
+  dueDate           DateTime? @map("due_date") @db.Date
+  deliveredAt       DateTime? @map("delivered_at")
+  status            String    @default("PENDING")
+  ownerId           String?   @map("owner_id")
+  createdAt         DateTime  @default(now()) @map("created_at")
+  updatedAt         DateTime  @updatedAt @map("updated_at")
+
+  researchProject ResearchProject @relation(fields: [researchProjectId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId, researchProjectId])
+  @@map("project_deliverables")
+}
+
+model ProjectTeam {
+  id                String    @id @default(uuid())
+  tenantId          String    @map("tenant_id")
+  researchProjectId String    @map("research_project_id")
+  name              String
+  description       String?
+  leaderId          String?   @map("leader_id")
+  startDate         DateTime? @map("start_date") @db.Date
+  endDate           DateTime? @map("end_date") @db.Date
+  createdAt         DateTime  @default(now()) @map("created_at")
+  updatedAt         DateTime  @updatedAt @map("updated_at")
+
+  researchProject ResearchProject     @relation(fields: [researchProjectId], references: [id], onDelete: Cascade)
+  tenant          Tenant              @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  leader          Employee?           @relation("TeamLeader", fields: [leaderId], references: [id])
+  members         ProjectTeamMember[]
+  tasks           ProjectTask[]
+
+  @@index([tenantId, researchProjectId])
+  @@map("project_teams")
+}
+
+model ProjectTeamMember {
+  id            String   @id @default(uuid())
+  projectTeamId String   @map("project_team_id")
+  employeeId    String   @map("employee_id")
+  role          String   @default("MEMBER")
+  joinedAt      DateTime @default(now()) @map("joined_at")
+
+  projectTeam ProjectTeam @relation(fields: [projectTeamId], references: [id], onDelete: Cascade)
+  employee    Employee    @relation(fields: [employeeId], references: [id])
+
+  @@unique([projectTeamId, employeeId])
+  @@map("project_team_members")
+}
+
+model ProjectTask {
+  id                String       @id @default(uuid())
+  tenantId          String       @map("tenant_id")
+  researchProjectId String?      @map("research_project_id")
+  projectTeamId     String?      @map("project_team_id")
+  title             String
+  description       String?
+  status            TaskStatus   @default(NOT_STARTED)
+  priority          TaskPriority @default(MEDIUM)
+  assigneeId        String?      @map("assignee_id")
+  startDate         DateTime?    @map("start_date") @db.Date
+  dueDate           DateTime?    @map("due_date") @db.Date
+  completedAt       DateTime?    @map("completed_at")
+  createdById       String?      @map("created_by_id")
+  createdAt         DateTime     @default(now()) @map("created_at")
+  updatedAt         DateTime     @updatedAt @map("updated_at")
+
+  researchProject ResearchProject? @relation(fields: [researchProjectId], references: [id], onDelete: Cascade)
+  projectTeam     ProjectTeam?     @relation(fields: [projectTeamId], references: [id])
+  assignee        Employee?        @relation("TaskAssignee", fields: [assigneeId], references: [id])
+  comments        TaskComment[]
+
+  @@index([tenantId, status, assigneeId])
+  @@index([tenantId, projectTeamId])
+  @@map("project_tasks")
+}
+
+model TaskComment {
+  id        String   @id @default(uuid())
+  taskId    String   @map("task_id")
+  authorId  String   @map("author_id")
+  content   String
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  task   ProjectTask @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  author User        @relation(fields: [authorId], references: [id])
+
+  @@map("task_comments")
+}
+
+model ProjectStatusUpdate {
+  id                String   @id @default(uuid())
+  researchProjectId String   @map("research_project_id")
+  content           String
+  authorId          String   @map("author_id")
+  createdAt         DateTime @default(now()) @map("created_at")
+
+  researchProject ResearchProject @relation(fields: [researchProjectId], references: [id], onDelete: Cascade)
+  author          User            @relation(fields: [authorId], references: [id])
+
+  @@map("project_status_updates")
+}
+
+// ─── Performance Management ───────────────────────────────────────────────────
+
+model PerformanceCycle {
+  id          String                 @id @default(uuid())
+  tenantId    String                 @map("tenant_id")
+  name        String
+  description String?
+  status      PerformanceCycleStatus @default(DRAFT)
+  startDate   DateTime               @map("start_date") @db.Date
+  endDate     DateTime               @map("end_date") @db.Date
+  createdById String?                @map("created_by_id")
+  createdAt   DateTime               @default(now()) @map("created_at")
+  updatedAt   DateTime               @updatedAt @map("updated_at")
+
+  tenant           Tenant                  @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  objectives       PerformanceObjective[]
+  kpiAssignments   KpiAssignment[]
+  evaluations      PerformanceEvaluation[]
+  improvementPlans ImprovementPlan[]
+
+  @@unique([tenantId, name])
+  @@index([tenantId, status])
+  @@map("performance_cycles")
+}
+
+model PerformanceObjective {
+  id                   String   @id @default(uuid())
+  tenantId             String   @map("tenant_id")
+  cycleId              String   @map("cycle_id")
+  strategicObjectiveId String?  @map("strategic_objective_id")
+  title                String
+  description          String?
+  departmentId         String?  @map("department_id")
+  createdAt            DateTime @default(now()) @map("created_at")
+  updatedAt            DateTime @updatedAt @map("updated_at")
+
+  cycle              PerformanceCycle    @relation(fields: [cycleId], references: [id], onDelete: Cascade)
+  strategicObjective StrategicObjective? @relation(fields: [strategicObjectiveId], references: [id])
+  kpiDefinitions     KpiDefinition[]
+
+  @@index([tenantId, cycleId])
+  @@map("performance_objectives")
+}
+
+model KpiDefinition {
+  id               String             @id @default(uuid())
+  tenantId         String             @map("tenant_id")
+  objectiveId      String?            @map("objective_id")
+  name             String
+  description      String?
+  category         String?
+  measurementType  KpiMeasurementType @default(NUMERIC)
+  unit             String?
+  directionality   KpiDirectionality  @default(HIGHER_IS_BETTER)
+  defaultWeight    Decimal            @default(1) @map("default_weight") @db.Decimal(5, 2)
+  targetValue      String?            @map("target_value")
+  evidenceRequired Boolean            @default(false) @map("evidence_required")
+  isActive         Boolean            @default(true) @map("is_active")
+  createdById      String?            @map("created_by_id")
+  createdAt        DateTime           @default(now()) @map("created_at")
+  updatedAt        DateTime           @updatedAt @map("updated_at")
+
+  objective   PerformanceObjective? @relation(fields: [objectiveId], references: [id])
+  assignments KpiAssignment[]
+
+  @@index([tenantId, isActive])
+  @@map("kpi_definitions")
+}
+
+model KpiAssignment {
+  id          String   @id @default(uuid())
+  tenantId    String   @map("tenant_id")
+  cycleId     String   @map("cycle_id")
+  kpiId       String   @map("kpi_id")
+  subjectType String   @map("subject_type")
+  subjectId   String   @map("subject_id")
+  weight      Decimal  @db.Decimal(5, 2)
+  targetValue String?  @map("target_value")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  cycle   PerformanceCycle @relation(fields: [cycleId], references: [id], onDelete: Cascade)
+  kpi     KpiDefinition    @relation(fields: [kpiId], references: [id])
+  results KpiResult[]
+
+  @@unique([cycleId, kpiId, subjectType, subjectId])
+  @@index([tenantId, cycleId, subjectId])
+  @@map("kpi_assignments")
+}
+
+model KpiResult {
+  id            String          @id @default(uuid())
+  tenantId      String          @map("tenant_id")
+  assignmentId  String          @unique @map("assignment_id")
+  status        KpiResultStatus @default(DRAFT)
+  value         String?
+  notes         String?
+  evidenceRef   String?         @map("evidence_ref")
+  submittedById String?         @map("submitted_by_id")
+  submittedAt   DateTime?       @map("submitted_at")
+  reviewedById  String?         @map("reviewed_by_id")
+  reviewedAt    DateTime?       @map("reviewed_at")
+  reviewNotes   String?         @map("review_notes")
+  approvedById  String?         @map("approved_by_id")
+  approvedAt    DateTime?       @map("approved_at")
+  createdAt     DateTime        @default(now()) @map("created_at")
+  updatedAt     DateTime        @updatedAt @map("updated_at")
+
+  assignment  KpiAssignment        @relation(fields: [assignmentId], references: [id], onDelete: Cascade)
+  submittedBy User?                @relation("KpiResultSubmitter", fields: [submittedById], references: [id])
+  reviewedBy  User?                @relation("KpiResultReviewer", fields: [reviewedById], references: [id])
+  approvedBy  User?                @relation("KpiResultApprover", fields: [approvedById], references: [id])
+  evidence    PerformanceEvidence[]
+
+  @@index([tenantId, status])
+  @@map("kpi_results")
+}
+
+// ─── Performance Evidence & Evaluations ──────────────────────────────────────
+
+enum PerformanceEvidenceType {
+  FILE
+  LINK
+  TEXT
+
+  @@map("performance_evidence_type")
+}
+
+model PerformanceEvidence {
+  id           String                  @id @default(uuid())
+  tenantId     String                  @map("tenant_id")
+  kpiResultId  String                  @map("kpi_result_id")
+  evidenceType PerformanceEvidenceType @map("evidence_type")
+  description  String
+  fileKey      String?                 @map("file_key")
+  url          String?
+  uploadedById String?                 @map("uploaded_by_id")
+  createdAt    DateTime                @default(now()) @map("created_at")
+
+  kpiResult KpiResult @relation(fields: [kpiResultId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId, kpiResultId])
+  @@map("performance_evidence")
+}
+
+enum PerformanceEvaluationStatus {
+  DRAFT
+  SUBMITTED
+  APPROVED
+  LOCKED
+
+  @@map("performance_evaluation_status")
+}
+
+model PerformanceEvaluation {
+  id               String                      @id @default(uuid())
+  tenantId         String                      @map("tenant_id")
+  cycleId          String                      @map("cycle_id")
+  subjectType      String                      @map("subject_type")
+  subjectId        String                      @map("subject_id")
+  evaluatorId      String?                     @map("evaluator_id")
+  overallScore     Decimal?                    @map("overall_score") @db.Decimal(5, 2)
+  scoringBand      String?                     @map("scoring_band")
+  narrativeSummary String?                     @map("narrative_summary")
+  status           PerformanceEvaluationStatus @default(DRAFT)
+  createdAt        DateTime                    @default(now()) @map("created_at")
+  updatedAt        DateTime                    @updatedAt @map("updated_at")
+
+  tenant Tenant           @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  cycle  PerformanceCycle @relation(fields: [cycleId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId, cycleId, subjectId])
+  @@map("performance_evaluations")
+}
+
+// ─── Improvement Plans ────────────────────────────────────────────────────────
+
+enum ImprovementPlanStatus {
+  DRAFT
+  ACTIVE
+  COMPLETED
+  CLOSED
+
+  @@map("improvement_plan_status")
+}
+
+model ImprovementPlan {
+  id          String                @id @default(uuid())
+  tenantId    String                @map("tenant_id")
+  employeeId  String                @map("employee_id")
+  cycleId     String?               @map("cycle_id")
+  title       String
+  description String?
+  status      ImprovementPlanStatus @default(DRAFT)
+  ownerId     String?               @map("owner_id")
+  dueDate     DateTime?             @map("due_date") @db.Date
+  closedAt    DateTime?             @map("closed_at")
+  createdById String?               @map("created_by_id")
+  createdAt   DateTime              @default(now()) @map("created_at")
+  updatedAt   DateTime              @updatedAt @map("updated_at")
+
+  tenant   Tenant            @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  employee Employee          @relation(fields: [employeeId], references: [id], onDelete: Cascade)
+  cycle    PerformanceCycle? @relation(fields: [cycleId], references: [id])
+
+  @@index([tenantId, employeeId, status])
+  @@map("improvement_plans")
+}
+
+// ─── Strategic Objectives ─────────────────────────────────────────────────────
+
+enum StrategicObjectiveStatus {
+  DRAFT
+  ACTIVE
+  COMPLETED
+  ARCHIVED
+
+  @@map("strategic_objective_status")
+}
+
+model StrategicObjective {
+  id          String                   @id @default(uuid())
+  tenantId    String                   @map("tenant_id")
+  title       String
+  description String?
+  startYear   Int?                     @map("start_year")
+  endYear     Int?                     @map("end_year")
+  status      StrategicObjectiveStatus @default(ACTIVE)
+  createdById String?                  @map("created_by_id")
+  createdAt   DateTime                 @default(now()) @map("created_at")
+  updatedAt   DateTime                 @updatedAt @map("updated_at")
+
+  tenant     Tenant                 @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  objectives PerformanceObjective[]
+
+  @@index([tenantId, status])
+  @@map("strategic_objectives")
+}
+
+// ─── Publications ─────────────────────────────────────────────────────────────
+
+model Manuscript {
+  id               String           @id @default(uuid())
+  tenantId         String           @map("tenant_id")
+  title            String
+  abstract         String?
+  keywords         String[]
+  status           ManuscriptStatus @default(DRAFT)
+  researchProjectId String?         @map("research_project_id")
+  targetJournal    String?          @map("target_journal")
+  publisher        String?
+  submittedAt      DateTime?        @map("submitted_at")
+  acceptedAt       DateTime?        @map("accepted_at")
+  rejectedAt       DateTime?        @map("rejected_at")
+  publishedAt      DateTime?        @map("published_at")
+  withdrawnAt      DateTime?        @map("withdrawn_at")
+  doi              String?
+  volume           String?
+  issue            String?
+  pages            String?
+  url              String?
+  createdById      String?          @map("created_by_id")
+  createdAt        DateTime         @default(now()) @map("created_at")
+  updatedAt        DateTime         @updatedAt @map("updated_at")
+
+  tenant          Tenant                  @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  researchProject ResearchProject?        @relation(fields: [researchProjectId], references: [id])
+  authors         ManuscriptAuthor[]
+  reviews         ManuscriptReview[]
+  websitePublicationLinks WebsitePublicationLink[]
+
+  @@index([tenantId, status])
+  @@map("manuscripts")
+}
+
+model ManuscriptAuthor {
+  id             String   @id @default(uuid())
+  manuscriptId   String   @map("manuscript_id")
+  employeeId     String   @map("employee_id")
+  contributionRole String? @map("contribution_role")
+  authorOrder    Int      @default(0) @map("author_order")
+  isCorresponding Boolean @default(false) @map("is_corresponding")
+
+  manuscript Manuscript @relation(fields: [manuscriptId], references: [id], onDelete: Cascade)
+  employee   Employee   @relation(fields: [employeeId], references: [id])
+
+  @@unique([manuscriptId, employeeId])
+  @@map("manuscript_authors")
+}
+
+model ManuscriptReview {
+  id            String   @id @default(uuid())
+  manuscriptId  String   @map("manuscript_id")
+  round         Int      @default(1)
+  submittedAt   DateTime? @map("submitted_at")
+  deadline      DateTime? @map("deadline") @db.Date
+  outcome       String?
+  notes         String?
+  createdAt     DateTime @default(now()) @map("created_at")
+
+  manuscript Manuscript @relation(fields: [manuscriptId], references: [id], onDelete: Cascade)
+
+  @@map("manuscript_reviews")
+}
+
+// ─── Finance ──────────────────────────────────────────────────────────────────
+
+model FundingSource {
+  id          String   @id @default(uuid())
+  tenantId    String   @map("tenant_id")
+  name        String
+  funderName  String?  @map("funder_name")
+  grantRef    String?  @map("grant_ref")
+  totalAmount Decimal? @map("total_amount") @db.Decimal(18,2)
+  currency    String   @default("USD")
+  startDate   DateTime? @map("start_date") @db.Date
+  endDate     DateTime? @map("end_date") @db.Date
+  isActive    Boolean  @default(true) @map("is_active")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  tenant  Tenant          @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  budgets ProjectBudget[]
+
+  @@index([tenantId])
+  @@map("funding_sources")
+}
+
+model ProjectBudget {
+  id               String               @id @default(uuid())
+  tenantId         String               @map("tenant_id")
+  researchProjectId String              @map("research_project_id")
+  fundingSourceId  String?              @map("funding_source_id")
+  approvedAmount   Decimal              @map("approved_amount") @db.Decimal(18,2)
+  currency         String               @default("USD")
+  approvalStatus   BudgetApprovalStatus @default(PENDING)
+  approvedById     String?              @map("approved_by_id")
+  approvedAt       DateTime?            @map("approved_at")
+  notes            String?
+  createdAt        DateTime             @default(now()) @map("created_at")
+  updatedAt        DateTime             @updatedAt @map("updated_at")
+
+  tenant          Tenant           @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  researchProject ResearchProject  @relation(fields: [researchProjectId], references: [id], onDelete: Cascade)
+  fundingSource   FundingSource?   @relation(fields: [fundingSourceId], references: [id])
+  categories      BudgetCategory[]
+  expenses        Expense[]
+
+  @@index([tenantId, researchProjectId])
+  @@map("project_budgets")
+}
+
+model BudgetCategory {
+  id         String   @id @default(uuid())
+  budgetId   String   @map("budget_id")
+  name       String
+  allocated  Decimal  @db.Decimal(18,2)
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  budget   ProjectBudget @relation(fields: [budgetId], references: [id], onDelete: Cascade)
+  expenses Expense[]
+
+  @@map("budget_categories")
+}
+
+model Expense {
+  id             String   @id @default(uuid())
+  tenantId       String   @map("tenant_id")
+  budgetId       String   @map("budget_id")
+  categoryId     String?  @map("category_id")
+  description    String
+  amount         Decimal  @db.Decimal(18,2)
+  currency       String   @default("USD")
+  transactionDate DateTime @map("transaction_date") @db.Date
+  reference      String?
+  submittedById  String?  @map("submitted_by_id")
+  createdAt      DateTime @default(now()) @map("created_at")
+  updatedAt      DateTime @updatedAt @map("updated_at")
+
+  tenant   Tenant          @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  budget   ProjectBudget   @relation(fields: [budgetId], references: [id], onDelete: Cascade)
+  category BudgetCategory? @relation(fields: [categoryId], references: [id])
+
+  @@index([tenantId, budgetId])
+  @@map("expenses")
+}
+
+// ─── Quality Assurance ────────────────────────────────────────────────────────
+
+model QualityReview {
+  id           String              @id @default(uuid())
+  tenantId     String              @map("tenant_id")
+  title        String
+  reviewType   String              @map("review_type")
+  status       QualityReviewStatus @default(SCHEDULED)
+  scheduledDate DateTime?          @map("scheduled_date") @db.Date
+  completedAt  DateTime?           @map("completed_at")
+  departmentId String?             @map("department_id")
+  leadReviewerId String?           @map("lead_reviewer_id")
+  summary      String?
+  createdAt    DateTime            @default(now()) @map("created_at")
+  updatedAt    DateTime            @updatedAt @map("updated_at")
+
+  tenant   Tenant           @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  findings QualityFinding[]
+
+  @@index([tenantId, status])
+  @@map("quality_reviews")
+}
+
+model QualityFinding {
+  id           String        @id @default(uuid())
+  tenantId     String        @map("tenant_id")
+  reviewId     String        @map("review_id")
+  title        String
+  description  String?
+  severity     String        @default("MINOR")
+  status       FindingStatus @default(OPEN)
+  closedAt     DateTime?     @map("closed_at")
+  createdAt    DateTime      @default(now()) @map("created_at")
+  updatedAt    DateTime      @updatedAt @map("updated_at")
+
+  tenant           Tenant             @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  review           QualityReview      @relation(fields: [reviewId], references: [id], onDelete: Cascade)
+  correctiveActions CorrectiveAction[]
+
+  @@index([tenantId, status])
+  @@map("quality_findings")
+}
+
+model CorrectiveAction {
+  id          String                 @id @default(uuid())
+  tenantId    String                 @map("tenant_id")
+  findingId   String                 @map("finding_id")
+  title       String
+  description String?
+  status      CorrectiveActionStatus @default(OPEN)
+  ownerId     String?                @map("owner_id")
+  dueDate     DateTime?              @map("due_date") @db.Date
+  closedAt    DateTime?              @map("closed_at")
+  evidenceRef String?                @map("evidence_ref")
+  createdAt   DateTime               @default(now()) @map("created_at")
+  updatedAt   DateTime               @updatedAt @map("updated_at")
+
+  tenant  Tenant         @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  finding QualityFinding @relation(fields: [findingId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId, status])
+  @@map("corrective_actions")
+}
+
+// ─── Documents ────────────────────────────────────────────────────────────────
+
+model Document {
+  id           String         @id @default(uuid())
+  tenantId     String         @map("tenant_id")
+  title        String
+  description  String?
+  folderId     String?        @map("folder_id")
+  status       DocumentStatus @default(DRAFT)
+  fileKey      String?        @map("file_key")
+  fileName     String?        @map("file_name")
+  mimeType     String?        @map("mime_type")
+  fileSizeBytes Int?           @map("file_size_bytes")
+  checksum     String?
+  currentVersion Int          @default(1) @map("current_version")
+  uploadedById String?        @map("uploaded_by_id")
+  approvedById String?        @map("approved_by_id")
+  approvedAt   DateTime?      @map("approved_at")
+  archivedAt   DateTime?      @map("archived_at")
+  createdAt    DateTime       @default(now()) @map("created_at")
+  updatedAt    DateTime       @updatedAt @map("updated_at")
+
+  tenant   Tenant           @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  folder   DocumentFolder?  @relation(fields: [folderId], references: [id])
+  versions DocumentVersion[]
+
+  @@index([tenantId, status, folderId])
+  @@map("documents")
+}
+
+model DocumentFolder {
+  id        String   @id @default(uuid())
+  tenantId  String   @map("tenant_id")
+  name      String
+  parentId  String?  @map("parent_id")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  tenant   Tenant           @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  parent   DocumentFolder?  @relation("FolderParent", fields: [parentId], references: [id])
+  children DocumentFolder[] @relation("FolderParent")
+  documents Document[]
+
+  @@index([tenantId])
+  @@map("document_folders")
+}
+
+model DocumentVersion {
+  id           String   @id @default(uuid())
+  documentId   String   @map("document_id")
+  version      Int
+  fileKey      String   @map("file_key")
+  fileName     String   @map("file_name")
+  fileSizeBytes Int?    @map("file_size_bytes")
+  checksum     String?
+  uploadedById String?  @map("uploaded_by_id")
+  notes        String?
+  createdAt    DateTime @default(now()) @map("created_at")
+
+  document Document @relation(fields: [documentId], references: [id], onDelete: Cascade)
+
+  @@map("document_versions")
+}
+
+// ─── MFA ──────────────────────────────────────────────────────────────────────
+
+enum MfaMethodType {
+  TOTP
+
+  @@map("mfa_method_type")
+}
+
+model MfaMethod {
+  id        String        @id @default(uuid())
+  userId    String        @map("user_id")
+  tenantId  String        @map("tenant_id")
+  type      MfaMethodType @default(TOTP)
+  secret    String
+  verified  Boolean       @default(false)
+  createdAt DateTime      @default(now()) @map("created_at")
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tenant Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, type])
+  @@index([tenantId])
+  @@map("mfa_methods")
+}
+
+// ─── Phase 4 Enums ────────────────────────────────────────────────────────────
+
+enum UsageMetricType {
+  ACTIVE_USERS
+  TOTAL_EMPLOYEES
+  TOTAL_PROJECTS
+  TOTAL_DOCUMENTS
+  STORAGE_BYTES
+  API_CALLS
+
+  @@map("usage_metric_type")
+}
+
+enum IntegrationStatus {
+  ACTIVE
+  INACTIVE
+  ERROR
+
+  @@map("integration_status")
+}
+
+enum WebhookDeliveryStatus {
+  PENDING
+  DELIVERED
+  FAILED
+  RETRYING
+
+  @@map("webhook_delivery_status")
+}
+
+enum NotificationChannel {
+  IN_APP
+  EMAIL
+
+  @@map("notification_channel")
+}
+
+enum NotificationStatus {
+  UNREAD
+  READ
+  DISMISSED
+
+  @@map("notification_status")
+}
+
+// ─── Usage Metering ───────────────────────────────────────────────────────────
+
+model UsageRecord {
+  id          String          @id @default(uuid())
+  tenantId    String          @map("tenant_id")
+  metricType  UsageMetricType @map("metric_type")
+  value       BigInt
+  recordedAt  DateTime        @default(now()) @map("recorded_at")
+  periodStart DateTime        @map("period_start") @db.Date
+  periodEnd   DateTime        @map("period_end") @db.Date
+
+  tenant Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId, metricType, periodStart])
+  @@map("usage_records")
+}
+
+// ─── Integrations ─────────────────────────────────────────────────────────────
+
+model IntegrationConnection {
+  id           String            @id @default(uuid())
+  tenantId     String            @map("tenant_id")
+  name         String
+  provider     String
+  status       IntegrationStatus @default(INACTIVE)
+  configJson   Json?             @map("config_json")
+  lastSyncAt   DateTime?         @map("last_sync_at")
+  errorMessage String?           @map("error_message")
+  createdAt    DateTime          @default(now()) @map("created_at")
+  updatedAt    DateTime          @updatedAt @map("updated_at")
+
+  tenant            Tenant            @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  webhookDeliveries WebhookDelivery[]
+
+  @@index([tenantId, provider])
+  @@map("integration_connections")
+}
+
+model WebhookDelivery {
+  id            String                @id @default(uuid())
+  connectionId  String                @map("connection_id")
+  event         String
+  payload       Json
+  status        WebhookDeliveryStatus @default(PENDING)
+  attempts      Int                   @default(0)
+  lastAttemptAt DateTime?             @map("last_attempt_at")
+  responseCode  Int?                  @map("response_code")
+  responseBody  String?               @map("response_body")
+  createdAt     DateTime              @default(now()) @map("created_at")
+
+  connection IntegrationConnection @relation(fields: [connectionId], references: [id], onDelete: Cascade)
+
+  @@index([connectionId, status])
+  @@map("webhook_deliveries")
+}
+
+// ─── Notifications ────────────────────────────────────────────────────────────
+
+model Notification {
+  id           String              @id @default(uuid())
+  tenantId     String              @map("tenant_id")
+  userId       String              @map("user_id")
+  channel      NotificationChannel @default(IN_APP)
+  status       NotificationStatus  @default(UNREAD)
+  title        String
+  body         String
+  resourceType String?             @map("resource_type")
+  resourceId   String?             @map("resource_id")
+  actionUrl    String?             @map("action_url")
+  readAt       DateTime?           @map("read_at")
+  createdAt    DateTime            @default(now()) @map("created_at")
+
+  tenant Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId, userId, status])
+  @@map("notifications")
+}
+
+model NotificationPreference {
+  id           String   @id @default(uuid())
+  userId       String   @map("user_id")
+  tenantId     String   @map("tenant_id")
+  eventType    String   @map("event_type")
+  inAppEnabled Boolean  @default(true) @map("in_app_enabled")
+  emailEnabled Boolean  @default(true) @map("email_enabled")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tenant Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, tenantId, eventType])
+  @@map("notification_preferences")
+}
+
+// ─── Analytics Snapshots ──────────────────────────────────────────────────────
+
+model AnalyticsSnapshot {
+  id           String   @id @default(uuid())
+  tenantId     String   @map("tenant_id")
+  snapshotType String   @map("snapshot_type")
+  periodStart  DateTime @map("period_start") @db.Date
+  periodEnd    DateTime @map("period_end") @db.Date
+  dataJson     Json     @map("data_json")
+  generatedAt  DateTime @default(now()) @map("generated_at")
+
+  tenant Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId, snapshotType, periodStart])
+  @@map("analytics_snapshots")
+}
+
+// ─── Institutional Web Presence ───────────────────────────────────────────────
+
+enum WebsiteStatus {
+  SETUP
+  DRAFT
+  PUBLISHED
+  SUSPENDED
+
+  @@map("website_status")
+}
+
+enum WebsitePageStatus {
+  DRAFT
+  SUBMITTED
+  CHANGES_REQUESTED
+  APPROVED
+  PUBLISHED
+  UNPUBLISHED
+  ARCHIVED
+
+  @@map("website_page_status")
+}
+
+enum WebsitePageType {
+  HOME
+  ABOUT
+  RESEARCH
+  PUBLICATIONS
+  OPPORTUNITIES
+  NEWS
+  EVENTS
+  TEAM
+  PARTNERS
+  RESOURCES
+  CONTACT
+  FAQ
+  CUSTOM
+
+  @@map("website_page_type")
+}
+
+enum WebsiteContentStatus {
+  DRAFT
+  SUBMITTED
+  CHANGES_REQUESTED
+  APPROVED
+  PUBLISHED
+  UNPUBLISHED
+  ARCHIVED
+
+  @@map("website_content_status")
+}
+
+enum OpportunityType {
+  VACANCY
+  RESEARCH_ASSISTANT
+  INTERNSHIP
+  FELLOWSHIP
+  GRADUATE
+  VOLUNTEER
+  CALL_FOR_PAPERS
+  CALL_FOR_COLLABORATION
+  OTHER
+
+  @@map("opportunity_type")
+}
+
+enum DomainVerificationStatus {
+  PENDING
+  VERIFIED
+  FAILED
+
+  @@map("domain_verification_status")
+}
+
+model InstitutionWebsite {
+  id              String        @id @default(uuid())
+  tenantId        String        @unique @map("tenant_id")
+  name            String
+  status          WebsiteStatus @default(SETUP)
+  defaultLocale   String        @default("en") @map("default_locale")
+  timezone        String        @default("UTC")
+  primaryDomainId    String?       @map("primary_domain_id")
+  sitemapCache       String?       @map("sitemap_cache")
+  sitemapGeneratedAt DateTime?     @map("sitemap_generated_at")
+  createdAt          DateTime      @default(now()) @map("created_at")
+  updatedAt          DateTime      @updatedAt @map("updated_at")
+
+  tenant             Tenant                     @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  branding           WebsiteBranding?
+  themeSelection     WebsiteThemeSelection?
+  pages              WebsitePage[]
+  navigations        WebsiteNavigation[]
+  media              WebsiteMedia[]
+  domains            WebsiteDomain[]
+  news               WebsiteNews[]
+  events             WebsiteEvent[]
+  opportunities      WebsiteOpportunity[]
+  teamProfiles       WebsiteTeamProfile[]
+  partners           WebsitePartner[]
+  resources          WebsiteResource[]
+  faqs               WebsiteFaq[]
+  publicationLinks   WebsitePublicationLink[]
+  opportunityLinks   WebsiteOpportunityLink[]
+  contactSubmissions WebsiteContactSubmission[]
+
+  @@map("institution_websites")
+}
+
+model WebsiteBranding {
+  id                 String   @id @default(uuid())
+  tenantId           String   @map("tenant_id")
+  websiteId          String   @unique @map("website_id")
+  logoUrl            String?  @map("logo_url")
+  logoDarkUrl        String?  @map("logo_dark_url")
+  faviconUrl         String?  @map("favicon_url")
+  tagline            String?
+  shortDescription   String?  @map("short_description")
+  fullDescription    String?  @map("full_description")
+  mission            String?
+  vision             String?
+  primaryColor       String?  @map("primary_color")
+  secondaryColor     String?  @map("secondary_color")
+  accentColor        String?  @map("accent_color")
+  typographyPreset   String?  @map("typography_preset")
+  contactEmail       String?  @map("contact_email")
+  contactPhone       String?  @map("contact_phone")
+  address            String?
+  socialLinksJson    Json?    @map("social_links_json")
+  copyrightStatement String?  @map("copyright_statement")
+  updatedById        String?  @map("updated_by_id")
+  createdAt          DateTime @default(now()) @map("created_at")
+  updatedAt          DateTime @updatedAt @map("updated_at")
+
+  website InstitutionWebsite @relation(fields: [websiteId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId])
+  @@map("website_brandings")
+}
+
+model WebsiteThemeSelection {
+  id           String   @id @default(uuid())
+  tenantId     String   @map("tenant_id")
+  websiteId    String   @unique @map("website_id")
+  themeKey     String   @map("theme_key")
+  themeVersion String   @default("1.0") @map("theme_version")
+  configJson   Json?    @map("config_json")
+  appliedById  String?  @map("applied_by_id")
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+
+  website InstitutionWebsite @relation(fields: [websiteId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId])
+  @@map("website_theme_selections")
+}
+
+model WebsitePage {
+  id             String            @id @default(uuid())
+  tenantId       String            @map("tenant_id")
+  websiteId      String            @map("website_id")
+  title          String
+  publicTitle    String?           @map("public_title")
+  slug           String
+  pageType       WebsitePageType   @default(CUSTOM) @map("page_type")
+  summary        String?
+  featuredMediaId String?          @map("featured_media_id")
+  status         WebsitePageStatus @default(DRAFT)
+  seoTitle       String?           @map("seo_title")
+  seoDescription String?           @map("seo_description")
+  socialImageUrl String?           @map("social_image_url")
+  robotsIndex    Boolean           @default(true) @map("robots_index")
+  authorId       String?           @map("author_id")
+  reviewerId     String?           @map("reviewer_id")
+  approverId     String?           @map("approver_id")
+  publisherId    String?           @map("publisher_id")
+  publishedAt    DateTime?         @map("published_at")
+  scheduledAt    DateTime?         @map("scheduled_at")
+  unpublishedAt  DateTime?         @map("unpublished_at")
+  archivedAt     DateTime?         @map("archived_at")
+  createdAt      DateTime          @default(now()) @map("created_at")
+  updatedAt      DateTime          @updatedAt @map("updated_at")
+
+  website   InstitutionWebsite   @relation(fields: [websiteId], references: [id], onDelete: Cascade)
+  sections  WebsitePageSection[]
+  revisions WebsitePageRevision[]
+
+  @@unique([websiteId, slug])
+  @@index([tenantId, websiteId, status])
+  @@map("website_pages")
+}
+
+model WebsitePageSection {
+  id          String   @id @default(uuid())
+  tenantId    String   @map("tenant_id")
+  pageId      String   @map("page_id")
+  sectionType String   @map("section_type")
+  sortOrder   Int      @default(0) @map("sort_order")
+  configJson  Json     @map("config_json")
+  isVisible   Boolean  @default(true) @map("is_visible")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  page WebsitePage @relation(fields: [pageId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId, pageId])
+  @@map("website_page_sections")
+}
+
+model WebsitePageRevision {
+  id             String   @id @default(uuid())
+  tenantId       String   @map("tenant_id")
+  pageId         String   @map("page_id")
+  revisionNumber Int      @map("revision_number")
+  contentSnapshot Json    @map("content_snapshot")
+  changeSummary  String?  @map("change_summary")
+  createdById    String?  @map("created_by_id")
+  createdAt      DateTime @default(now()) @map("created_at")
+
+  page WebsitePage @relation(fields: [pageId], references: [id], onDelete: Cascade)
+
+  @@unique([pageId, revisionNumber])
+  @@index([tenantId, pageId])
+  @@map("website_page_revisions")
+}
+
+model WebsiteNavigation {
+  id        String   @id @default(uuid())
+  tenantId  String   @map("tenant_id")
+  websiteId String   @map("website_id")
+  name      String
+  location  String
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  website InstitutionWebsite      @relation(fields: [websiteId], references: [id], onDelete: Cascade)
+  items   WebsiteNavigationItem[]
+
+  @@unique([websiteId, location])
+  @@index([tenantId, websiteId])
+  @@map("website_navigations")
+}
+
+model WebsiteNavigationItem {
+  id           String   @id @default(uuid())
+  tenantId     String   @map("tenant_id")
+  navigationId String   @map("navigation_id")
+  parentId     String?  @map("parent_id")
+  label        String
+  linkType     String   @map("link_type")
+  pageId       String?  @map("page_id")
+  externalUrl  String?  @map("external_url")
+  sortOrder    Int      @default(0) @map("sort_order")
+  isVisible    Boolean  @default(true) @map("is_visible")
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+
+  navigation WebsiteNavigation      @relation(fields: [navigationId], references: [id], onDelete: Cascade)
+  parent     WebsiteNavigationItem? @relation("NavItemParent", fields: [parentId], references: [id])
+  children   WebsiteNavigationItem[] @relation("NavItemParent")
+
+  @@index([tenantId, navigationId])
+  @@map("website_navigation_items")
+}
+
+model WebsiteMedia {
+  id            String   @id @default(uuid())
+  tenantId      String   @map("tenant_id")
+  websiteId     String   @map("website_id")
+  storageKey    String   @map("storage_key")
+  fileName      String   @map("file_name")
+  mimeType      String   @map("mime_type")
+  fileSizeBytes Int      @map("file_size_bytes")
+  width         Int?
+  height        Int?
+  altText       String?  @map("alt_text")
+  caption       String?
+  credit        String?
+  isPublic      Boolean  @default(false) @map("is_public")
+  uploadedById  String?  @map("uploaded_by_id")
+  createdAt     DateTime @default(now()) @map("created_at")
+  updatedAt     DateTime @updatedAt @map("updated_at")
+
+  website InstitutionWebsite @relation(fields: [websiteId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId, websiteId])
+  @@map("website_media")
+}
+
+model WebsiteDomain {
+  id                 String                   @id @default(uuid())
+  tenantId           String                   @map("tenant_id")
+  websiteId          String                   @map("website_id")
+  hostname           String                   @unique
+  verificationStatus DomainVerificationStatus @default(PENDING) @map("verification_status")
+  verificationToken  String?                  @map("verification_token")
+  isPrimary          Boolean                  @default(false) @map("is_primary")
+  tlsStatus          String?                  @map("tls_status")
+  verifiedAt         DateTime?                @map("verified_at")
+  createdAt          DateTime                 @default(now()) @map("created_at")
+  updatedAt          DateTime                 @updatedAt @map("updated_at")
+
+  website InstitutionWebsite @relation(fields: [websiteId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId, websiteId])
+  @@map("website_domains")
+}
+
+model WebsiteNews {
+  id               String               @id @default(uuid())
+  tenantId         String               @map("tenant_id")
+  websiteId        String               @map("website_id")
+  title            String
+  slug             String
+  summary          String?
+  body             String?
+  featuredImageUrl String?              @map("featured_image_url")
+  category         String?
+  tags             String[]
+  authorId         String?              @map("author_id")
+  status                WebsiteContentStatus @default(DRAFT)
+  publishedAt           DateTime?            @map("published_at")
+  scheduledPublishAt    DateTime?            @map("scheduled_publish_at")
+  seoTitle              String?              @map("seo_title")
+  seoDescription        String?              @map("seo_description")
+  createdAt             DateTime             @default(now()) @map("created_at")
+  updatedAt             DateTime             @updatedAt @map("updated_at")
+
+  website InstitutionWebsite @relation(fields: [websiteId], references: [id], onDelete: Cascade)
+
+  @@unique([websiteId, slug])
+  @@index([tenantId, websiteId, status])
+  @@map("website_news")
+}
+
+model WebsiteEvent {
+  id               String               @id @default(uuid())
+  tenantId         String               @map("tenant_id")
+  websiteId        String               @map("website_id")
+  title            String
+  slug             String
+  summary          String?
+  description      String?
+  category         String?
+  startDatetime    DateTime             @map("start_datetime")
+  endDatetime      DateTime?            @map("end_datetime")
+  timezone         String               @default("UTC")
+  venue            String?
+  isOnline         Boolean              @default(false) @map("is_online")
+  registrationUrl  String?              @map("registration_url")
+  featuredImageUrl String?              @map("featured_image_url")
+  status                WebsiteContentStatus @default(DRAFT)
+  publishedAt           DateTime?            @map("published_at")
+  scheduledPublishAt    DateTime?            @map("scheduled_publish_at")
+  createdAt             DateTime             @default(now()) @map("created_at")
+  updatedAt             DateTime             @updatedAt @map("updated_at")
+
+  website InstitutionWebsite @relation(fields: [websiteId], references: [id], onDelete: Cascade)
+
+  @@unique([websiteId, slug])
+  @@index([tenantId, websiteId, status])
+  @@map("website_events")
+}
+
+model WebsiteOpportunity {
+  id              String               @id @default(uuid())
+  tenantId        String               @map("tenant_id")
+  websiteId       String               @map("website_id")
+  title           String
+  slug            String
+  opportunityType OpportunityType      @map("opportunity_type")
+  summary         String?
+  body            String?
+  department      String?
+  location        String?
+  isRemote        Boolean              @default(false) @map("is_remote")
+  applicationUrl  String?              @map("application_url")
+  openingDate     DateTime?            @map("opening_date") @db.Date
+  closingDate     DateTime?            @map("closing_date") @db.Date
+  status          WebsiteContentStatus @default(DRAFT)
+  publishedAt     DateTime?            @map("published_at")
+  createdAt       DateTime             @default(now()) @map("created_at")
+  updatedAt       DateTime             @updatedAt @map("updated_at")
+
+  website InstitutionWebsite @relation(fields: [websiteId], references: [id], onDelete: Cascade)
+
+  @@unique([websiteId, slug])
+  @@index([tenantId, websiteId, status, opportunityType])
+  @@map("website_opportunities")
+}
+
+model WebsiteTeamProfile {
+  id                    String               @id @default(uuid())
+  tenantId              String               @map("tenant_id")
+  websiteId             String               @map("website_id")
+  employeeId            String?              @map("employee_id")
+  displayName           String               @map("display_name")
+  role                  String?
+  department            String?
+  biography             String?
+  photoUrl              String?              @map("photo_url")
+  qualifications        String?
+  professionalLinksJson Json?                @map("professional_links_json")
+  sortOrder             Int                  @default(0) @map("sort_order")
+  status                WebsiteContentStatus @default(DRAFT)
+  publishedAt           DateTime?            @map("published_at")
+  createdAt             DateTime             @default(now()) @map("created_at")
+  updatedAt             DateTime             @updatedAt @map("updated_at")
+
+  website InstitutionWebsite @relation(fields: [websiteId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId, websiteId, status])
+  @@map("website_team_profiles")
+}
+
+model WebsitePartner {
+  id              String               @id @default(uuid())
+  tenantId        String               @map("tenant_id")
+  websiteId       String               @map("website_id")
+  name            String
+  logoUrl         String?              @map("logo_url")
+  description     String?
+  websiteUrl      String?              @map("website_url")
+  partnershipType String?              @map("partnership_type")
+  sortOrder       Int                  @default(0) @map("sort_order")
+  status          WebsiteContentStatus @default(DRAFT)
+  publishedAt     DateTime?            @map("published_at")
+  createdAt       DateTime             @default(now()) @map("created_at")
+  updatedAt       DateTime             @updatedAt @map("updated_at")
+
+  website InstitutionWebsite @relation(fields: [websiteId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId, websiteId, status])
+  @@map("website_partners")
+}
+
+model WebsiteResource {
+  id            String               @id @default(uuid())
+  tenantId      String               @map("tenant_id")
+  websiteId     String               @map("website_id")
+  title         String
+  description   String?
+  fileKey       String?              @map("file_key")
+  fileName      String?              @map("file_name")
+  mimeType      String?              @map("mime_type")
+  fileSizeBytes Int?                 @map("file_size_bytes")
+  category      String?
+  publicDownload Boolean             @default(false) @map("public_download")
+  status        WebsiteContentStatus @default(DRAFT)
+  publishedAt   DateTime?            @map("published_at")
+  createdAt     DateTime             @default(now()) @map("created_at")
+  updatedAt     DateTime             @updatedAt @map("updated_at")
+
+  website InstitutionWebsite @relation(fields: [websiteId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId, websiteId, status])
+  @@map("website_resources")
+}
+
+model WebsiteFaq {
+  id        String               @id @default(uuid())
+  tenantId  String               @map("tenant_id")
+  websiteId String               @map("website_id")
+  question  String
+  answer    String
+  category  String?
+  sortOrder Int                  @default(0) @map("sort_order")
+  status    WebsiteContentStatus @default(DRAFT)
+  createdAt DateTime             @default(now()) @map("created_at")
+  updatedAt DateTime             @updatedAt @map("updated_at")
+
+  website InstitutionWebsite @relation(fields: [websiteId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId, websiteId, status])
+  @@map("website_faqs")
+}
+
+model WebsitePublicationLink {
+  id                    String               @id @default(uuid())
+  tenantId              String               @map("tenant_id")
+  websiteId             String               @map("website_id")
+  manuscriptId          String               @map("manuscript_id")
+  publicSummaryOverride String?              @map("public_summary_override")
+  status                WebsiteContentStatus @default(DRAFT)
+  approverId            String?              @map("approver_id")
+  approvedAt            DateTime?            @map("approved_at")
+  publishedAt           DateTime?            @map("published_at")
+  createdAt             DateTime             @default(now()) @map("created_at")
+  updatedAt             DateTime             @updatedAt @map("updated_at")
+
+  website    InstitutionWebsite @relation(fields: [websiteId], references: [id], onDelete: Cascade)
+  manuscript Manuscript         @relation(fields: [manuscriptId], references: [id], onDelete: Cascade)
+
+  @@unique([websiteId, manuscriptId])
+  @@index([tenantId, websiteId, status])
+  @@map("website_publication_links")
+}
+
+model WebsiteOpportunityLink {
+  id          String               @id @default(uuid())
+  tenantId    String               @map("tenant_id")
+  websiteId   String               @map("website_id")
+  sourceType  String               @map("source_type")
+  sourceId    String               @map("source_id")
+  status      WebsiteContentStatus @default(DRAFT)
+  approverId  String?              @map("approver_id")
+  approvedAt  DateTime?            @map("approved_at")
+  publishedAt DateTime?            @map("published_at")
+  createdAt   DateTime             @default(now()) @map("created_at")
+  updatedAt   DateTime             @updatedAt @map("updated_at")
+
+  website InstitutionWebsite @relation(fields: [websiteId], references: [id], onDelete: Cascade)
+
+  @@unique([websiteId, sourceType, sourceId])
+  @@index([tenantId, websiteId, status])
+  @@map("website_opportunity_links")
+}
+
+model WebsiteContactSubmission {
+  id               String    @id @default(uuid())
+  tenantId         String    @map("tenant_id")
+  websiteId        String    @map("website_id")
+  name             String
+  email            String
+  subject          String?
+  message          String
+  consentGiven     Boolean   @default(false) @map("consent_given")
+  spamStatus       String    @default("CLEAN") @map("spam_status")
+  processingStatus String    @default("NEW") @map("processing_status")
+  retentionExpiresAt DateTime? @map("retention_expires_at")
+  receivedAt       DateTime  @default(now()) @map("received_at")
+  createdAt        DateTime  @default(now()) @map("created_at")
+
+  // Contact submissions contain personal data.
+  // Access is ONLY via authenticated CMS (website.view + website.content.review).
+  // NEVER expose through any public API route.
+  website InstitutionWebsite @relation(fields: [websiteId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId, websiteId, processingStatus])
+  @@map("website_contact_submissions")
+}

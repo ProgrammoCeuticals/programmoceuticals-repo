@@ -1,0 +1,843 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// PharmIntern NG — Prisma Schema
+// Matches the relational data model in docs/DATA_MODEL.md
+//
+// IMPORTANT DATABASE CONSTRAINTS not expressible in Prisma DSL:
+//   1. vacancies: CHECK (reserved_positions + confirmed_positions <= total_positions)
+//      Add via raw migration after prisma migrate dev:
+//        ALTER TABLE vacancies
+//          ADD CONSTRAINT chk_positions
+//          CHECK (reserved_positions + confirmed_positions <= total_positions);
+//
+// All IDs are UUIDs. All timestamps stored as UTC.
+// Table names use snake_case via @@map.
+// ─────────────────────────────────────────────────────────────────────────────
+
+generator client {
+  provider      = "prisma-client-js"
+  output        = "../node_modules/.prisma/client"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ─── Enums ───────────────────────────────────────────────────────────────────
+
+enum UserRole {
+  APPLICANT
+  EMPLOYER_STAFF
+  PLATFORM_ADMIN
+
+  @@map("user_role")
+}
+
+enum OrgMemberRole {
+  ORGANISATION_OWNER
+  RECRUITER_HR
+  INTERNSHIP_COORDINATOR
+  PRECEPTOR_SUPERVISOR
+  FINANCE_ADMIN
+  READ_ONLY
+
+  @@map("org_member_role")
+}
+
+enum VerificationStatus {
+  DRAFT
+  SUBMITTED
+  UNDER_REVIEW
+  MEETING_REQUIRED
+  MEETING_SCHEDULED
+  ADDITIONAL_INFORMATION_REQUIRED
+  APPROVED
+  REJECTED
+  SUSPENDED
+  REVERIFICATION_REQUIRED
+  EXPIRED
+
+  @@map("verification_status")
+}
+
+enum VerificationDecision {
+  APPROVED
+  REJECTED
+  SUSPENDED
+
+  @@map("verification_decision")
+}
+
+enum DocumentScanStatus {
+  PENDING
+  CLEAN
+  FLAGGED
+
+  @@map("document_scan_status")
+}
+
+enum MeetingOutcome {
+  PASSED
+  FAILED
+  INCONCLUSIVE
+
+  @@map("meeting_outcome")
+}
+
+enum VacancyStatus {
+  DRAFT
+  PUBLISHED
+  PAUSED
+  CLOSED
+  FILLED
+  ARCHIVED
+
+  @@map("vacancy_status")
+}
+
+enum AccommodationStatus {
+  NOT_PROVIDED
+  PROVIDED
+  CONDITIONAL
+  UNKNOWN
+
+  @@map("accommodation_status")
+}
+
+enum QuestionType {
+  TEXT
+  TEXTAREA
+  BOOLEAN
+  SELECT
+  FILE
+
+  @@map("question_type")
+}
+
+enum ApplicationStatus {
+  DRAFT
+  SUBMITTED
+  UNDER_REVIEW
+  SHORTLISTED
+  INTERVIEWING
+  WAITLISTED
+  REJECTED
+  WITHDRAWN
+  OFFERED
+  ACCEPTED
+  CLOSED_OTHER_OFFER_ACCEPTED
+  CLOSED_VACANCY
+  EXPIRED
+
+  @@map("application_status")
+}
+
+enum CredentialCheckOutcome {
+  SATISFACTORY
+  UNSATISFACTORY
+  PENDING
+  NOT_CHECKED
+
+  @@map("credential_check_outcome")
+}
+
+enum InterviewStageType {
+  VERBAL_INTERVIEW
+  WRITTEN_ASSESSMENT
+  ADDITIONAL_STAGE
+  OTHER
+
+  @@map("interview_stage_type")
+}
+
+enum InterviewEventStatus {
+  SCHEDULED
+  COMPLETED
+  CANCELLED
+  RESCHEDULED
+  NO_SHOW
+
+  @@map("interview_event_status")
+}
+
+enum InterviewOutcome {
+  PASSED
+  FAILED
+  DEFERRED
+
+  @@map("interview_outcome")
+}
+
+enum OfferStatus {
+  DRAFT
+  ISSUED
+  ACCEPTED
+  DECLINED
+  EXPIRED
+  WITHDRAWN_BY_EMPLOYER
+  CANCELLED
+
+  @@map("offer_status")
+}
+
+enum PlacementStatus {
+  OFFER_ACCEPTED
+  AWAITING_RESUMPTION
+  ACTIVE
+  INTERRUPTED
+  WITHDRAWAL_REQUESTED
+  TERMINATED
+  COMPLETED
+
+  @@map("placement_status")
+}
+
+enum NotificationChannel {
+  EMAIL
+  IN_APP
+  PUSH
+
+  @@map("notification_channel")
+}
+
+enum NotificationStatus {
+  PENDING
+  SENT
+  FAILED
+  SKIPPED
+
+  @@map("notification_status")
+}
+
+// ─── Reference Tables (admin-configurable) ───────────────────────────────────
+
+model State {
+  id          String   @id @default(uuid())
+  name        String   @unique
+  countryCode String   @default("NG") @map("country_code")
+  isActive    Boolean  @default(true) @map("is_active")
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  locations OrganisationLocation[]
+
+  @@map("states")
+}
+
+model PracticeArea {
+  id           String   @id @default(uuid())
+  name         String   @unique
+  isActive     Boolean  @default(true) @map("is_active")
+  displayOrder Int      @default(0) @map("display_order")
+  createdAt    DateTime @default(now()) @map("created_at")
+
+  vacancyPracticeAreas VacancyPracticeArea[]
+
+  @@map("practice_areas")
+}
+
+model OrganisationType {
+  id        String   @id @default(uuid())
+  name      String   @unique
+  isActive  Boolean  @default(true) @map("is_active")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  organisations Organisation[]
+
+  @@map("organisation_types")
+}
+
+model VerificationChecklistType {
+  id                String   @id @default(uuid())
+  organisationTypeId String  @map("organisation_type_id")
+  name              String
+  checklistJson     Json     @map("checklist_json")
+  isActive          Boolean  @default(true) @map("is_active")
+  createdAt         DateTime @default(now()) @map("created_at")
+
+  verificationCases VerificationCase[]
+
+  @@map("verification_checklist_types")
+}
+
+// ─── Users ───────────────────────────────────────────────────────────────────
+
+model User {
+  id                  String    @id @default(uuid())
+  email               String    @unique
+  emailVerifiedAt     DateTime? @map("email_verified_at")
+  passwordHash        String    @map("password_hash")
+  role                UserRole
+  isActive            Boolean   @default(true) @map("is_active")
+  mfaEnabled          Boolean   @default(false) @map("mfa_enabled")
+  mfaSecret           String?   @map("mfa_secret")
+  createdAt           DateTime  @default(now()) @map("created_at")
+  updatedAt           DateTime  @updatedAt @map("updated_at")
+  deletedAt           DateTime? @map("deleted_at")
+
+  applicantProfile     ApplicantProfile?
+  memberships          OrganisationMembership[]
+  organisationsCreated Organisation[]            @relation("CreatedByUser")
+  auditEventsActed     AuditEvent[]              @relation("AuditActor")
+  notificationsInApp   InAppNotification[]
+  notificationsOutbox  NotificationOutbox[]      @relation("RecipientUser")
+  offersDecided        Offer[]                   @relation("OfferDecidedBy")
+  offersIssued         Offer[]                   @relation("OfferIssuedBy")
+  verificationsDecided VerificationCase[]        @relation("VerificationDecidedBy")
+  verificationsReviewed VerificationCase[]       @relation("VerificationReviewer")
+  verificationsOpened  VerificationCase[]        @relation("VerificationOpenedBy")
+  documentsUploaded    VerificationDocument[]
+  meetingsRecorded     VerificationMeeting[]
+  supervisorAssignments SupervisorAssignment[]   @relation("SupervisorUser")
+  supervisorAssignedBy  SupervisorAssignment[]   @relation("AssignedByUser")
+  credentialChecks     CredentialCheck[]
+  interviewsScheduled  InterviewEvent[]
+
+  @@index([email])
+  @@index([role])
+  @@index([deletedAt])
+  @@map("users")
+}
+
+model ApplicantProfile {
+  id                   String   @id @default(uuid())
+  userId               String   @unique @map("user_id")
+  fullName             String   @map("full_name")
+  phone                String?
+  university           String?
+  graduationYear       Int?     @map("graduation_year")
+  shortBio             String?  @map("short_bio")
+  accommodationPref    String?  @map("accommodation_preference")
+  createdAt            DateTime @default(now()) @map("created_at")
+  updatedAt            DateTime @updatedAt @map("updated_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Restrict)
+
+  @@map("applicant_profiles")
+}
+
+// ─── Organisations ────────────────────────────────────────────────────────────
+
+model Organisation {
+  id                 String             @id @default(uuid())
+  name               String
+  typeId             String?            @map("type_id")
+  website            String?
+  contactName        String?            @map("contact_name")
+  contactEmail       String?            @map("contact_email")
+  contactPhone       String?            @map("contact_phone")
+  verificationStatus VerificationStatus @default(DRAFT) @map("verification_status")
+  approvedAt         DateTime?          @map("approved_at")
+  suspendedAt        DateTime?          @map("suspended_at")
+  createdByUserId    String             @map("created_by_user_id")
+  createdAt          DateTime           @default(now()) @map("created_at")
+  updatedAt          DateTime           @updatedAt @map("updated_at")
+
+  type              OrganisationType?         @relation(fields: [typeId], references: [id])
+  createdByUser     User                       @relation("CreatedByUser", fields: [createdByUserId], references: [id])
+  locations         OrganisationLocation[]
+  memberships       OrganisationMembership[]
+  verificationCases VerificationCase[]
+  vacancies         Vacancy[]
+  offers            Offer[]
+  placements        Placement[]
+
+  @@index([verificationStatus])
+  @@map("organisations")
+}
+
+model OrganisationLocation {
+  id                 String             @id @default(uuid())
+  organisationId     String             @map("organisation_id")
+  name               String
+  addressLine1       String?            @map("address_line1")
+  addressLine2       String?            @map("address_line2")
+  city               String?
+  stateId            String?            @map("state_id")
+  latitude           Float?
+  longitude          Float?
+  isPrimary          Boolean            @default(false) @map("is_primary")
+  verificationStatus VerificationStatus @default(DRAFT) @map("verification_status")
+  createdAt          DateTime           @default(now()) @map("created_at")
+  updatedAt          DateTime           @updatedAt @map("updated_at")
+
+  organisation    Organisation             @relation(fields: [organisationId], references: [id], onDelete: Cascade)
+  state           State?                   @relation(fields: [stateId], references: [id])
+  memberships     OrganisationMembership[]
+  verificationCases VerificationCase[]
+  vacancies       Vacancy[]
+  placements      Placement[]
+  supervisorAssignments SupervisorAssignment[]
+
+  @@index([organisationId])
+  @@map("organisation_locations")
+}
+
+model OrganisationMembership {
+  id              String    @id @default(uuid())
+  organisationId  String    @map("organisation_id")
+  userId          String    @map("user_id")
+  locationId      String?   @map("location_id")
+  isOwner         Boolean   @default(false) @map("is_owner")
+  invitedByUserId String?   @map("invited_by_user_id")
+  acceptedAt      DateTime? @map("accepted_at")
+  revokedAt       DateTime? @map("revoked_at")
+  createdAt       DateTime  @default(now()) @map("created_at")
+  updatedAt       DateTime  @updatedAt @map("updated_at")
+
+  organisation Organisation          @relation(fields: [organisationId], references: [id], onDelete: Cascade)
+  user         User                  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  location     OrganisationLocation? @relation(fields: [locationId], references: [id])
+  roles        MembershipRole[]
+
+  @@unique([organisationId, userId])
+  @@index([userId])
+  @@map("organisation_memberships")
+}
+
+model MembershipRole {
+  id           String        @id @default(uuid())
+  membershipId String        @map("membership_id")
+  role         OrgMemberRole
+  createdAt    DateTime      @default(now()) @map("created_at")
+
+  membership OrganisationMembership @relation(fields: [membershipId], references: [id], onDelete: Cascade)
+
+  @@unique([membershipId, role])
+  @@map("membership_roles")
+}
+
+// ─── Verification ─────────────────────────────────────────────────────────────
+
+model VerificationCase {
+  id                   String                @id @default(uuid())
+  organisationId       String                @map("organisation_id")
+  locationId           String?               @map("location_id")
+  status               VerificationStatus    @default(SUBMITTED)
+  checklistTypeId      String?               @map("checklist_type_id")
+  openedByUserId       String?               @map("opened_by_user_id")
+  currentReviewerUserId String?              @map("current_reviewer_user_id")
+  decision             VerificationDecision? 
+  decisionReason       String?               @map("decision_reason")
+  decidedAt            DateTime?             @map("decided_at")
+  decidedByUserId      String?               @map("decided_by_user_id")
+  createdAt            DateTime              @default(now()) @map("created_at")
+  updatedAt            DateTime              @updatedAt @map("updated_at")
+
+  organisation    Organisation               @relation(fields: [organisationId], references: [id], onDelete: Restrict)
+  location        OrganisationLocation?      @relation(fields: [locationId], references: [id])
+  checklistType   VerificationChecklistType? @relation(fields: [checklistTypeId], references: [id])
+  openedByUser    User?                      @relation("VerificationOpenedBy", fields: [openedByUserId], references: [id])
+  currentReviewer User?                      @relation("VerificationReviewer", fields: [currentReviewerUserId], references: [id])
+  decidedByUser   User?                      @relation("VerificationDecidedBy", fields: [decidedByUserId], references: [id])
+  documents       VerificationDocument[]
+  meetings        VerificationMeeting[]
+
+  @@index([organisationId])
+  @@index([status])
+  @@map("verification_cases")
+}
+
+model VerificationDocument {
+  id                   String             @id @default(uuid())
+  verificationCaseId   String             @map("verification_case_id")
+  documentType         String             @map("document_type")
+  storageKey           String             @map("storage_key")
+  originalFilename     String?            @map("original_filename")
+  fileSizeBytes        BigInt?            @map("file_size_bytes")
+  mimeType             String?            @map("mime_type")
+  uploadedByUserId     String             @map("uploaded_by_user_id")
+  uploadedAt           DateTime           @default(now()) @map("uploaded_at")
+  scanStatus           DocumentScanStatus @default(PENDING) @map("scan_status")
+
+  verificationCase VerificationCase @relation(fields: [verificationCaseId], references: [id], onDelete: Restrict)
+  uploadedByUser   User             @relation(fields: [uploadedByUserId], references: [id])
+
+  @@map("verification_documents")
+}
+
+model VerificationMeeting {
+  id                   String          @id @default(uuid())
+  verificationCaseId   String          @map("verification_case_id")
+  scheduledAt          DateTime        @map("scheduled_at")
+  heldAt               DateTime?       @map("held_at")
+  participants         String[]
+  checklistResponses   Json?           @map("checklist_responses")
+  notes                String?
+  outcome              MeetingOutcome?
+  recordedByUserId     String?         @map("recorded_by_user_id")
+  createdAt            DateTime        @default(now()) @map("created_at")
+  updatedAt            DateTime        @updatedAt @map("updated_at")
+
+  verificationCase VerificationCase @relation(fields: [verificationCaseId], references: [id], onDelete: Restrict)
+  recordedByUser   User?            @relation(fields: [recordedByUserId], references: [id])
+
+  @@map("verification_meetings")
+}
+
+// ─── Vacancies ────────────────────────────────────────────────────────────────
+
+model Vacancy {
+  id                   String              @id @default(uuid())
+  organisationId       String              @map("organisation_id")
+  locationId           String?             @map("location_id")
+  title                String
+  description          String?
+  status               VacancyStatus       @default(DRAFT)
+  totalPositions       Int                 @map("total_positions")
+  reservedPositions    Int                 @default(0) @map("reserved_positions")
+  confirmedPositions   Int                 @default(0) @map("confirmed_positions")
+  applicationOpenDate  DateTime?           @map("application_open_date") @db.Date
+  applicationDeadline  DateTime?           @map("application_deadline") @db.Date
+  expectedStartDate    DateTime?           @map("expected_start_date") @db.Date
+  accommodationStatus  AccommodationStatus @default(UNKNOWN) @map("accommodation_status")
+  accommodationDetails String?             @map("accommodation_details")
+  remunerationInfo     String?             @map("remuneration_info")
+  applicationInstructions String?          @map("application_instructions")
+  createdByUserId      String              @map("created_by_user_id")
+  formVersion          Int                 @default(1) @map("form_version")
+  publishedAt          DateTime?           @map("published_at")
+  closedAt             DateTime?           @map("closed_at")
+  createdAt            DateTime            @default(now()) @map("created_at")
+  updatedAt            DateTime            @updatedAt @map("updated_at")
+
+  organisation       Organisation         @relation(fields: [organisationId], references: [id], onDelete: Restrict)
+  location           OrganisationLocation? @relation(fields: [locationId], references: [id])
+  practiceAreas      VacancyPracticeArea[]
+  questions          VacancyQuestion[]
+  requiredDocuments  VacancyRequiredDocument[]
+  applications       Application[]
+  interviewStages    InterviewStage[]
+  offers             Offer[]
+
+  @@index([status])
+  @@index([organisationId])
+  @@index([applicationDeadline])
+  @@map("vacancies")
+}
+
+model VacancyPracticeArea {
+  vacancyId      String @map("vacancy_id")
+  practiceAreaId String @map("practice_area_id")
+
+  vacancy      Vacancy      @relation(fields: [vacancyId], references: [id], onDelete: Cascade)
+  practiceArea PracticeArea @relation(fields: [practiceAreaId], references: [id])
+
+  @@id([vacancyId, practiceAreaId])
+  @@map("vacancy_practice_areas")
+}
+
+model VacancyQuestion {
+  id          String       @id @default(uuid())
+  vacancyId   String       @map("vacancy_id")
+  questionText String      @map("question_text")
+  questionType QuestionType @map("question_type")
+  options     Json?
+  isRequired  Boolean      @default(true) @map("is_required")
+  displayOrder Int         @default(0) @map("display_order")
+  formVersion Int          @map("form_version")
+  createdAt   DateTime     @default(now()) @map("created_at")
+
+  vacancy     Vacancy              @relation(fields: [vacancyId], references: [id], onDelete: Cascade)
+  answers     ApplicationAnswer[]
+
+  @@index([vacancyId])
+  @@map("vacancy_questions")
+}
+
+model VacancyRequiredDocument {
+  id            String   @id @default(uuid())
+  vacancyId     String   @map("vacancy_id")
+  documentLabel String   @map("document_label")
+  isRequired    Boolean  @default(true) @map("is_required")
+  formVersion   Int      @map("form_version")
+  createdAt     DateTime @default(now()) @map("created_at")
+
+  vacancy   Vacancy               @relation(fields: [vacancyId], references: [id], onDelete: Cascade)
+  documents ApplicationDocument[]
+
+  @@index([vacancyId])
+  @@map("vacancy_required_documents")
+}
+
+// ─── Applications ─────────────────────────────────────────────────────────────
+
+model Application {
+  id                  String            @id @default(uuid())
+  vacancyId           String            @map("vacancy_id")
+  applicantUserId     String            @map("applicant_user_id")
+  status              ApplicationStatus @default(DRAFT)
+  submittedAt         DateTime?         @map("submitted_at")
+  formVersionSnapshot Int?              @map("form_version_snapshot")
+  idempotencyKey      String?           @unique @map("idempotency_key")
+  createdAt           DateTime          @default(now()) @map("created_at")
+  updatedAt           DateTime          @updatedAt @map("updated_at")
+
+  vacancy         Vacancy               @relation(fields: [vacancyId], references: [id], onDelete: Restrict)
+  // applicant accessed via users table
+  snapshot        ApplicationSnapshot?
+  answers         ApplicationAnswer[]
+  documents       ApplicationDocument[]
+  credentialChecks CredentialCheck[]
+  interviewEvents InterviewEvent[]
+  offers          Offer[]
+  placement       Placement?
+
+  @@index([vacancyId])
+  @@index([applicantUserId])
+  @@index([status])
+  @@map("applications")
+}
+
+model ApplicationSnapshot {
+  id             String   @id @default(uuid())
+  applicationId  String   @unique @map("application_id")
+  answersJson    Json     @map("answers_json")
+  documentsJson  Json     @map("documents_json")
+  questionsSnapshot Json  @map("questions_snapshot")
+  capturedAt     DateTime @default(now()) @map("captured_at")
+
+  application Application @relation(fields: [applicationId], references: [id], onDelete: Restrict)
+
+  @@map("application_snapshots")
+}
+
+model ApplicationAnswer {
+  id             String   @id @default(uuid())
+  applicationId  String   @map("application_id")
+  questionId     String   @map("question_id")
+  answerText     String?  @map("answer_text")
+  answerBoolean  Boolean? @map("answer_boolean")
+  createdAt      DateTime @default(now()) @map("created_at")
+  updatedAt      DateTime @updatedAt @map("updated_at")
+
+  application Application    @relation(fields: [applicationId], references: [id], onDelete: Cascade)
+  question    VacancyQuestion @relation(fields: [questionId], references: [id], onDelete: Restrict)
+
+  @@index([applicationId])
+  @@map("application_answers")
+}
+
+model ApplicationDocument {
+  id             String             @id @default(uuid())
+  applicationId  String             @map("application_id")
+  requirementId  String?            @map("requirement_id")
+  storageKey     String             @map("storage_key")
+  originalFilename String?          @map("original_filename")
+  fileSizeBytes  BigInt?            @map("file_size_bytes")
+  mimeType       String?            @map("mime_type")
+  uploadedAt     DateTime           @default(now()) @map("uploaded_at")
+  scanStatus     DocumentScanStatus @default(PENDING) @map("scan_status")
+
+  application Application              @relation(fields: [applicationId], references: [id], onDelete: Cascade)
+  requirement VacancyRequiredDocument? @relation(fields: [requirementId], references: [id])
+
+  @@index([applicationId])
+  @@map("application_documents")
+}
+
+model CredentialCheck {
+  id              String                  @id @default(uuid())
+  applicationId   String                  @map("application_id")
+  checkedByUserId String                  @map("checked_by_user_id")
+  documentType    String?                 @map("document_type")
+  outcome         CredentialCheckOutcome  @default(NOT_CHECKED)
+  notes           String?
+  checkedAt       DateTime?               @map("checked_at")
+  createdAt       DateTime                @default(now()) @map("created_at")
+
+  application   Application @relation(fields: [applicationId], references: [id], onDelete: Restrict)
+  checkedByUser User        @relation(fields: [checkedByUserId], references: [id])
+
+  @@map("credential_checks")
+}
+
+// ─── Interviews ───────────────────────────────────────────────────────────────
+
+model InterviewStage {
+  id          String             @id @default(uuid())
+  vacancyId   String             @map("vacancy_id")
+  name        String
+  stageType   InterviewStageType @map("stage_type")
+  stageOrder  Int                @default(0) @map("stage_order")
+  description String?
+  createdAt   DateTime           @default(now()) @map("created_at")
+
+  vacancy Vacancy          @relation(fields: [vacancyId], references: [id], onDelete: Cascade)
+  events  InterviewEvent[]
+
+  @@index([vacancyId])
+  @@map("interview_stages")
+}
+
+model InterviewEvent {
+  id                   String               @id @default(uuid())
+  applicationId        String               @map("application_id")
+  stageId              String               @map("stage_id")
+  scheduledAt          DateTime             @map("scheduled_at")
+  timezone             String               @default("Africa/Lagos")
+  format               String?
+  locationOrLink       String?              @map("location_or_link")
+  candidateInstructions String?             @map("candidate_instructions")
+  status               InterviewEventStatus @default(SCHEDULED)
+  outcome              InterviewOutcome?
+  outcomeNotes         String?              @map("outcome_notes")
+  scheduledByUserId    String               @map("scheduled_by_user_id")
+  createdAt            DateTime             @default(now()) @map("created_at")
+  updatedAt            DateTime             @updatedAt @map("updated_at")
+
+  application     Application    @relation(fields: [applicationId], references: [id], onDelete: Restrict)
+  stage           InterviewStage @relation(fields: [stageId], references: [id])
+  scheduledByUser User           @relation(fields: [scheduledByUserId], references: [id])
+
+  @@index([applicationId])
+  @@map("interview_events")
+}
+
+// ─── Offers ───────────────────────────────────────────────────────────────────
+
+model Offer {
+  id                      String      @id @default(uuid())
+  applicationId           String      @map("application_id")
+  vacancyId               String      @map("vacancy_id")
+  applicantUserId         String      @map("applicant_user_id")
+  organisationId          String      @map("organisation_id")
+  status                  OfferStatus @default(DRAFT)
+  reportingDate           DateTime?   @map("reporting_date") @db.Date
+  acceptanceDeadline      DateTime?   @map("acceptance_deadline")
+  termsAndConditions      String?     @map("terms_and_conditions")
+  remunerationInfo        String?     @map("remuneration_info")
+  accommodationDetails    String?     @map("accommodation_details")
+  offerDocumentStorageKey String?     @map("offer_document_storage_key")
+  generatedFromTemplate   Boolean     @default(false) @map("generated_from_template")
+  templateVersion         String?     @map("template_version")
+  versionNumber           Int         @default(1) @map("version_number")
+  issuedAt                DateTime?   @map("issued_at")
+  issuedByUserId          String?     @map("issued_by_user_id")
+  decidedAt               DateTime?   @map("decided_at")
+  decidedByUserId         String?     @map("decided_by_user_id")
+  idempotencyKey          String?     @unique @map("idempotency_key")
+  createdAt               DateTime    @default(now()) @map("created_at")
+  updatedAt               DateTime    @updatedAt @map("updated_at")
+
+  application   Application  @relation(fields: [applicationId], references: [id], onDelete: Restrict)
+  vacancy       Vacancy      @relation(fields: [vacancyId], references: [id], onDelete: Restrict)
+  organisation  Organisation @relation(fields: [organisationId], references: [id], onDelete: Restrict)
+  issuedByUser  User?        @relation("OfferIssuedBy", fields: [issuedByUserId], references: [id])
+  decidedByUser User?        @relation("OfferDecidedBy", fields: [decidedByUserId], references: [id])
+  placement     Placement?
+
+  @@index([applicantUserId])
+  @@index([vacancyId])
+  @@index([status])
+  @@index([acceptanceDeadline])
+  @@map("offers")
+}
+
+// ─── Placements ───────────────────────────────────────────────────────────────
+
+model Placement {
+  id              String          @id @default(uuid())
+  offerId         String          @unique @map("offer_id")
+  applicationId   String          @unique @map("application_id")
+  applicantUserId String          @map("applicant_user_id")
+  organisationId  String          @map("organisation_id")
+  locationId      String?         @map("location_id")
+  vacancyId       String          @map("vacancy_id")
+  status          PlacementStatus @default(OFFER_ACCEPTED)
+  reportingDate   DateTime?       @map("reporting_date") @db.Date
+  expectedEndDate DateTime?       @map("expected_end_date") @db.Date
+  actualEndDate   DateTime?       @map("actual_end_date") @db.Date
+  coordinatorUserId String?       @map("coordinator_user_id")
+  createdAt       DateTime        @default(now()) @map("created_at")
+  updatedAt       DateTime        @updatedAt @map("updated_at")
+
+  offer         Offer                  @relation(fields: [offerId], references: [id], onDelete: Restrict)
+  application   Application            @relation(fields: [applicationId], references: [id], onDelete: Restrict)
+  organisation  Organisation           @relation(fields: [organisationId], references: [id], onDelete: Restrict)
+  location      OrganisationLocation?  @relation(fields: [locationId], references: [id])
+  supervisorAssignments SupervisorAssignment[]
+
+  @@index([applicantUserId])
+  @@index([organisationId])
+  @@index([status])
+  @@map("placements")
+}
+
+model SupervisorAssignment {
+  id               String    @id @default(uuid())
+  placementId      String    @map("placement_id")
+  supervisorUserId String    @map("supervisor_user_id")
+  locationId       String?   @map("location_id")
+  assignedAt       DateTime  @default(now()) @map("assigned_at")
+  unassignedAt     DateTime? @map("unassigned_at")
+  assignedByUserId String    @map("assigned_by_user_id")
+
+  placement      Placement            @relation(fields: [placementId], references: [id], onDelete: Restrict)
+  supervisorUser User                 @relation("SupervisorUser", fields: [supervisorUserId], references: [id])
+  location       OrganisationLocation? @relation(fields: [locationId], references: [id])
+  assignedByUser User                 @relation("AssignedByUser", fields: [assignedByUserId], references: [id])
+
+  @@map("supervisor_assignments")
+}
+
+// ─── Audit & Notifications ────────────────────────────────────────────────────
+
+model AuditEvent {
+  id          String   @id @default(uuid())
+  eventType   String   @map("event_type")
+  actorUserId String?  @map("actor_user_id")
+  entityType  String   @map("entity_type")
+  entityId    String   @map("entity_id")
+  payload     Json?
+  ipAddress   String?  @map("ip_address")
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  actorUser User? @relation("AuditActor", fields: [actorUserId], references: [id])
+
+  // Never update or delete audit events
+  @@index([entityType, entityId])
+  @@index([actorUserId])
+  @@index([createdAt])
+  @@map("audit_events")
+}
+
+model NotificationOutbox {
+  id              String             @id @default(uuid())
+  recipientUserId String             @map("recipient_user_id")
+  channel         NotificationChannel
+  eventType       String             @map("event_type")
+  payload         Json
+  status          NotificationStatus @default(PENDING)
+  attempts        Int                @default(0)
+  lastAttemptedAt DateTime?          @map("last_attempted_at")
+  sentAt          DateTime?          @map("sent_at")
+  idempotencyKey  String             @unique @map("idempotency_key")
+  createdAt       DateTime           @default(now()) @map("created_at")
+  updatedAt       DateTime           @updatedAt @map("updated_at")
+
+  recipientUser    User               @relation("RecipientUser", fields: [recipientUserId], references: [id])
+  inAppNotification InAppNotification?
+
+  @@index([status])
+  @@index([recipientUserId])
+  @@map("notification_outbox")
+}
+
+model InAppNotification {
+  id        String   @id @default(uuid())
+  userId    String   @map("user_id")
+  outboxId  String?  @unique @map("outbox_id")
+  eventType String   @map("event_type")
+  title     String?
+  body      String?
+  linkUrl   String?  @map("link_url")
+  isRead    Boolean  @default(false) @map("is_read")
+  readAt    DateTime? @map("read_at")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  user   User                @relation(fields: [userId], references: [id])
+  outbox NotificationOutbox? @relation(fields: [outboxId], references: [id])
+
+  @@index([userId, isRead])
+  @@map("in_app_notifications")
+}

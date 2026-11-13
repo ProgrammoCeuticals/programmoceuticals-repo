@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+build/
+.next/
+
+# TypeScript
+*.tsbuildinfo
+
+# Prisma
+prisma/generated/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Turbo
+.turbo/
+
+# Test coverage
+coverage/
+
+# Temp / staging
+tmp/
+staging/
+
+# Docker
+docker/volumes/
+
+# Regulatory packages (binaries/archives are not committed; only metadata)
+regulatory/packages/**/*.zip
+regulatory/packages/**/*.tar.gz

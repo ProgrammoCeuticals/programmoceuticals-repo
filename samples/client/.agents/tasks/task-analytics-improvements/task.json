@@ -1,0 +1,7 @@
+{
+  "task_id": "task-analytics-improvements",
+  "task_description": "Implement all 9 analytics improvements to App.jsx and styles.css: generic name normalisation, dosage form + country of origin breakdowns, rejection reason frequency, turnaround time metrics, date range filter state + UI, month gap-filling in buildAnalyticsTimeline, new UI cards (dosage form, country, rejection reasons, turnaround panel), date filter strip, and new CSS.",
+  "status": "pending",
+  "feature_order": ["FEAT-001", "FEAT-002"],
+  "blocked_reason": null
+}

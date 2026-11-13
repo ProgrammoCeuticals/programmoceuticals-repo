@@ -1,0 +1,13 @@
+{
+  "task_id": "task-rims-phase0-phase1",
+  "task_description": "Scaffold RIMS monorepo from zero: pnpm workspaces + Turborepo, Prisma schema with 20+ tables and RLS, Docker Compose, NestJS API with auth/RBAC/tenant isolation/all Phase 1 modules, React+Vite SPA with full Phase 1 UI, BullMQ worker, shared packages, and full documentation.",
+  "status": "pending",
+  "feature_order": [
+    "FEAT-001",
+    "FEAT-002",
+    "FEAT-003",
+    "FEAT-004",
+    "FEAT-005"
+  ],
+  "blocked_reason": null
+}

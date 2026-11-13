@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NAFDAC Bioequivalence Study Report Submission Checklist</title>
+    <style>
+        body { font-family: "Times New Roman", serif; line-height: 1.4; padding: 40px; color: #000; }
+        .container { max-width: 900px; margin: auto; border: 1px solid #000; padding: 20px; }
+        .header { text-align: center; font-weight: bold; margin-bottom: 20px; }
+        .instruction-box { border: 1px solid #000; padding: 10px; margin-bottom: 20px; }
+        .section-header { background-color: #f2f2f2; font-weight: bold; padding: 5px; border: 1px solid #000; margin-top: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 10px; }
+        th, td { border: 1px solid #000; padding: 8px; vertical-align: top; text-align: left; }
+        input[type="text"], textarea { width: 98%; border: none; font-family: inherit; font-size: inherit; }
+        .signature-line { border-bottom: 1px solid #000; width: 300px; display: inline-block; margin-top: 20px; }
+        .nested-table { margin: 0; width: 100%; }
+        .nested-table td { border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        NAFDAC BIOEQUIVALENCE STUDY REPORT SUBMISSION CHECKLIST
+    </div>
+
+    <div class="instruction-box">
+        <strong>General Instructions</strong><br>
+        Please submit this checklist together with the bioequivalence study report (including all appendices) and the bioequivalence trial information form (BTIF) for product screening and evaluation.<br>
+        Provide/fill in as much detailed, accurate and final information as possible.<br>
+        All the appended documents should be clearly identifiable by their location and tagging of the file names.<br>
+        Kindly check that you have signed on the checklist, provided all requested information and enclosed all requested documents.<br>
+        Should you have any queries regarding this procedure or the checklist, kindly contact Drug Evaluation and Research Directorate (DER) via e-mail der.headquarters@nafdac.gov.ng or registration@nafdac.gov.ng<br><br>
+        <strong>*Reminder:</strong><br>
+        Please be informed that all data submitted to support the registration application for this product will be subjected to further evaluation.<br>
+        Please refrain from changing/removing all submitted data unless requested by NAFDAC or the data has been updated as per latest registration requirements.<br>
+        Kindly be reminded that decision whether the dossier is allowed for registration will be subjected to full evaluation and the final decision by NAFDAC.
+    </div>
+
+    <form>
+        <p>I, the undersigned, certify, that the information provided in this application and the attached documents is correct and true.</p>
+        
+        <p>Signed on behalf of:</p>
+        <div><input type="text" class="signature-line" placeholder="(Market Authorisation Holder)"></div>
+        <div><input type="text" class="signature-line" placeholder="(Name & Title)"></div>
+        <div><input type="text" class="signature-line" placeholder="(Date)"></div>
+
+        <div class="section-header">Bioequivalence Study Information</div>
+        <p>(Please fill in the following information)</p>
+
+        <table>
+            <tr>
+                <td style="width: 5%;">1.</td>
+                <td style="width: 45%;">Study number/ study protocol number</td>
+                <td><input type="text" name="q1"></td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Study title</td>
+                <td><textarea name="q2" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Start and end dates for each period of the clinical study</td>
+                <td>
+                    <table class="nested-table">
+                        <tr>
+                            <th>Study period</th>
+                            <th>Start date</th>
+                            <th>End date</th>
+                        </tr>
+                        <tr>
+                            <td>Period 1</td>
+                            <td><input type="text" name="p1_start"></td>
+                            <td><input type="text" name="p1_end"></td>
+                        </tr>
+                        <tr>
+                            <td>Period 2</td>
+                            <td><input type="text" name="p2_start"></td>
+                            <td><input type="text" name="p2_end"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Start and end date for bio-analytical study</td>
+                <td><input type="text" name="q4"></td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>Clinical Study facility (Name and full address of clinical study site)</td>
+                <td><textarea name="q5" rows="2"></textarea></td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>Bio-analytical facility (Name and full address of bioanalytical study site)</td>
+                <td><textarea name="q6" rows="2"></textarea></td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td colspan="2">
+                    <strong>Institutional Review Board/ Independent Ethical Committee</strong><br>
+                    Name & address of the ethics committee: <input type="text" name="q7_name"><br><br>
+                    Approval date of study protocol (together with study protocol number and version): <input type="text" name="q7_protocol"><br><br>
+                    Approval date of informed consent form: <input type="text" name="q7_icf">
+                </td>
+            </tr>
+            <tr>
+                <td>8.</td>
+                <td colspan="2">
+                    <strong>Relevant information on the test product used in the BE study</strong><br>
+                    Product name: <input type="text" name="t8_name"><br>
+                    Strength (*Please indicate whether the test product used has the same strength as product proposed for registration): <input type="text" name="t8_strength"><br>
+                    Dosage form: <input type="text" name="t8_form"><br>
+                    Batch number: <input type="text" name="t8_batch"><br>
+                    Batch size: <input type="text" name="t8_size"><br>
+                    Manufacture date: <input type="text" name="t8_mfg"><br>
+                    Expiry date: <input type="text" name="t8_exp"><br>
+                    Name and full address of the drug substance (API) manufacturing site: <textarea name="t8_api" rows="2"></textarea><br>
+                    Name and full address of the test product manufacturing site (*Please indicate whether the test product used has the same qualitative and quantitative composition as the product proposed for registration): <textarea name="t8_site" rows="2"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>9.</td>
+                <td colspan="2">
+                    <strong>Relevant information on the reference product used in the BE study</strong><br>
+                    Product name: <input type="text" name="r9_name"><br>
+                    Strength: <input type="text" name="r9_strength"><br>
+                    Dosage form: <input type="text" name="r9_form"><br>
+                    Batch number: <input type="text" name="r9_batch"><br>
+                    Expiry date: <input type="text" name="r9_exp"><br>
+                    Country where the product is sourced from: <input type="text" name="r9_source"><br>
+                    Name and full address of the reference product manufacturing site (*Please indicate whether the reference product is the same as WHO Comparator Product. If NO, please provide document no. 3 & 5 under section B. (Documents to be submitted).): <textarea name="r9_site" rows="2"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>10.</td>
+                <td colspan="2">
+                    <strong>Summary results of the study</strong>
+                    <table class="nested-table">
+                        <tr>
+                            <th>Parameter Logarithmic transformed data</th>
+                            <th>Test (Geometric mean)</th>
+                            <th>Reference (Geometric mean)</th>
+                            <th>% Ratio of geometric means</th>
+                            <th>90% Confidence interval</th>
+                            <th>Intra-subject coefficient of variation, ISCV (%)</th>
+                        </tr>
+                        <tr>
+                            <td>AUC0-t</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>AUC0-∞</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Cmax</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <div class="section-header">Documents to be submitted</div>
+        <p>(Please tag/state the name and location of the documents in the dossier)</p>
+
+        <table>
+            <tr>
+                <th>No.</th>
+                <th>Documents</th>
+                <th>Name of document and location</th>
+            </tr>
+            <tr><td>1.</td><td>Certificate of analysis (COA) of BE test product</td><td><input type="text"></td></tr>
+            <tr><td>2.</td><td>Certificate of analysis (COA) of reference product</td><td><input type="text"></td></tr>
+            <tr><td>3.</td><td>Outer packaging and prescribing information sheet or SmPC of BE reference product. The document should contain the information of the batch number, expiry date, name and address of manufacturer</td><td><input type="text"></td></tr>
+            <tr><td>4.</td><td>(i) Dissolution study report for comparative dissolution profile (CDP) conducted between test product and reference product in pH 1.2, 4.5, 6.8 and quality control media (if applicable)<br>(ii) Dissolution study protocol<br>The dissolution study report should be dated and signed by analyst or relevant personnel.</td><td><input type="text"></td></tr>
+            <tr><td>5.</td><td>Justifications and bridging data if BE reference product is not the same as WHO comparator product (i.e. same strength and manufacturing site as registered in Nigeria)<br>(i) Dissolution study report for comparative dissolution profile (CDP) conducted between BE reference product in pH 1.2, 4.5, 6.8 and quality control media (if applicable)<br>(ii) Dissolution study protocol<br>The dissolution study report should be dated and signed by analyst or relevant personnel.</td><td><input type="text"></td></tr>
+            <tr><td>6.</td><td>Application form for a biowaiver of additional strength (if applicable), together with justification and documents for biowaiver request<br>(i) All strengths are manufactured by the same manufacturing process<br>(ii) Qualitative and quantitative composition of the different strengths (all)<br>(iii) Dissolution study report for comparative dissolution profile (CDP) conducted between test product and other proposed additional strengths in pH 1.2, 4.5, 6.8 and quality control media (if applicable)<br>(iv) Dissolution study protocol<br>The dissolution study report should be dated and signed by analyst or relevant personnel.</td><td><input type="text"></td></tr>
+            <tr><td>7.</td><td>Clinical study report</td><td><input type="text"></td></tr>
+            <tr><td>8.</td><td>Pharmacokinetic and statistical analysis report</td><td><input type="text"></td></tr>
+            <tr><td>9.</td><td>Bioanalytical method validation report and relevant addendum(s)</td><td><input type="text"></td></tr>
+            <tr><td>10.</td><td>Bioanalytical study report</td><td><input type="text"></td></tr>
+            <tr><td>11.</td><td>Quality assurance statement</td><td><input type="text"></td></tr>
+            <tr><td>12.</td><td>Letter of approval of Institutional Review Board/ Independent Ethical Committee (IEC)</td><td><input type="text"></td></tr>
+            <tr><td>13.</td><td>Study protocol approved by Independent Ethical Committee (IEC)</td><td><input type="text"></td></tr>
+            <tr><td>14.</td><td>Informed consent form</td><td><input type="text"></td></tr>
+            <tr><td>15.</td><td>Bioequivalence Trial Information Form, BTIF (in MS Word and pdf)</td><td><input type="text"></td></tr>
+            <tr><td>16.</td><td>Literature references (if applicable)</td><td><input type="text"></td></tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>

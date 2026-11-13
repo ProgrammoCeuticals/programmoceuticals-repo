@@ -1,0 +1,28 @@
+{
+  "id": "FEAT-005",
+  "type": "feat",
+  "description": "BullMQ worker app (apps/worker) + email job handlers. Depends on FEAT-001 (monorepo scaffold) and FEAT-002 (auth module enqueues email jobs). Independent of FEAT-003 and FEAT-004. The worker consumes jobs that FEAT-002 and FEAT-003 enqueue: invitation emails, password reset emails. In dev/local, jobs are processed but emails are only logged (no real SMTP). The worker must connect to the same Redis instance as the API.",
+  "status": "pending",
+  "steps": [
+    "Create apps/worker/package.json: name @rims/worker, scripts (build: nest build, dev: nest start --watch, start: node dist/main, type-check: tsc --noEmit). dependencies: @rims/shared-types workspace:*, @nestjs/common@10.4.7, @nestjs/config@3.3.0, @nestjs/core@10.4.7, @nestjs/platform-express@10.4.7, bullmq@5.13.2, ioredis@5.4.1, reflect-metadata@0.2.2, rxjs@7.8.1. devDependencies: @nestjs/cli@10.4.9, @types/node@22, typescript@5.7.2.",
+    "Create apps/worker/tsconfig.json (extends ../../packages/config/tsconfig.nestjs.json, outDir dist, rootDir src). Create apps/worker/nest-cli.json.",
+    "Create apps/worker/src/config/env.validation.ts: Joi validates REDIS_URL (required), NODE_ENV, SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, SMTP_FROM (all optional in dev, worker logs instead of sending).",
+    "Create apps/worker/src/workers/email.worker.ts: BullMQ Worker consuming queue name 'email'. Job types handled: INVITATION_EMAIL {to, inviteeName, inviterName, invitationToken, tenantName} — log job data in dev, in production send via nodemailer (conditional on SMTP_HOST present). PASSWORD_RESET_EMAIL {to, resetToken, tenantName} — same pattern. Always ack (complete) jobs after processing; on error catch and log, do not crash worker. Use concurrency: 5.",
+    "Create apps/worker/src/workers/notifications.worker.ts: BullMQ Worker consuming queue name 'notifications'. Stub — logs job data. Placeholder for future in-app notification delivery.",
+    "Create apps/worker/src/app.module.ts: imports ConfigModule.forRoot({validate: envValidationSchema, isGlobal: true}), EmailWorkerModule, NotificationsWorkerModule.",
+    "Create apps/worker/src/main.ts: bootstrap NestFactory, app.listen(3001 or configurable port, '127.0.0.1'). Graceful shutdown: process.on('SIGTERM') → app.close(). Structured startup log {service: 'worker', event: 'WORKER_STARTED'}.",
+    "Verify jobs flow end-to-end: run API + worker together, call POST /api/v1/auth/forgot-password with seeded user email, confirm worker logs show the job was processed (PASSWORD_RESET_EMAIL job received and logged)."
+  ],
+  "acceptance_criteria": [
+    "pnpm --filter @rims/worker build exits 0",
+    "pnpm --filter @rims/worker dev starts without errors and logs 'WORKER_STARTED'",
+    "Worker connects to Redis (logged on startup)",
+    "After POST /api/v1/auth/forgot-password, worker console shows PASSWORD_RESET_EMAIL job processed"
+  ],
+  "verification": [
+    "cd /Users/macbookpro/Desktop/ProgrammoCeuticals/rims && pnpm --filter @rims/worker build",
+    "pnpm --filter @rims/worker dev & sleep 5 && echo 'Worker started' && kill %1"
+  ],
+  "blocked_reason": null,
+  "findings": ""
+}

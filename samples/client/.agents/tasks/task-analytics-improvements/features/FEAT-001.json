@@ -1,0 +1,32 @@
+{
+  "id": "FEAT-001",
+  "type": "feat",
+  "description": "Analytics data/compute layer: add 3 new state variables (analyticsDateRangeMode, analyticsDateFrom, analyticsDateTo), derive analyticsSubmissions from them, rewrite the analytics useMemo to accept analyticsSubmissions instead of submissions, normalise generic names with case-insensitive keying, add byDosageForm + byCountry + byRejectionReason breakdowns, add turnaround time metrics after the loop, and gap-fill months in buildAnalyticsTimeline. This feature is independent of FEAT-002 (the UI cards) as long as the new return fields are added before FEAT-002 tries to render them.",
+  "status": "pending",
+  "steps": [
+    "Step 1 — gap-fill months in buildAnalyticsTimeline (line 1704, file src/App.jsx). After the existing `submissions.forEach(...)` loop that builds byMonth, add gap-filling logic. Find the min and max month keys in byMonth. Walk from min to max in monthly increments using a Date-based loop (set day to 1, increment month by 1, format as YYYY-MM). For each month in that range that is missing from byMonth, set byMonth[monthKey] = 0. Then keep the existing `return { total: datedCount, todayCount, months: Object.entries(byMonth).sort(...) }` unchanged. Only add the gap-fill block between the forEach and the return. Guard: if byMonth has no keys, skip gap-fill.",
+
+    "Step 2 — add 3 new state variables just after the existing `analyticsDateMode` declaration on line 3015 (file src/App.jsx). Insert: `const [analyticsDateRangeMode, setAnalyticsDateRangeMode] = useState('all');` then `const [analyticsDateFrom, setAnalyticsDateFrom] = useState('');` then `const [analyticsDateTo, setAnalyticsDateTo] = useState('');`.",
+
+    "Step 3 — reset the 3 new state variables in clearAdminSession (line 3494, file src/App.jsx). Add after `setAnalyticsDateMode('sampling');`: `setAnalyticsDateRangeMode('all');`, `setAnalyticsDateFrom('');`, `setAnalyticsDateTo('');`.",
+
+    "Step 4 — derive analyticsSubmissions as a useMemo just before the existing analytics useMemo (i.e., insert before line 4841, file src/App.jsx). The new memo filters submissions by sampleReceivedDate (fallback createdAt) to implement the date range. Logic: if analyticsDateRangeMode === 'all', analyticsSubmissions = submissions. If 'custom', filter where the date key of (s.sampleReceivedDate || s.createdAt) is >= analyticsDateFrom (if set) and <= analyticsDateTo (if set). Dep array: [submissions, analyticsDateRangeMode, analyticsDateFrom, analyticsDateTo].",
+
+    "Step 5 — rewrite the analytics useMemo body (lines 4841–4916, file src/App.jsx) with these changes: (a) Change `const total = submissions.length` to `const total = analyticsSubmissions.length`. (b) Change `for (const s of submissions)` to `for (const s of analyticsSubmissions)`. (c) Inside the loop, replace the byGeneric block: use `const genKey = gen.toLowerCase();` as map key but store display form in a separate `byGenericDisplay` object (map genKey → first-seen capitalised form). After the loop, rebuild topGeneric entries as `[byGenericDisplay[k], byGeneric[k]]` pairs. (d) Inside the loop, add: `const dosageForm = (s.dosageForm || s.productSampleAnswers?.dosage_form || '').trim(); if (dosageForm) byDosageForm[dosageForm] = (byDosageForm[dosageForm] || 0) + 1;`. (e) Add: `const country = (s.productSampleAnswers?.country_of_origin || '').trim(); if (country) byCountry[country] = (byCountry[country] || 0) + 1;`. (f) Add: `if (s.status === 'REJECTED' && s.decisionRemark && s.decisionRemark.trim()) { const rr = s.decisionRemark.trim(); byRejectionReason[rr] = (byRejectionReason[rr] || 0) + 1; }`. (g) Declare byDosageForm = {}, byCountry = {}, byRejectionReason = {}, byGenericDisplay = {} alongside the other `by*` declarations at the top of the memo. (h) After the loop, add turnaround time computation. For each of 3 segments — [submissionToReceived: createdAt→sampleReceivedDate], [receivedToLab: sampleReceivedDate→takenToLabDate], [labToReport: takenToLabDate→labReportReceivedDate] — iterate analyticsSubmissions, parse both dates with getDateKeyFromValue(), compute difference in calendar days (new Date(endKey) - new Date(startKey)) / 86400000, skip if either date is missing or the diff is negative. Collect valid diffs, then compute count, avg (toFixed(1)), min, max. Return as `turnaround: { submissionToReceived: {...}, receivedToLab: {...}, labToReport: {...} }`. (i) Change all 3 buildAnalyticsTimeline calls to pass analyticsSubmissions instead of submissions. (j) Add to the return object: `topDosageForm: top(byDosageForm).map(([k,v])=>([k,v])).slice(0,10)` (just `top(byDosageForm)` suffices since top already slices to 10), `topCountry: top(byCountry)`, `topRejectionReasons: top(byRejectionReason)`, `turnaround`, `dosageFormCount: Object.keys(byDosageForm).length`, `countryCount: Object.keys(byCountry).length`. (k) Change the dep array from `[submissions]` to `[analyticsSubmissions]`.",
+
+    "Step 6 — verify the build compiles cleanly. Run `npm run build` from the client directory. Fix any compilation errors before marking FEAT-001 complete."
+  ],
+  "acceptance_criteria": [
+    "npm run build completes with 0 errors after all steps",
+    "analytics useMemo dep array is [analyticsSubmissions] not [submissions]",
+    "buildAnalyticsTimeline returns a months array with no gaps between earliest and latest month (zero-count entries fill gaps)",
+    "analytics return object contains turnaround, topDosageForm, topCountry, topRejectionReasons, dosageFormCount, countryCount",
+    "byGeneric uses lowercased key internally; topGeneric entries display the original capitalised form",
+    "clearAdminSession resets the 3 new state variables"
+  ],
+  "verification": [
+    "cd /Users/macbookpro/Desktop/ProgrammoCeuticals/samples/client && npm run build 2>&1 | tail -30"
+  ],
+  "blocked_reason": null,
+  "findings": ""
+}

@@ -1,0 +1,29 @@
+FROM node:22-alpine AS base
+RUN apk add --no-cache libc6-compat dumb-init
+WORKDIR /app
+RUN npm install -g pnpm@9.15.4 --quiet
+
+FROM base AS deps
+COPY package.json pnpm-workspace.yaml ./
+COPY apps/worker-validation/package.json ./apps/worker-validation/
+COPY packages/shared/package.json ./packages/shared/
+COPY packages/ectd-validation/package.json ./packages/ectd-validation/
+RUN pnpm install --frozen-lockfile --prod=false
+
+FROM deps AS builder
+COPY . .
+RUN pnpm --filter @ectd/worker-validation build
+
+FROM node:22-alpine AS production
+RUN apk add --no-cache libc6-compat dumb-init
+WORKDIR /app
+RUN addgroup --system --gid 1001 ectd && adduser --system --uid 1001 ectd
+USER ectd
+
+COPY --from=builder --chown=ectd:ectd /app/node_modules ./node_modules
+COPY --from=builder --chown=ectd:ectd /app/apps/worker-validation/dist ./dist
+
+ENV NODE_ENV=production
+
+ENTRYPOINT ["dumb-init", "--"]
+CMD ["node", "dist/main"]

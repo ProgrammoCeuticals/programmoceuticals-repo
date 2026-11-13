@@ -1,0 +1,528 @@
+[
+  {
+    "id": "ip-001",
+    "restrictionType": "import_prohibition",
+    "sourceId": "ncs-import-prohibition-2026",
+    "subjectType": "trade_item",
+    "subjectName": "PARACETAMOL TABLETS",
+    "canonicalIngredientIds": [
+      "paracetamol"
+    ],
+    "strength": null,
+    "dosageForm": "Tablets",
+    "route": "oral",
+    "hsCode": "3003/3004",
+    "exclusions": null,
+    "notes": null,
+    "effectCode": "import_prohibition",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "ip-002",
+    "restrictionType": "import_prohibition",
+    "sourceId": "ncs-import-prohibition-2026",
+    "subjectType": "trade_item",
+    "subjectName": "PARACETAMOL SYRUPS",
+    "canonicalIngredientIds": [
+      "paracetamol"
+    ],
+    "strength": null,
+    "dosageForm": "Syrups",
+    "route": "oral",
+    "hsCode": "3003/3004",
+    "exclusions": null,
+    "notes": null,
+    "effectCode": "import_prohibition",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "ip-003",
+    "restrictionType": "import_prohibition",
+    "sourceId": "ncs-import-prohibition-2026",
+    "subjectType": "trade_item",
+    "subjectName": "COTRIMOXAZOLE TABLETS",
+    "canonicalIngredientIds": [
+      "cotrimoxazole"
+    ],
+    "strength": null,
+    "dosageForm": "Tablets",
+    "route": "oral",
+    "hsCode": "3003/3004",
+    "exclusions": null,
+    "notes": null,
+    "effectCode": "import_prohibition",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "ip-004",
+    "restrictionType": "import_prohibition",
+    "sourceId": "ncs-import-prohibition-2026",
+    "subjectType": "trade_item",
+    "subjectName": "COTRIMOXAZOLE SYRUPS",
+    "canonicalIngredientIds": [
+      "cotrimoxazole"
+    ],
+    "strength": null,
+    "dosageForm": "Syrups",
+    "route": "oral",
+    "hsCode": "3003/3004",
+    "exclusions": null,
+    "notes": null,
+    "effectCode": "import_prohibition",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "ip-005",
+    "restrictionType": "import_prohibition",
+    "sourceId": "ncs-import-prohibition-2026",
+    "subjectType": "trade_item",
+    "subjectName": "METRONIDAZOLE TABLETS",
+    "canonicalIngredientIds": [
+      "metronidazole"
+    ],
+    "strength": null,
+    "dosageForm": "Tablets",
+    "route": "oral",
+    "hsCode": "3003/3004",
+    "exclusions": null,
+    "notes": null,
+    "effectCode": "import_prohibition",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "ip-006",
+    "restrictionType": "import_prohibition",
+    "sourceId": "ncs-import-prohibition-2026",
+    "subjectType": "trade_item",
+    "subjectName": "METRONIDAZOLE SYRUPS",
+    "canonicalIngredientIds": [
+      "metronidazole"
+    ],
+    "strength": null,
+    "dosageForm": "Syrups",
+    "route": "oral",
+    "hsCode": "3003/3004",
+    "exclusions": null,
+    "notes": null,
+    "effectCode": "import_prohibition",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "ip-007",
+    "restrictionType": "import_prohibition",
+    "sourceId": "ncs-import-prohibition-2026",
+    "subjectType": "trade_item",
+    "subjectName": "CHLOROQUINE TABLETS",
+    "canonicalIngredientIds": [
+      "chloroquine"
+    ],
+    "strength": null,
+    "dosageForm": "Tablets",
+    "route": "oral",
+    "hsCode": "3003/3004",
+    "exclusions": null,
+    "notes": null,
+    "effectCode": "import_prohibition",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "ip-008",
+    "restrictionType": "import_prohibition",
+    "sourceId": "ncs-import-prohibition-2026",
+    "subjectType": "trade_item",
+    "subjectName": "CHLOROQUINE SYRUPS",
+    "canonicalIngredientIds": [
+      "chloroquine"
+    ],
+    "strength": null,
+    "dosageForm": "Syrups",
+    "route": "oral",
+    "hsCode": "3003/3004",
+    "exclusions": null,
+    "notes": null,
+    "effectCode": "import_prohibition",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "ip-009",
+    "restrictionType": "import_prohibition",
+    "sourceId": "ncs-import-prohibition-2026",
+    "subjectType": "product_class",
+    "subjectName": "HAEMATINIC FORMULATIONS",
+    "canonicalIngredientIds": [],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": "3003/3004",
+    "exclusions": null,
+    "notes": null,
+    "effectCode": "import_prohibition",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "ip-010",
+    "restrictionType": "import_prohibition",
+    "sourceId": "ncs-import-prohibition-2026",
+    "subjectType": "trade_item",
+    "subjectName": "FERROUS SULPHATE TABLETS",
+    "canonicalIngredientIds": [
+      "iron"
+    ],
+    "strength": null,
+    "dosageForm": "Tablets",
+    "route": "oral",
+    "hsCode": "3003/3004",
+    "exclusions": null,
+    "notes": null,
+    "effectCode": "import_prohibition",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "ip-011",
+    "restrictionType": "import_prohibition",
+    "sourceId": "ncs-import-prohibition-2026",
+    "subjectType": "trade_item",
+    "subjectName": "FERROUS GLUCONATE TABLETS",
+    "canonicalIngredientIds": [
+      "iron"
+    ],
+    "strength": null,
+    "dosageForm": "Tablets",
+    "route": "oral",
+    "hsCode": "3003/3004",
+    "exclusions": null,
+    "notes": null,
+    "effectCode": "import_prohibition",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "ip-012",
+    "restrictionType": "import_prohibition",
+    "sourceId": "ncs-import-prohibition-2026",
+    "subjectType": "trade_item",
+    "subjectName": "FOLIC ACID TABLETS",
+    "canonicalIngredientIds": [
+      "folic acid"
+    ],
+    "strength": null,
+    "dosageForm": "Tablets",
+    "route": "oral",
+    "hsCode": "3003/3004",
+    "exclusions": null,
+    "notes": null,
+    "effectCode": "import_prohibition",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "ip-013",
+    "restrictionType": "import_prohibition",
+    "sourceId": "ncs-import-prohibition-2026",
+    "subjectType": "trade_item",
+    "subjectName": "VITAMIN B COMPLEX TABLETS",
+    "canonicalIngredientIds": [],
+    "strength": null,
+    "dosageForm": "Tablets",
+    "route": "oral",
+    "hsCode": "3003/3004",
+    "exclusions": "Except modified release formulations",
+    "notes": null,
+    "effectCode": "import_prohibition",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "ip-014",
+    "restrictionType": "import_prohibition",
+    "sourceId": "ncs-import-prohibition-2026",
+    "subjectType": "trade_item",
+    "subjectName": "MULTIVITAMIN TABLETS",
+    "canonicalIngredientIds": [],
+    "strength": null,
+    "dosageForm": "Tablets",
+    "route": "oral",
+    "hsCode": "3003/3004",
+    "exclusions": "Except special formulations",
+    "notes": null,
+    "effectCode": "import_prohibition",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "ip-015",
+    "restrictionType": "import_prohibition",
+    "sourceId": "ncs-import-prohibition-2026",
+    "subjectType": "trade_item",
+    "subjectName": "MULTIVITAMIN CAPSULES",
+    "canonicalIngredientIds": [],
+    "strength": null,
+    "dosageForm": "Capsules",
+    "route": "oral",
+    "hsCode": "3003/3004",
+    "exclusions": "Except special formulations",
+    "notes": null,
+    "effectCode": "import_prohibition",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "ip-016",
+    "restrictionType": "import_prohibition",
+    "sourceId": "ncs-import-prohibition-2026",
+    "subjectType": "trade_item",
+    "subjectName": "MULTIVITAMIN SYRUPS",
+    "canonicalIngredientIds": [],
+    "strength": null,
+    "dosageForm": "Syrups",
+    "route": "oral",
+    "hsCode": "3003/3004",
+    "exclusions": "Except special formulations",
+    "notes": null,
+    "effectCode": "import_prohibition",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "ip-017",
+    "restrictionType": "import_prohibition",
+    "sourceId": "ncs-import-prohibition-2026",
+    "subjectType": "trade_item",
+    "subjectName": "ASPIRIN TABLETS",
+    "canonicalIngredientIds": [
+      "aspirin"
+    ],
+    "strength": null,
+    "dosageForm": "Tablets",
+    "route": "oral",
+    "hsCode": "3003/3004",
+    "exclusions": "Except modified release formulation and soluble aspirin",
+    "notes": null,
+    "effectCode": "import_prohibition",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "ip-018",
+    "restrictionType": "import_prohibition",
+    "sourceId": "ncs-import-prohibition-2026",
+    "subjectType": "trade_item",
+    "subjectName": "MAGNESIUM TRISILICATE TABLETS",
+    "canonicalIngredientIds": [
+      "magnesium trisilicate"
+    ],
+    "strength": null,
+    "dosageForm": "Tablets",
+    "route": "oral",
+    "hsCode": "3003/3004",
+    "exclusions": null,
+    "notes": null,
+    "effectCode": "import_prohibition",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "ip-019",
+    "restrictionType": "import_prohibition",
+    "sourceId": "ncs-import-prohibition-2026",
+    "subjectType": "trade_item",
+    "subjectName": "MAGNESIUM TRISILICATE SUSPENSIONS",
+    "canonicalIngredientIds": [
+      "magnesium trisilicate"
+    ],
+    "strength": null,
+    "dosageForm": "Suspensions",
+    "route": "oral",
+    "hsCode": "3003/3004",
+    "exclusions": null,
+    "notes": null,
+    "effectCode": "import_prohibition",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "ip-020",
+    "restrictionType": "import_prohibition",
+    "sourceId": "ncs-import-prohibition-2026",
+    "subjectType": "trade_item",
+    "subjectName": "PIPERAZINE TABLETS",
+    "canonicalIngredientIds": [
+      "piperazine"
+    ],
+    "strength": null,
+    "dosageForm": "Tablets",
+    "route": "oral",
+    "hsCode": "3003/3004",
+    "exclusions": null,
+    "notes": null,
+    "effectCode": "import_prohibition",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "ip-021",
+    "restrictionType": "import_prohibition",
+    "sourceId": "ncs-import-prohibition-2026",
+    "subjectType": "trade_item",
+    "subjectName": "PIPERAZINE SYRUPS",
+    "canonicalIngredientIds": [
+      "piperazine"
+    ],
+    "strength": null,
+    "dosageForm": "Syrups",
+    "route": "oral",
+    "hsCode": "3003/3004",
+    "exclusions": null,
+    "notes": null,
+    "effectCode": "import_prohibition",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "ip-022",
+    "restrictionType": "import_prohibition",
+    "sourceId": "ncs-import-prohibition-2026",
+    "subjectType": "trade_item",
+    "subjectName": "LEVAMISOLE TABLETS",
+    "canonicalIngredientIds": [
+      "levamisole"
+    ],
+    "strength": null,
+    "dosageForm": "Tablets",
+    "route": "oral",
+    "hsCode": "3003/3004",
+    "exclusions": null,
+    "notes": null,
+    "effectCode": "import_prohibition",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "ip-023",
+    "restrictionType": "import_prohibition",
+    "sourceId": "ncs-import-prohibition-2026",
+    "subjectType": "trade_item",
+    "subjectName": "LEVAMISOLE SYRUPS",
+    "canonicalIngredientIds": [
+      "levamisole"
+    ],
+    "strength": null,
+    "dosageForm": "Syrups",
+    "route": "oral",
+    "hsCode": "3003/3004",
+    "exclusions": null,
+    "notes": null,
+    "effectCode": "import_prohibition",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "ip-024",
+    "restrictionType": "import_prohibition",
+    "sourceId": "ncs-import-prohibition-2026",
+    "subjectType": "trade_item",
+    "subjectName": "PENICILLIN OINTMENTS",
+    "canonicalIngredientIds": [
+      "penicillin"
+    ],
+    "strength": null,
+    "dosageForm": "Ointments",
+    "route": "topical",
+    "hsCode": "3003/3004",
+    "exclusions": null,
+    "notes": null,
+    "effectCode": "import_prohibition",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "ip-025",
+    "restrictionType": "import_prohibition",
+    "sourceId": "ncs-import-prohibition-2026",
+    "subjectType": "trade_item",
+    "subjectName": "GENTAMYCIN OINTMENTS",
+    "canonicalIngredientIds": [
+      "gentamicin"
+    ],
+    "strength": null,
+    "dosageForm": "Ointments",
+    "route": "topical",
+    "hsCode": "3003/3004",
+    "exclusions": null,
+    "notes": null,
+    "effectCode": "import_prohibition",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "imp-030",
+    "restrictionType": "import_prohibition",
+    "sourceId": "ncs-import-prohibition-2026",
+    "subjectType": "ingredient",
+    "subjectName": "CLOTRIMAZOLE CREAM",
+    "canonicalIngredientIds": [
+      "clotrimazole"
+    ],
+    "strength": null,
+    "dosageForm": "Cream",
+    "route": "Topical",
+    "hsCode": "3003/3004",
+    "exclusions": null,
+    "notes": "Import prohibition on Clotrimazole cream formulations.",
+    "effectCode": "IMPORT_PROHIBITED",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "ip-026",
+    "restrictionType": "import_prohibition",
+    "sourceId": "ncs-import-prohibition-2026",
+    "subjectType": "trade_item",
+    "subjectName": "PYRANTEL PAMOATE TABLETS",
+    "canonicalIngredientIds": [
+      "pyrantel pamoate"
+    ],
+    "strength": null,
+    "dosageForm": "Tablets",
+    "route": "oral",
+    "hsCode": "3003/3004",
+    "exclusions": null,
+    "notes": null,
+    "effectCode": "import_prohibition",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "ip-027",
+    "restrictionType": "import_prohibition",
+    "sourceId": "ncs-import-prohibition-2026",
+    "subjectType": "trade_item",
+    "subjectName": "PYRANTEL PAMOATE SYRUPS",
+    "canonicalIngredientIds": [
+      "pyrantel pamoate"
+    ],
+    "strength": null,
+    "dosageForm": "Syrups",
+    "route": "oral",
+    "hsCode": "3003/3004",
+    "exclusions": null,
+    "notes": null,
+    "effectCode": "import_prohibition",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "ip-028",
+    "restrictionType": "import_prohibition",
+    "sourceId": "ncs-import-prohibition-2026",
+    "subjectType": "product_class",
+    "subjectName": "INTRAVENOUS FLUIDS",
+    "canonicalIngredientIds": [],
+    "strength": null,
+    "dosageForm": "Intravenous",
+    "route": "parenteral",
+    "hsCode": "3003/3004",
+    "exclusions": null,
+    "notes": "Dextrose, Normal Saline, etc.",
+    "effectCode": "import_prohibition",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "ip-029",
+    "restrictionType": "import_prohibition",
+    "sourceId": "ncs-import-prohibition-2026",
+    "subjectType": "trade_item",
+    "subjectName": "WASTE PHARMACEUTICALS",
+    "canonicalIngredientIds": [],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": "3006.9200",
+    "exclusions": null,
+    "notes": null,
+    "effectCode": "import_prohibition",
+    "verificationStatus": "verified"
+  }
+]

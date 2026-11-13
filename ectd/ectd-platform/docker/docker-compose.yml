@@ -1,0 +1,114 @@
+version: "3.9"
+
+# ProgrammoCeuticals eCTD Platform — Development Stack
+# spec §53
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: ectd_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ectd_user
+      POSTGRES_PASSWORD: ectd_dev_password
+      POSTGRES_DB: ectd_dev
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ectd_user -d ectd_dev"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: ectd_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.api
+    container_name: ectd_api
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    env_file:
+      - ../.env
+    environment:
+      DATABASE_URL: postgresql://ectd_user:ectd_dev_password@postgres:5432/ectd_dev
+      REDIS_URL: redis://redis:6379
+    ports:
+      - "3000:3000"
+    volumes:
+      - storage_data:/tmp/ectd-storage
+
+  worker-validation:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.worker-validation
+    container_name: ectd_worker_validation
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    env_file:
+      - ../.env
+    environment:
+      DATABASE_URL: postgresql://ectd_user:ectd_dev_password@postgres:5432/ectd_dev
+      REDIS_URL: redis://redis:6379
+
+  worker-publishing:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.worker-publishing
+    container_name: ectd_worker_publishing
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    env_file:
+      - ../.env
+    environment:
+      DATABASE_URL: postgresql://ectd_user:ectd_dev_password@postgres:5432/ectd_dev
+      REDIS_URL: redis://redis:6379
+
+  worker-inspection:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.worker-inspection
+    container_name: ectd_worker_inspection
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    env_file:
+      - ../.env
+    environment:
+      DATABASE_URL: postgresql://ectd_user:ectd_dev_password@postgres:5432/ectd_dev
+      REDIS_URL: redis://redis:6379
+
+volumes:
+  postgres_data:
+  redis_data:
+  storage_data:

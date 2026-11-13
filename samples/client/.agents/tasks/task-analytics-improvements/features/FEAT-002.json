@@ -1,0 +1,33 @@
+{
+  "id": "FEAT-002",
+  "type": "feat",
+  "description": "Analytics UI layer: add date range filter strip above analytics-hero, add dosage form + country of origin bar cards, add full-width rejection reasons bar card (conditional), add full-width turnaround time panel with 3 stat cards, and add new CSS classes (analytics-kpi-card--sm, analytics-filter-strip). Depends on FEAT-001 having added the new analytics return fields.",
+  "status": "pending",
+  "steps": [
+    "Step 1 — add date range filter strip UI in src/App.jsx. Find the exact line `<div className=\"analytics-shell\">` (line 6215). Immediately after that opening div and before the `<div className=\"analytics-hero\">` (line 6216), insert a new `<div className=\"analytics-filter-strip\">` block. It renders: (a) A label 'Filter by date received'. (b) Three toggle buttons with role='group': 'All time' (value 'all'), 'This month' (value 'month'), 'Custom' (value 'custom'). Each button has onClick calling setAnalyticsDateRangeMode and is-active class when analyticsDateRangeMode matches. (c) When analyticsDateRangeMode === 'custom', render two date inputs inline: one for analyticsDateFrom (label 'From', type='date', value=analyticsDateFrom, onChange=setAnalyticsDateFrom), one for analyticsDateTo (label 'To', type='date', value=analyticsDateTo, onChange=setAnalyticsDateTo). Note: 'This month' mode must also update analyticsDateFrom/To: in the onClick for 'month' button, compute the first and last day of the current month as YYYY-MM-DD strings and call setAnalyticsDateFrom/setAnalyticsDateTo accordingly, then setAnalyticsDateRangeMode('month'). Use getLocalDateKey(new Date(...)) or manual string construction.",
+
+    "Step 2 — add dosage form + country of origin bar cards in src/App.jsx. Find the closing `</div>` of the existing `analytics-card analytics-card-full` (Top generic names) block at approximately line 6641. This closing `</div>` is immediately followed by the closing `</div>` of the analytics-shell. After the analytics-card-full closing div (before the analytics-shell closing div), insert: a 2-column `<div className=\"analytics-grid\">` containing two `<div className=\"analytics-card\">` cards. First card: kicker 'Dosage Forms', title 'Top dosage forms', meta '{analytics.dosageFormCount} forms tracked', renders `<AnalyticsBar data={analytics.topDosageForm} total={analytics.total} colorVar=\"var(--accent-mid)\" />`. Second card: kicker 'Origin', title 'Top countries of origin', meta '{analytics.countryCount} countries tracked', renders `<AnalyticsBar data={analytics.topCountry} total={analytics.total} colorVar=\"var(--ok)\" />`.",
+
+    "Step 3 — add rejection reasons bar card in src/App.jsx. After the dosage form / country analytics-grid div (added in Step 2), insert a conditional block: `{analytics.topRejectionReasons.length > 0 && (<div className=\"analytics-card analytics-card-full\">...</div>)}`. Inside: kicker 'Quality', title 'Rejection reason frequency', meta '{analytics.topRejectionReasons.length} distinct reasons', renders `<AnalyticsBar data={analytics.topRejectionReasons} total={analytics.byStatus[\"REJECTED\"] || 0} colorVar=\"var(--danger)\" />`.",
+
+    "Step 4 — add turnaround time panel in src/App.jsx. After the rejection reasons card (Step 3), insert a full-width `<div className=\"analytics-card analytics-card-full\">` panel. Header: kicker 'Efficiency', title 'Turnaround time metrics', meta 'Days between workflow stages'. Body: a 3-column row of `<div className=\"analytics-kpi-card analytics-kpi-card--sm\">` cards, one per turnaround segment. For each segment (submissionToReceived, receivedToLab, labToReport) render: badge abbreviation (e.g. 'S→R', 'R→L', 'L→P'), label (e.g. 'Submission → Received', 'Received → Lab', 'Lab → Report'), the avg value as the primary value, and a small line showing 'min X d / max Y d / n=Z records'. Use the turnaround object from analytics: analytics.turnaround.submissionToReceived, analytics.turnaround.receivedToLab, analytics.turnaround.labToReport. When a segment's count is 0, show 'No data' instead of values. Wrap the 3 cards in a div with inline style `display:grid; gridTemplateColumns:'repeat(3,minmax(0,1fr))'; gap:'12px'` or add a class `analytics-turnaround-row` (add CSS in Step 5).",
+
+    "Step 5 — add new CSS rules in src/styles.css. Insert BEFORE the `/* ── Guide ── */` comment at line 3288 (after the analytics-empty-state p block at line ~3285). Add these rules: (a) `.analytics-kpi-card--sm` — override the base kpi card for compact display: reduce padding to 12px 14px, set gap to 8px, and set `.analytics-kpi-card--sm .analytics-kpi-value` to font-size clamp(1.25rem, 2vw, 1.6rem). (b) `.analytics-filter-strip` — display flex, flex-wrap wrap, align-items center, gap 10px, padding 12px 16px, background var(--surface-raised), border 1px solid var(--border), border-radius var(--radius-lg), font-size var(--text-sm). (c) `.analytics-filter-strip label` — color var(--ink-muted), font-weight 600. (d) `.analytics-filter-strip input[type='date']` — padding 4px 8px, border 1px solid var(--border), border-radius var(--radius-sm), background var(--surface), color var(--ink), font-size var(--text-sm). (e) `.analytics-turnaround-row` — display grid, grid-template-columns repeat(3,minmax(0,1fr)), gap 12px. Also add responsive override inside the existing `@media (max-width: 640px)` block (around line 3513): `.analytics-turnaround-row { grid-template-columns: 1fr; }`.",
+
+    "Step 6 — verify the build compiles cleanly. Run `npm run build` from the client directory. Fix any compilation errors before marking FEAT-002 complete."
+  ],
+  "acceptance_criteria": [
+    "npm run build completes with 0 errors after all steps",
+    "The analytics tab shows an analytics-filter-strip above the hero div with All time / This month / Custom toggle buttons",
+    "Custom mode reveals two date inputs inline in the strip",
+    "The analytics grid section below Top generic names shows dosage form and country of origin bar cards",
+    "The rejection reasons card is conditionally rendered only when topRejectionReasons.length > 0",
+    "The turnaround time panel shows 3 stat cards (S→R, R→L, L→P) with avg/min/max values or 'No data'",
+    "No existing analytics cards are removed or broken"
+  ],
+  "verification": [
+    "cd /Users/macbookpro/Desktop/ProgrammoCeuticals/samples/client && npm run build 2>&1 | tail -30"
+  ],
+  "blocked_reason": null,
+  "findings": ""
+}

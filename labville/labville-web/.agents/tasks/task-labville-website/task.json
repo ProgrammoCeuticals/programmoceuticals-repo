@@ -1,0 +1,7 @@
+{
+  "task_id": "task-labville-website",
+  "task_description": "Build the full Labville Diagnostic Centre website: replicate the live site sections page by page, then layer professional 3-D R3F scenes and Framer Motion animations on top. All 10 routes are currently stubs. The task covers homepage (8 sections), services overview, 6 service detail pages, about, contact (with form), book-a-test wizard, quality, professionals, and resources pages — plus 7 R3F 3-D scenes and full-build verification.",
+  "status": "pending",
+  "feature_order": ["FEAT-001", "FEAT-002", "FEAT-003", "FEAT-004"],
+  "blocked_reason": null
+}

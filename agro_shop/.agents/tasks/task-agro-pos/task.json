@@ -1,0 +1,7 @@
+{
+  "task_id": "task-agro-pos",
+  "task_description": "Build a complete AgroVet POS and Inventory Management System at /Users/macbookpro/Desktop/ProgrammoCeuticals/agro_shop/ using Vite+React 18, plain CSS mirroring the GLSI project design, Zustand, Supabase, xlsx, and Recharts. 11 pages, 3 CSS files, mock mode for frontend-only demo.",
+  "status": "pending",
+  "feature_order": ["FEAT-001", "FEAT-002", "FEAT-003", "FEAT-004"],
+  "blocked_reason": null
+}

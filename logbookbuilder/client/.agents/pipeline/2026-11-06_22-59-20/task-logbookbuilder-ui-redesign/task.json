@@ -1,0 +1,7 @@
+{
+  "task_id": "task-logbookbuilder-ui-redesign",
+  "task_description": "GLSI-inspired UI redesign of LogbookBuilder client: replace index.css with full pc-* design system, swap sidebar AppShell for horizontal sticky nav with mobile hamburger, restyle all 14 page components to use new class names, and add RecordsPage inline expand panel.",
+  "status": "pending",
+  "feature_order": ["FEAT-001", "FEAT-002", "FEAT-003"],
+  "blocked_reason": null
+}

@@ -1,0 +1,55 @@
+{
+  "verdict": "CHANGES_REQUESTED",
+  "findings": [
+    {
+      "id": 1,
+      "label": "Missing `sku` on historical `mockSaleItems`",
+      "detail": "The 15 pre-seeded sale items have no `sku` field. Sales.jsx expanded rows display `i.sku || \"—\"`, so every historical sale shows \"—\" in the SKU column. Add `sku` to each entry in `mockSaleItems` to match the product catalog.",
+      "severity": "minor",
+      "confirmed": true
+    },
+    {
+      "id": 2,
+      "label": "mockSaleItems totals don't reconcile with mockSales.total",
+      "detail": "Confirmed discrepancies in sale-007 (items ₦5,300 vs total ₦4,500), sale-008 (items ₦10,600 vs total ₦9,900 net ₦9,800), sale-010 (items ₦6,075 vs total ₦6,300), sale-014 (item ₦6,250 vs total ₦5,500). These corrupt the P&L COGS calculation in Reports. Reconcile item totals against sale totals and discount fields.",
+      "severity": "blocking",
+      "confirmed": true
+    },
+    {
+      "id": 3,
+      "label": "`sale_items.subtotal` column vs. app `total` field mismatch",
+      "detail": "The schema defines `sale_items.subtotal` but POS.jsx writes `{ total: price * i.qty }`. In live Supabase mode the insert will fail or silently drop the value. Rename the schema column to `total` or update POS.jsx to write `subtotal`.",
+      "severity": "blocking",
+      "confirmed": true
+    },
+    {
+      "id": 4,
+      "label": "Settings save does not update the live `mockSettings` export",
+      "detail": "Settings.jsx copies mockSettings to a local `mockSettingsState` and saves there. Receipt.jsx reads the original `mockSettings` export. Shop name/footer changes will not appear on receipts in the same session. Fix: `Object.assign(mockSettings, settings)` instead of `Object.assign(mockSettingsState, settings)`.",
+      "severity": "minor",
+      "confirmed": true
+    },
+    {
+      "id": 5,
+      "label": "RLS gap: cashier cannot decrement product quantity at sale time",
+      "detail": "`products_update_admin_manager` blocks UPDATE on products for cashiers. In live Supabase mode, completing a sale from a cashier session will be blocked when the app tries to decrement quantity. Add a server-side trigger or a targeted cashier-scoped RLS policy before going live.",
+      "severity": "blocking-on-live",
+      "confirmed": true
+    },
+    {
+      "id": 6,
+      "label": "Fractional quantities in historical sale items",
+      "detail": "mockSaleItems contains quantity: 0.5 on four entries (si-007-2, si-008-3, si-010-3, si-014-1). The POS cart enforces integer quantities, so these are unreachable through the UI. They cause incorrect COGS in Reports. Replace with whole-unit quantities that reconcile with the sale totals.",
+      "severity": "blocking",
+      "confirmed": true
+    },
+    {
+      "id": 7,
+      "label": "Seed expenses use `Utilities` category where mock/schema use `Electricity` and `Water`",
+      "detail": "seed.sql inserts ('Utilities', ...) for two rows that mock.js categorises as 'Electricity' and 'Water'. The schema CHECK allows both values. The seed loses category granularity that the mock provides, causing divergent behaviour between mock mode and live Supabase.",
+      "severity": "minor",
+      "confirmed": true
+    }
+  ],
+  "reviewDoc": "/Users/macbookpro/Desktop/ProgrammoCeuticals/agro_shop/.agents/tasks/review.md"
+}

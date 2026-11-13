@@ -1,0 +1,53 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+.expo/
+*.tsbuildinfo
+
+# Environment files - NEVER commit real env files
+.env
+.env.local
+.env.development
+.env.production
+.env.staging
+# .env.example is committed intentionally
+
+# Prisma generated
+prisma/generated/
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+logs/
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Testing
+test-results/
+playwright-report/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# Turbo cache
+.turbo/
+
+# Misc
+*.pem

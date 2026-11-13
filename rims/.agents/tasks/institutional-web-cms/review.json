@@ -1,0 +1,16 @@
+{
+  "verdict": "CHANGES_REQUESTED",
+  "findings": [
+    {
+      "id": "F-001",
+      "severity": "blocker",
+      "file": "apps/api/src/modules/institutional-web/pages.service.ts",
+      "lines": "252-258",
+      "title": "publish() permits DRAFT→PUBLISHED, bypassing required approval workflow",
+      "evidence": "Line 253: `if (existing.status !== \"APPROVED\" && existing.status !== \"DRAFT\")` — DRAFT is included in the allowed set, so a publisher can skip submit→review→approve and immediately publish a draft page.",
+      "consequence": "Any user with website.content.publish permission can make unapproved page content publicly visible, violating the spec Section 10.1 lifecycle (Draft → Submitted → Approved → Published) and plan step 3.4 (APPROVED→PUBLISHED only).",
+      "correction": "Change the guard to allow only APPROVED: `if (existing.status !== \"APPROVED\") { throw new BadRequestException(...) }`"
+    }
+  ],
+  "reviewDoc": "/Users/macbookpro/Desktop/ProgrammoCeuticals/rims/.agents/tasks/institutional-web-cms/review.md"
+}

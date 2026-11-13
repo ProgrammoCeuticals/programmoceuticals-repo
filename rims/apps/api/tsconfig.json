@@ -1,0 +1,19 @@
+{
+  "extends": "../../packages/config/tsconfig.nestjs.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "baseUrl": ".",
+    "composite": false,
+    "paths": {
+      "@rims/shared-types": ["../../packages/shared-types/dist/index"],
+      "@rims/validation": ["../../packages/validation/dist/index"],
+      ".prisma/client": ["../../node_modules/.prisma/client"],
+      ".prisma/client/runtime/library": [
+        "../../node_modules/.prisma/client/runtime/library"
+      ]
+    }
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["dist", "node_modules", "**/*.spec.ts"]
+}

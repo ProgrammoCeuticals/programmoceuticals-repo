@@ -1,0 +1,77 @@
+version: '3.8'
+
+# Multi-tenant deployment - Each client gets isolated stack
+services:
+  # Client 1 - Hospital A
+  app-hospital-a:
+    build: .
+    ports:
+      - "3001:3000"
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=postgresql://postgres:password@db-hospital-a:5432/hospital_a_db
+      - REDIS_URL=redis://redis-hospital-a:6379
+      - TENANT_ID=hospital-a
+    depends_on:
+      - db-hospital-a
+      - redis-hospital-a
+
+  db-hospital-a:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_DB=hospital_a_db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+    volumes:
+      - postgres_data_a:/var/lib/postgresql/data
+
+  redis-hospital-a:
+    image: redis:7-alpine
+    volumes:
+      - redis_data_a:/data
+
+  # Client 2 - Hospital B  
+  app-hospital-b:
+    build: .
+    ports:
+      - "3002:3000"
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=postgresql://postgres:password@db-hospital-b:5432/hospital_b_db
+      - REDIS_URL=redis://redis-hospital-b:6379
+      - TENANT_ID=hospital-b
+    depends_on:
+      - db-hospital-b
+      - redis-hospital-b
+
+  db-hospital-b:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_DB=hospital_b_db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+    volumes:
+      - postgres_data_b:/var/lib/postgresql/data
+
+  redis-hospital-b:
+    image: redis:7-alpine
+    volumes:
+      - redis_data_b:/data
+
+  # Shared Load Balancer
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx-multi-tenant.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - app-hospital-a
+      - app-hospital-b
+
+volumes:
+  postgres_data_a:
+  postgres_data_b:
+  redis_data_a:
+  redis_data_b:

@@ -1,0 +1,80 @@
+.mermaid-wrap {
+  margin: var(--space-6) 0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mermaid-wrap--loading {
+  padding: var(--space-12);
+  justify-content: center;
+}
+
+.mermaid-wrap--error {
+  padding: var(--space-4) var(--space-6);
+  background: var(--color-danger-light);
+  color: var(--color-danger);
+  font-size: var(--text-sm);
+}
+
+.mermaid-svg {
+  width: 100%;
+  padding: var(--space-6);
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+
+.mermaid-svg svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.mermaid-caption {
+  width: 100%;
+  padding: var(--space-3) var(--space-6);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  font-style: italic;
+  text-align: center;
+  border-top: 1px solid var(--color-border);
+  background: var(--color-surface-2);
+}
+
+.mermaid-spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid var(--color-border);
+  border-top-color: var(--color-primary);
+  border-radius: 50%;
+  animation: mermaid-spin 0.7s linear infinite;
+}
+
+@keyframes mermaid-spin { to { transform: rotate(360deg); } }
+
+/* Theme overrides for dark course themes */
+.theme-terminal .mermaid-wrap,
+.theme-serverroom .mermaid-wrap,
+.theme-component .mermaid-wrap,
+.theme-dashboard .mermaid-wrap,
+.theme-document .mermaid-wrap,
+.theme-networkmap .mermaid-wrap {
+  background: #161b22;
+  border-color: #30363d;
+}
+
+.theme-terminal .mermaid-caption,
+.theme-serverroom .mermaid-caption,
+.theme-component .mermaid-caption,
+.theme-dashboard .mermaid-caption,
+.theme-document .mermaid-caption,
+.theme-networkmap .mermaid-caption {
+  background: #0d1117;
+  border-color: #30363d;
+  color: #6e7681;
+}

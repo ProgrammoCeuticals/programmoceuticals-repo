@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─────────────────────────────────────────
+   OSFNG DESIGN TOKENS
+───────────────────────────────────────── */
+:root {
+  /* Backgrounds */
+  --bg-base:       #FAFAF8;
+  --bg-alt:        #F2F1EE;
+  --bg-card:       #FFFFFF;
+  --bg-dark:       #0D3B2E;
+  --bg-dark-alt:   #0A2E23;
+  --bg-dark-card:  #133D2F;
+
+  /* Text */
+  --text-primary:      #0F1A12;
+  --text-secondary:    #3D5247;
+  --text-muted:        #7A9085;
+  --text-light:        #FFFFFF;
+  --text-light-muted:  #B8CEBF;
+
+  /* Brand */
+  --green-deep:   #0D3B2E;
+  --green-mid:    #1A6B4A;
+  --green-light:  #2D9A6A;
+  --gold:         #C8922A;
+  --gold-light:   #E5B04A;
+  --gold-pale:    #FDF0D5;
+
+  /* Gradients */
+  --gradient-green:  linear-gradient(135deg, #0D3B2E 0%, #1A6B4A 100%);
+  --gradient-gold:   linear-gradient(135deg, #C8922A 0%, #E5B04A 100%);
+  --gradient-hero:   linear-gradient(160deg, #0D3B2E 0%, #0A4535 50%, #0D3B2E 100%);
+
+  /* Borders */
+  --border-light: rgba(0,0,0,0.08);
+  --border-green: rgba(13,59,46,0.15);
+  --border-dark:  rgba(255,255,255,0.12);
+
+  /* Layout */
+  --max-width:     1380px;
+  --content-width: 1160px;
+  --narrow-width:  760px;
+  --section-px:    clamp(20px, 5vw, 80px);
+  --section-py:    clamp(56px, 7vw, 112px);
+  --header-height: 70px;
+
+  /* Motion */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast:   180ms;
+  --duration-normal: 380ms;
+  --duration-slow:   600ms;
+}
+
+/* ─────────────────────────────────────────
+   BASE
+───────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-inter), Inter, system-ui, sans-serif;
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background-color: rgba(200, 146, 42, 0.25);
+  color: var(--text-primary);
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg-alt); }
+::-webkit-scrollbar-thumb { background: rgba(13,59,46,0.2); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(13,59,46,0.35); }
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ─────────────────────────────────────────
+   UTILITY CLASSES
+───────────────────────────────────────── */
+.section-container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--section-px);
+}
+
+.content-container {
+  width: 100%;
+  max-width: var(--content-width);
+  margin-inline: auto;
+  padding-inline: var(--section-px);
+}
+
+.section-py {
+  padding-top: var(--section-py);
+  padding-bottom: var(--section-py);
+}
+
+/* Gold gradient text */
+.gradient-text-gold {
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Green gradient text */
+.gradient-text-green {
+  background: var(--gradient-green);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Subtle leaf/organic pattern for dark sections */
+.leaf-pattern {
+  background-image:
+    radial-gradient(circle at 20% 80%, rgba(45,154,106,0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(200,146,42,0.06) 0%, transparent 50%);
+}
+
+/* Card base */
+.card-base {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06), 0 6px 20px rgba(0,0,0,0.04);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.card-base:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1), 0 16px 40px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+
+/* Gold underline accent */
+.gold-underline {
+  position: relative;
+  display: inline-block;
+}
+.gold-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: var(--gradient-gold);
+  border-radius: 2px;
+}
+
+/* Divider */
+.divider-gold {
+  width: 48px;
+  height: 3px;
+  background: var(--gradient-gold);
+  border-radius: 2px;
+}

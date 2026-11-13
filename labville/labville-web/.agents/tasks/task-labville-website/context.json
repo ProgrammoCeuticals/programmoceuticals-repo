@@ -1,0 +1,33 @@
+{
+  "project_type": "Next.js 15 app router + React 18, TypeScript, Tailwind CSS 3 — dark-theme diagnostic centre website",
+  "language": "TypeScript (strict mode via tsconfig.json)",
+  "build_system": "Next.js 15.5.27 with next.config.js — `transpilePackages: ['three']` is already set; no monorepo, single package.json at labville-web/",
+  "test_framework": "none configured — no test runner in package.json; verification is build + dev-server visual check only",
+  "build_command": "npm run build (runs `next build`)",
+  "test_command": "npm run lint (runs `next lint`); full verification: npm run build && npm run lint",
+  "verification_instructions": "1) cd /Users/macbookpro/Desktop/ProgrammoCeuticals/labville/labville-web && npm run build — must exit 0 with no TypeScript errors. 2) npm run lint — must exit 0. 3) npm run dev — visually confirm the implemented pages at localhost:3000.",
+  "snapshot_or_generated_files": null,
+  "environment_constraints": "All 3-D components (R3F Canvas) MUST use `next/dynamic` with `{ ssr: false }` — Next.js SSR cannot render WebGL. Wrap dynamic imports in React.Suspense. Never restart a running dev server; just run build for verification.",
+  "contribution_requirements": "No AGENTS.md or CONTRIBUTING.md in this repo. Follow the existing code conventions strictly: 'use client' at top of every client component, @/ path alias for all imports, cn() from @/lib/utils for className merging, all data from data/ files not hardcoded inline.",
+  "key_patterns": "1) Server components (RSC) are page files — they import client components. 2) Client components are in components/ subdirectories, named PascalCase .tsx, start with 'use client'. 3) Tailwind token classes used directly — bg-bg-primary, text-accent-cyan, etc. — all defined in tailwind.config.ts extend block. 4) SectionContainer wraps every section content (width='content' default = max-w-[1200px]). 5) AnimatedSection (to be created in FEAT-001) wraps any block needing scroll-triggered fade-up. 6) gradient-text CSS class in globals.css for science gradient on text. 7) cn() from @/lib/utils merges Tailwind classes safely.",
+  "relevant_files": [
+    "/Users/macbookpro/Desktop/ProgrammoCeuticals/labville/labville-web/app/layout.tsx",
+    "/Users/macbookpro/Desktop/ProgrammoCeuticals/labville/labville-web/app/page.tsx",
+    "/Users/macbookpro/Desktop/ProgrammoCeuticals/labville/labville-web/app/globals.css",
+    "/Users/macbookpro/Desktop/ProgrammoCeuticals/labville/labville-web/tailwind.config.ts",
+    "/Users/macbookpro/Desktop/ProgrammoCeuticals/labville/labville-web/package.json",
+    "/Users/macbookpro/Desktop/ProgrammoCeuticals/labville/labville-web/next.config.js",
+    "/Users/macbookpro/Desktop/ProgrammoCeuticals/labville/labville-web/types/index.ts",
+    "/Users/macbookpro/Desktop/ProgrammoCeuticals/labville/labville-web/lib/utils.ts",
+    "/Users/macbookpro/Desktop/ProgrammoCeuticals/labville/labville-web/components/ui/Button.tsx",
+    "/Users/macbookpro/Desktop/ProgrammoCeuticals/labville/labville-web/components/ui/Badge.tsx",
+    "/Users/macbookpro/Desktop/ProgrammoCeuticals/labville/labville-web/components/ui/SectionHeading.tsx",
+    "/Users/macbookpro/Desktop/ProgrammoCeuticals/labville/labville-web/components/ui/SectionContainer.tsx",
+    "/Users/macbookpro/Desktop/ProgrammoCeuticals/labville/labville-web/components/layout/Header.tsx",
+    "/Users/macbookpro/Desktop/ProgrammoCeuticals/labville/labville-web/components/layout/Footer.tsx",
+    "/Users/macbookpro/Desktop/ProgrammoCeuticals/labville/labville-web/data/services.ts",
+    "/Users/macbookpro/Desktop/ProgrammoCeuticals/labville/labville-web/data/content.ts",
+    "/Users/macbookpro/Desktop/ProgrammoCeuticals/labville/labville-web/data/navigation.ts"
+  ],
+  "directory_structure": "labville-web/ — root. app/ — all page routes (page.tsx stubs + layout.tsx + globals.css). components/ — ui/ (Button, Badge, SectionHeading, SectionContainer), layout/ (Header, Footer), navigation/ (DesktopNav, MobileNav), sections/ (empty), hero/ (empty), services/ (empty), forms/ (empty), 3d/ (empty). data/ — services.ts, content.ts, navigation.ts. types/ — index.ts. lib/ — utils.ts."
+}

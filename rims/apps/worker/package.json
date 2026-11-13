@@ -1,0 +1,42 @@
+{
+  "name": "@rims/worker",
+  "version": "0.1.0",
+  "private": true,
+  "description": "RIMS BullMQ background worker",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "dev": "echo 'Worker requires Redis — skipping in dev. Install Redis to enable background jobs.' && exit 0",
+    "lint": "eslint src --ext .ts",
+    "type-check": "tsc --project tsconfig.json --noEmit",
+    "test": "jest --passWithNoTests"
+  },
+  "dependencies": {
+    "nodemailer": "6.9.16",
+    "@nestjs/bullmq": "10.2.3",
+    "@nestjs/common": "10.4.7",
+    "@nestjs/config": "3.3.0",
+    "@nestjs/core": "10.4.7",
+    "@nestjs/platform-express": "10.4.7",
+    "@nestjs/schedule": "4.1.1",
+    "@prisma/client": "5.22.0",
+    "@rims/shared-types": "workspace:*",
+    "bullmq": "5.26.2",
+    "cron": "3.1.7",
+    "nodemailer": "^10.5.0",
+    "reflect-metadata": "0.2.2",
+    "rxjs": "7.8.1"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "6.4.17",
+    "@rims/config": "workspace:*",
+    "@types/node": "22.9.0",
+    "@types/nodemailer": "^8.0.2",
+    "@typescript-eslint/eslint-plugin": "7.18.0",
+    "@typescript-eslint/parser": "7.18.0",
+    "eslint": "8.57.0",
+    "jest": "29.7.0",
+    "ts-jest": "29.2.5",
+    "ts-node": "10.9.2",
+    "typescript": "5.7.2"
+  }
+}

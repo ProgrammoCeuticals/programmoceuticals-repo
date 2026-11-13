@@ -1,0 +1,46 @@
+{
+  "verdict": "CHANGES_REQUESTED",
+  "findings": [
+    {
+      "id": "B1",
+      "file": "apps/api/src/modules/tasks/tasks.service.ts",
+      "location": "addComment method",
+      "issue": "No auditService.log call after TaskComment create. Every write in the established pattern (employees.service.ts) is audited; addComment is a write that is silently unaudited.",
+      "consequence": "Comment writes bypass the audit log, breaking the audit trail for task activity.",
+      "correction": "After taskComment.create, call await this.auditService.log({ tenantId, actorId: authorId, action: 'task.comment.added', resourceType: 'TaskComment', resourceId: comment.id, outcome: 'SUCCESS' })."
+    },
+    {
+      "id": "B2",
+      "file": "apps/api/src/modules/research/research.service.ts",
+      "location": "addMember, removeMember, addMilestone, updateMilestone, addStatusUpdate methods",
+      "issue": "None of these five write operations call auditService.log. Additionally addMember and removeMember have no actorId parameter, so the actor cannot be recorded even if a call were added.",
+      "consequence": "Project member, milestone, and status-update mutations are entirely unaudited. Security-relevant membership changes (addMember/removeMember) cannot be attributed to an actor.",
+      "correction": "Thread actorId: string into addMember, removeMember, addMilestone, updateMilestone; update research.controller.ts to pass user.sub; add auditService.log after each write."
+    },
+    {
+      "id": "B3",
+      "file": "apps/api/src/modules/performance/kpi-results.service.ts",
+      "location": "review() method, after findFirst, before update",
+      "issue": "No status guard checks that result.status === SUBMITTED before applying the review transition. A DRAFT or already-APPROVED result can be reviewed or returned.",
+      "consequence": "A user with performance.results.review permission can return or review a result that was never submitted, corrupting the KPI workflow state.",
+      "correction": "Add: if (result.status !== KpiResultStatus.SUBMITTED) { throw new BadRequestException(`Cannot review a result with status ${result.status}`); }"
+    },
+    {
+      "id": "B4",
+      "file": "apps/api/src/modules/performance/kpi-results.service.ts",
+      "location": "approve() method, after findFirst, before update",
+      "issue": "No status guard checks result.status before applying APPROVED. A DRAFT, RETURNED, or already-APPROVED result can be directly approved.",
+      "consequence": "A user with performance.results.approve permission can approve a DRAFT result, bypassing submission and review steps entirely.",
+      "correction": "Add a guard asserting the expected prior status (SUBMITTED, or REVIEWED if a two-step review workflow is intended) and throw BadRequestException on violation."
+    },
+    {
+      "id": "B5",
+      "file": "apps/api/src/modules/research/research.service.ts",
+      "location": "addStatusUpdate method, projectStatusUpdate.create data object",
+      "issue": "The ProjectStatusUpdate record is created without a tenantId field. If ProjectStatusUpdate has its own tenantId column in the schema, rows will be missing tenant context, breaking direct table queries for tenant scoping.",
+      "consequence": "Status update records lack tenant isolation; any query on ProjectStatusUpdate filtered by tenantId will omit these rows.",
+      "correction": "Add tenantId to the data object: { researchProjectId: projectId, content, authorId, tenantId }. Verify the field exists in the Prisma schema first; if absent, file a schema migration and close this finding."
+    }
+  ],
+  "reviewDoc": "/Users/macbookpro/Desktop/ProgrammoCeuticals/rims/.agents/tasks/phase2/backend-review.md"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@rims/validation",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Zod validation schemas for RIMS API inputs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "type-check": "tsc --project tsconfig.json --noEmit",
+    "lint": "eslint src --ext .ts"
+  },
+  "peerDependencies": {
+    "zod": "3"
+  },
+  "devDependencies": {
+    "@rims/config": "workspace:*",
+    "@typescript-eslint/eslint-plugin": "7.18.0",
+    "@typescript-eslint/parser": "7.18.0",
+    "eslint": "8.57.0",
+    "typescript": "5.7.2",
+    "zod": "3.23.8"
+  },
+  "dependencies": {
+    "zod": "3.23.8"
+  }
+}

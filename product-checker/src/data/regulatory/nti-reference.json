@@ -1,0 +1,4574 @@
+[
+  {
+    "id": "nti-001",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Abemaciclib",
+    "canonicalIngredientIds": [
+      "abemaciclib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-002",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Acalabrutinib",
+    "canonicalIngredientIds": [
+      "acalabrutinib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-003",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Acenocoumarol",
+    "canonicalIngredientIds": [
+      "acenocoumarol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-004",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Alatrofloxacin",
+    "canonicalIngredientIds": [
+      "alatrofloxacin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-005",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Aldesleukin",
+    "canonicalIngredientIds": [
+      "aldesleukin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-006",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Alectinib",
+    "canonicalIngredientIds": [
+      "alectinib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-007",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Alemtuzumab",
+    "canonicalIngredientIds": [
+      "alemtuzumab"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-008",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Alpelisib",
+    "canonicalIngredientIds": [
+      "alpelisib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-009",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Altretamine",
+    "canonicalIngredientIds": [
+      "altretamine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-010",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Amikacin",
+    "canonicalIngredientIds": [
+      "amikacin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-011",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Amineptine",
+    "canonicalIngredientIds": [
+      "amineptine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-012",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Aminoglutethimide",
+    "canonicalIngredientIds": [
+      "aminoglutethimide"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-013",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Aminophylline",
+    "canonicalIngredientIds": [
+      "aminophylline"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-014",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Amiodarone",
+    "canonicalIngredientIds": [
+      "amiodarone"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-015",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Amitriptyline",
+    "canonicalIngredientIds": [
+      "amitriptyline"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-016",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Amitriptylinoxide",
+    "canonicalIngredientIds": [
+      "amitriptylinoxide"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-017",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Amoxapine",
+    "canonicalIngredientIds": [
+      "amoxapine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-018",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Amphotericin B",
+    "canonicalIngredientIds": [
+      "amphotericin b"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-019",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Amsacrine",
+    "canonicalIngredientIds": [
+      "amsacrine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-020",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Anagrelide",
+    "canonicalIngredientIds": [
+      "anagrelide"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-021",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Arbekacin",
+    "canonicalIngredientIds": [
+      "arbekacin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-022",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Argatroban",
+    "canonicalIngredientIds": [
+      "argatroban"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-023",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Arsenic trioxide",
+    "canonicalIngredientIds": [
+      "arsenic trioxide"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-024",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Asparaginase Erwinia chrysanthemi",
+    "canonicalIngredientIds": [
+      "asparaginase erwinia chrysanthemi"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-025",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Asparaginase Escherichia coli",
+    "canonicalIngredientIds": [
+      "asparaginase escherichia coli"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-026",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Astemizole",
+    "canonicalIngredientIds": [
+      "astemizole"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-027",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Atezolizumab",
+    "canonicalIngredientIds": [
+      "atezolizumab"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-028",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Avelumab",
+    "canonicalIngredientIds": [
+      "avelumab"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-029",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Axitinib",
+    "canonicalIngredientIds": [
+      "axitinib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-030",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Azacitidine",
+    "canonicalIngredientIds": [
+      "azacitidine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-031",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Baricitinib",
+    "canonicalIngredientIds": [
+      "baricitinib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-032",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Bekanamycin",
+    "canonicalIngredientIds": [
+      "bekanamycin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-033",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Belinostat",
+    "canonicalIngredientIds": [
+      "belinostat"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-034",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Bendamustine",
+    "canonicalIngredientIds": [
+      "bendamustine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-035",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Bevacizumab",
+    "canonicalIngredientIds": [
+      "bevacizumab"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-036",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Bicalutamide",
+    "canonicalIngredientIds": [
+      "bicalutamide"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-037",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Binimetinib",
+    "canonicalIngredientIds": [
+      "binimetinib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-038",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Bleomycin",
+    "canonicalIngredientIds": [
+      "bleomycin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-039",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Blinatumomab",
+    "canonicalIngredientIds": [
+      "blinatumomab"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-040",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Bortezomib",
+    "canonicalIngredientIds": [
+      "bortezomib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-041",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Bosutinib",
+    "canonicalIngredientIds": [
+      "bosutinib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-042",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Brentuximab vedotin",
+    "canonicalIngredientIds": [
+      "brentuximab vedotin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-043",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Brigatinib",
+    "canonicalIngredientIds": [
+      "brigatinib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-044",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Busulfan",
+    "canonicalIngredientIds": [
+      "busulfan"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-045",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Butriptyline",
+    "canonicalIngredientIds": [
+      "butriptyline"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-046",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Cabazitaxel",
+    "canonicalIngredientIds": [
+      "cabazitaxel"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-047",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Cabergoline",
+    "canonicalIngredientIds": [
+      "cabergoline"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-048",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Cabozantinib",
+    "canonicalIngredientIds": [
+      "cabozantinib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-049",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Capecitabine",
+    "canonicalIngredientIds": [
+      "capecitabine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-050",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Capreomycin",
+    "canonicalIngredientIds": [
+      "capreomycin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-051",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Carbamazepine",
+    "canonicalIngredientIds": [
+      "carbamazepine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-052",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Carboplatin",
+    "canonicalIngredientIds": [
+      "carboplatin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-053",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Carfilzomib",
+    "canonicalIngredientIds": [
+      "carfilzomib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-054",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Carmustine",
+    "canonicalIngredientIds": [
+      "carmustine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-055",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Cemiplimab",
+    "canonicalIngredientIds": [
+      "cemiplimab"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-056",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Ceritinib",
+    "canonicalIngredientIds": [
+      "ceritinib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-057",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Cetuximab",
+    "canonicalIngredientIds": [
+      "cetuximab"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-058",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Chlorambucil",
+    "canonicalIngredientIds": [
+      "chlorambucil"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-059",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Chloramphenicol succinate",
+    "canonicalIngredientIds": [
+      "chloramphenicol succinate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-060",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Cisplatin",
+    "canonicalIngredientIds": [
+      "cisplatin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-061",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Clofarabine",
+    "canonicalIngredientIds": [
+      "clofarabine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-062",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Clomipramine",
+    "canonicalIngredientIds": [
+      "clomipramine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-063",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Clonidine",
+    "canonicalIngredientIds": [
+      "clonidine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-064",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Cobimetinib",
+    "canonicalIngredientIds": [
+      "cobimetinib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-065",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Colistin",
+    "canonicalIngredientIds": [
+      "colistin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-066",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Conivaptan",
+    "canonicalIngredientIds": [
+      "conivaptan"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-067",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Copanlisib",
+    "canonicalIngredientIds": [
+      "copanlisib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-068",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Crizotinib",
+    "canonicalIngredientIds": [
+      "crizotinib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-069",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Cyclophosphamide",
+    "canonicalIngredientIds": [
+      "cyclophosphamide"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-070",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Cyclosporine",
+    "canonicalIngredientIds": [
+      "cyclosporine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-071",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Cytarabine",
+    "canonicalIngredientIds": [
+      "cytarabine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-072",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Dabrafenib",
+    "canonicalIngredientIds": [
+      "dabrafenib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-073",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Dacarbazine",
+    "canonicalIngredientIds": [
+      "dacarbazine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-074",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Dacomitinib",
+    "canonicalIngredientIds": [
+      "dacomitinib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-075",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Dactinomycin",
+    "canonicalIngredientIds": [
+      "dactinomycin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-076",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Dalfampridine",
+    "canonicalIngredientIds": [
+      "dalfampridine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-077",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Daratumumab",
+    "canonicalIngredientIds": [
+      "daratumumab"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-078",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Dasatinib",
+    "canonicalIngredientIds": [
+      "dasatinib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-079",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Daunorubicin",
+    "canonicalIngredientIds": [
+      "daunorubicin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-080",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Decitabine",
+    "canonicalIngredientIds": [
+      "decitabine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-081",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Denileukin diftitox",
+    "canonicalIngredientIds": [
+      "denileukin diftitox"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-082",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Desipramine",
+    "canonicalIngredientIds": [
+      "desipramine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-083",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Dibekacin",
+    "canonicalIngredientIds": [
+      "dibekacin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-084",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Dibenzepin",
+    "canonicalIngredientIds": [
+      "dibenzepin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-085",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Dicoumarol",
+    "canonicalIngredientIds": [
+      "dicoumarol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-086",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Digitoxin",
+    "canonicalIngredientIds": [
+      "digitoxin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-087",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Digoxin",
+    "canonicalIngredientIds": [
+      "digoxin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-088",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Dihydroergotamine",
+    "canonicalIngredientIds": [
+      "dihydroergotamine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-089",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Dinutuximab",
+    "canonicalIngredientIds": [
+      "dinutuximab"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-090",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Docetaxel",
+    "canonicalIngredientIds": [
+      "docetaxel"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-091",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Dofetilide",
+    "canonicalIngredientIds": [
+      "dofetilide"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-092",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Dosulepin",
+    "canonicalIngredientIds": [
+      "dosulepin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-093",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Doxorubicin",
+    "canonicalIngredientIds": [
+      "doxorubicin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-094",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Dronedarone",
+    "canonicalIngredientIds": [
+      "dronedarone"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-095",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Durvalumab",
+    "canonicalIngredientIds": [
+      "durvalumab"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-096",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Elotuzumab",
+    "canonicalIngredientIds": [
+      "elotuzumab"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-097",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Enasidenib",
+    "canonicalIngredientIds": [
+      "enasidenib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-098",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Entrectinib",
+    "canonicalIngredientIds": [
+      "entrectinib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-099",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Epirubicin",
+    "canonicalIngredientIds": [
+      "epirubicin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-100",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Erdafitinib",
+    "canonicalIngredientIds": [
+      "erdafitinib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-101",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Ergotamine",
+    "canonicalIngredientIds": [
+      "ergotamine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-102",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Eribulin",
+    "canonicalIngredientIds": [
+      "eribulin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-103",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Erlotinib",
+    "canonicalIngredientIds": [
+      "erlotinib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-104",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Etoposide",
+    "canonicalIngredientIds": [
+      "etoposide"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-105",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Everolimus",
+    "canonicalIngredientIds": [
+      "everolimus"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-106",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Flecainide",
+    "canonicalIngredientIds": [
+      "flecainide"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-107",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Floxuridine",
+    "canonicalIngredientIds": [
+      "floxuridine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-108",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Fludarabine",
+    "canonicalIngredientIds": [
+      "fludarabine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-109",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Fluindione",
+    "canonicalIngredientIds": [
+      "fluindione"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-110",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Fluorouracil",
+    "canonicalIngredientIds": [
+      "fluorouracil"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-111",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Fosphenytoin",
+    "canonicalIngredientIds": [
+      "fosphenytoin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-112",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Gallium nitrate",
+    "canonicalIngredientIds": [
+      "gallium nitrate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-113",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Gemcitabine",
+    "canonicalIngredientIds": [
+      "gemcitabine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-114",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Gemtuzumab ozogamicin",
+    "canonicalIngredientIds": [
+      "gemtuzumab ozogamicin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-115",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Gentamicin",
+    "canonicalIngredientIds": [
+      "gentamicin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-116",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Gentamicin C1a",
+    "canonicalIngredientIds": [
+      "gentamicin c1a"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-117",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Heparin",
+    "canonicalIngredientIds": [
+      "heparin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-118",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Hydroxyurea",
+    "canonicalIngredientIds": [
+      "hydroxyurea"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-119",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Idarubicin",
+    "canonicalIngredientIds": [
+      "idarubicin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-120",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Idelalisib",
+    "canonicalIngredientIds": [
+      "idelalisib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-121",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Ifosfamide",
+    "canonicalIngredientIds": [
+      "ifosfamide"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-122",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Imipramine",
+    "canonicalIngredientIds": [
+      "imipramine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-123",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Imipramine oxide",
+    "canonicalIngredientIds": [
+      "imipramine oxide"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-124",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Inotuzumab ozogamicin",
+    "canonicalIngredientIds": [
+      "inotuzumab ozogamicin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-125",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Interferon alfa-2b",
+    "canonicalIngredientIds": [
+      "interferon alfa-2b"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-126",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Iobenguane",
+    "canonicalIngredientIds": [
+      "iobenguane"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-127",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Ipilimumab",
+    "canonicalIngredientIds": [
+      "ipilimumab"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-128",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Iprindole",
+    "canonicalIngredientIds": [
+      "iprindole"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-129",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Irinotecan",
+    "canonicalIngredientIds": [
+      "irinotecan"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-130",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Isatuximab",
+    "canonicalIngredientIds": [
+      "isatuximab"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-131",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Isepamicin",
+    "canonicalIngredientIds": [
+      "isepamicin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-132",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Ivosidenib",
+    "canonicalIngredientIds": [
+      "ivosidenib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-133",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Ixabepilone",
+    "canonicalIngredientIds": [
+      "ixabepilone"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-134",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Ixazomib",
+    "canonicalIngredientIds": [
+      "ixazomib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-135",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Kanamycin",
+    "canonicalIngredientIds": [
+      "kanamycin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-136",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Levacetylmethadol",
+    "canonicalIngredientIds": [
+      "levacetylmethadol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-137",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Levothyroxine",
+    "canonicalIngredientIds": [
+      "levothyroxine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-138",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Lithium carbonate",
+    "canonicalIngredientIds": [
+      "lithium carbonate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-139",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Lithium citrate",
+    "canonicalIngredientIds": [
+      "lithium citrate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-140",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Lithium hydroxide",
+    "canonicalIngredientIds": [
+      "lithium hydroxide"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-141",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Lomitapide",
+    "canonicalIngredientIds": [
+      "lomitapide"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-142",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Lomustine",
+    "canonicalIngredientIds": [
+      "lomustine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-143",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Mechlorethamine",
+    "canonicalIngredientIds": [
+      "mechlorethamine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-144",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Melitracen",
+    "canonicalIngredientIds": [
+      "melitracen"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-145",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Melphalan",
+    "canonicalIngredientIds": [
+      "melphalan"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-146",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Melphalan flufenamide",
+    "canonicalIngredientIds": [
+      "melphalan flufenamide"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-147",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Mercaptopurine",
+    "canonicalIngredientIds": [
+      "mercaptopurine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-148",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Methotrexate",
+    "canonicalIngredientIds": [
+      "methotrexate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-149",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Micronomicin",
+    "canonicalIngredientIds": [
+      "micronomicin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-150",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Midostaurin",
+    "canonicalIngredientIds": [
+      "midostaurin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-151",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Mitomycin",
+    "canonicalIngredientIds": [
+      "mitomycin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-152",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Mitotane",
+    "canonicalIngredientIds": [
+      "mitotane"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-153",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Mitoxantrone",
+    "canonicalIngredientIds": [
+      "mitoxantrone"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-154",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Mogamulizumab",
+    "canonicalIngredientIds": [
+      "mogamulizumab"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-155",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Moxetumomab pasudotox",
+    "canonicalIngredientIds": [
+      "moxetumomab pasudotox"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-156",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Mycophenolic acid",
+    "canonicalIngredientIds": [
+      "mycophenolic acid"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-157",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Necitumumab",
+    "canonicalIngredientIds": [
+      "necitumumab"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-158",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Nedaplatin",
+    "canonicalIngredientIds": [
+      "nedaplatin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-159",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Nelarabine",
+    "canonicalIngredientIds": [
+      "nelarabine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-160",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Neomycin",
+    "canonicalIngredientIds": [
+      "neomycin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-161",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Neratinib",
+    "canonicalIngredientIds": [
+      "neratinib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-162",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Netilmicin",
+    "canonicalIngredientIds": [
+      "netilmicin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-163",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Nilotinib",
+    "canonicalIngredientIds": [
+      "nilotinib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-164",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Niraparib",
+    "canonicalIngredientIds": [
+      "niraparib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-165",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Nortriptyline",
+    "canonicalIngredientIds": [
+      "nortriptyline"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-166",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Olaparib",
+    "canonicalIngredientIds": [
+      "olaparib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-167",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Omacetaxine mepesuccinate",
+    "canonicalIngredientIds": [
+      "omacetaxine mepesuccinate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-168",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Opipramol",
+    "canonicalIngredientIds": [
+      "opipramol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-169",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Osimertinib",
+    "canonicalIngredientIds": [
+      "osimertinib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-170",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Oxaliplatin",
+    "canonicalIngredientIds": [
+      "oxaliplatin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-171",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Paclitaxel",
+    "canonicalIngredientIds": [
+      "paclitaxel"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-172",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Palbociclib",
+    "canonicalIngredientIds": [
+      "palbociclib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-173",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Panobinostat",
+    "canonicalIngredientIds": [
+      "panobinostat"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-174",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Pazopanib",
+    "canonicalIngredientIds": [
+      "pazopanib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-175",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Peginterferon alfa-2a",
+    "canonicalIngredientIds": [
+      "peginterferon alfa-2a"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-176",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Pemetrexed",
+    "canonicalIngredientIds": [
+      "pemetrexed"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-177",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Pentostatin",
+    "canonicalIngredientIds": [
+      "pentostatin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-178",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Pexidartinib",
+    "canonicalIngredientIds": [
+      "pexidartinib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-179",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Phenindione",
+    "canonicalIngredientIds": [
+      "phenindione"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-180",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Phenobarbital",
+    "canonicalIngredientIds": [
+      "phenobarbital"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-181",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Phenprocoumon",
+    "canonicalIngredientIds": [
+      "phenprocoumon"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-182",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Phenytoin",
+    "canonicalIngredientIds": [
+      "phenytoin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-183",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Pimozide",
+    "canonicalIngredientIds": [
+      "pimozide"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-184",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Pixantrone",
+    "canonicalIngredientIds": [
+      "pixantrone"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-185",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Plazomicin",
+    "canonicalIngredientIds": [
+      "plazomicin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-186",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Pomalidomide",
+    "canonicalIngredientIds": [
+      "pomalidomide"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-187",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Ponatinib",
+    "canonicalIngredientIds": [
+      "ponatinib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-188",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Pralatrexate",
+    "canonicalIngredientIds": [
+      "pralatrexate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-189",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Procainamide",
+    "canonicalIngredientIds": [
+      "procainamide"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-190",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Procarbazine",
+    "canonicalIngredientIds": [
+      "procarbazine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-191",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Protriptyline",
+    "canonicalIngredientIds": [
+      "protriptyline"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-192",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Quinidine",
+    "canonicalIngredientIds": [
+      "quinidine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-193",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Raltitrexed",
+    "canonicalIngredientIds": [
+      "raltitrexed"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-194",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Ramucirumab",
+    "canonicalIngredientIds": [
+      "ramucirumab"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-195",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Regorafenib",
+    "canonicalIngredientIds": [
+      "regorafenib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-196",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Ribociclib",
+    "canonicalIngredientIds": [
+      "ribociclib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-197",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Ribostamycin",
+    "canonicalIngredientIds": [
+      "ribostamycin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-198",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Rituximab",
+    "canonicalIngredientIds": [
+      "rituximab"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-199",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Romidepsin",
+    "canonicalIngredientIds": [
+      "romidepsin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-200",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Rucaparib",
+    "canonicalIngredientIds": [
+      "rucaparib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-201",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Ruxolitinib",
+    "canonicalIngredientIds": [
+      "ruxolitinib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-202",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Siponimod",
+    "canonicalIngredientIds": [
+      "siponimod"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-203",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Sirolimus",
+    "canonicalIngredientIds": [
+      "sirolimus"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-204",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Sisomicin",
+    "canonicalIngredientIds": [
+      "sisomicin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-205",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Sodium phosphate P 32",
+    "canonicalIngredientIds": [
+      "sodium phosphate p 32"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-206",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Sonidegib",
+    "canonicalIngredientIds": [
+      "sonidegib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-207",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Sorafenib",
+    "canonicalIngredientIds": [
+      "sorafenib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-208",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Sotalol",
+    "canonicalIngredientIds": [
+      "sotalol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-209",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Streptomycin",
+    "canonicalIngredientIds": [
+      "streptomycin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-210",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Streptozocin",
+    "canonicalIngredientIds": [
+      "streptozocin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-211",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Sunitinib",
+    "canonicalIngredientIds": [
+      "sunitinib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-212",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Tacrolimus",
+    "canonicalIngredientIds": [
+      "tacrolimus"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-213",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Tagraxofusp",
+    "canonicalIngredientIds": [
+      "tagraxofusp"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-214",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Talazoparib",
+    "canonicalIngredientIds": [
+      "talazoparib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-215",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Tamoxifen",
+    "canonicalIngredientIds": [
+      "tamoxifen"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-216",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Tegafur",
+    "canonicalIngredientIds": [
+      "tegafur"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-217",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Teicoplanin",
+    "canonicalIngredientIds": [
+      "teicoplanin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-218",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Temoporfin",
+    "canonicalIngredientIds": [
+      "temoporfin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-219",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Temozolomide",
+    "canonicalIngredientIds": [
+      "temozolomide"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-220",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Temsirolimus",
+    "canonicalIngredientIds": [
+      "temsirolimus"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-221",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Teniposide",
+    "canonicalIngredientIds": [
+      "teniposide"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-222",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Theophylline",
+    "canonicalIngredientIds": [
+      "theophylline"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-223",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Thiopental",
+    "canonicalIngredientIds": [
+      "thiopental"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-224",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Thiotepa",
+    "canonicalIngredientIds": [
+      "thiotepa"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-225",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Tianeptine",
+    "canonicalIngredientIds": [
+      "tianeptine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-226",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Tioguanine",
+    "canonicalIngredientIds": [
+      "tioguanine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-227",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Tipiracil",
+    "canonicalIngredientIds": [
+      "tipiracil"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-228",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Tizanidine",
+    "canonicalIngredientIds": [
+      "tizanidine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-229",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Tobramycin",
+    "canonicalIngredientIds": [
+      "tobramycin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-230",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Tolvaptan",
+    "canonicalIngredientIds": [
+      "tolvaptan"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-231",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Topotecan",
+    "canonicalIngredientIds": [
+      "topotecan"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-232",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Trabectedin",
+    "canonicalIngredientIds": [
+      "trabectedin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-233",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Trametinib",
+    "canonicalIngredientIds": [
+      "trametinib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-234",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Trastuzumab",
+    "canonicalIngredientIds": [
+      "trastuzumab"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-235",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Trastuzumab emtansine",
+    "canonicalIngredientIds": [
+      "trastuzumab emtansine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-236",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Trilostane",
+    "canonicalIngredientIds": [
+      "trilostane"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-237",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Trimetrexate",
+    "canonicalIngredientIds": [
+      "trimetrexate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-238",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Trimipramine",
+    "canonicalIngredientIds": [
+      "trimipramine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-239",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Uracil mustard",
+    "canonicalIngredientIds": [
+      "uracil mustard"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-240",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Valproic acid",
+    "canonicalIngredientIds": [
+      "valproic acid"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-241",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Vancomycin",
+    "canonicalIngredientIds": [
+      "vancomycin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-242",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Vandetanib",
+    "canonicalIngredientIds": [
+      "vandetanib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-243",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Vemurafenib",
+    "canonicalIngredientIds": [
+      "vemurafenib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-244",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Venetoclax",
+    "canonicalIngredientIds": [
+      "venetoclax"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-245",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Vinblastine",
+    "canonicalIngredientIds": [
+      "vinblastine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-246",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Vincristine",
+    "canonicalIngredientIds": [
+      "vincristine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-247",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Vindesine",
+    "canonicalIngredientIds": [
+      "vindesine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-248",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Vinorelbine",
+    "canonicalIngredientIds": [
+      "vinorelbine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-249",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Visilizumab",
+    "canonicalIngredientIds": [
+      "visilizumab"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-250",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Vorinostat",
+    "canonicalIngredientIds": [
+      "vorinostat"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-251",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Voruciclib",
+    "canonicalIngredientIds": [
+      "voruciclib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-252",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Warfarin",
+    "canonicalIngredientIds": [
+      "warfarin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-253",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Zanubrutinib",
+    "canonicalIngredientIds": [
+      "zanubrutinib"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  },
+  {
+    "id": "nti-254",
+    "restrictionType": "nti",
+    "sourceId": "nti-legacy-reference",
+    "subjectType": "ingredient",
+    "subjectName": "Ziconotide",
+    "canonicalIngredientIds": [
+      "ziconotide"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "hsCode": null,
+    "exclusions": null,
+    "notes": "NTI reference — identified by FDA/EMA/WHO/USP based on narrow margin between therapeutic and toxic doses. Not an official NAFDAC list. For bioequivalence/therapeutic monitoring consideration only. Does not constitute an import prohibition.",
+    "effectCode": "NTI_REVIEW",
+    "verificationStatus": "verification_required"
+  }
+]

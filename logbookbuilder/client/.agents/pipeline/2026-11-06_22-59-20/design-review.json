@@ -1,0 +1,61 @@
+{
+  "verdict": "CHANGES_REQUESTED",
+  "findings": [
+    {
+      "id": 1,
+      "severity": "MEDIUM",
+      "location": "§1 CSS (Stat card block) vs §4 DashboardPage JSX (StatCard rewrite)",
+      "summary": "Class name conflict: CSS defines pc-stat-card/pc-stat-value/pc-stat-label (prefixed); DashboardPage JSX uses stat-card/stat-val/stat-lbl (unprefixed). The pc-stat-card CSS block becomes dead code after the JSX rewrite.",
+      "fix": "Add explicit note in §4 that StatCard switches from pc-stat-card system to stat-card system, and either remove the pc-stat-card CSS block from §1 or mark it as intentionally retained for future use."
+    },
+    {
+      "id": 2,
+      "severity": "MEDIUM",
+      "location": "§7 RecordsPage — panelLoading state",
+      "summary": "panelLoading is a single shared boolean. Rapid clicks on two different rows leave B's panel showing the error/empty state when A's promise resolves and sets panelLoading=false before B's data arrives.",
+      "fix": "Replace panelLoading: boolean with panelLoading: Record<string, boolean> keyed by recordId. Set/clear per-record in the click handler and .finally()."
+    },
+    {
+      "id": 3,
+      "severity": "MEDIUM",
+      "location": "§1 CSS (.main-content) vs FR-1.4 requirement",
+      "summary": "FR-1.4 specifies margin-top: 52px on .main-content. The design uses position: sticky for the nav (in-flow), making margin-top unnecessary and harmful if added. No clarifying note is present.",
+      "fix": "Add a note in §1 explaining that FR-1.4's margin-top: 52px was written for a fixed-position nav and is superseded by the sticky nav decision. .main-content carries margin-top: 0."
+    },
+    {
+      "id": 4,
+      "severity": "MEDIUM",
+      "location": "§1 CSS (Legacy alias classes section)",
+      "summary": "The current index.css legacy alias section references var(--color-blue), var(--color-text-900), var(--color-border-2), etc. — none of which are defined anywhere in the current CSS. This is a live bug causing broken styles on LogDetailPage, RelationshipsPage, RecordEntryForm, and SignatureModal. The design fixes it but does not call it out as a pre-existing defect.",
+      "fix": "Add a callout before the :root block in §1 warning that --color-* tokens are currently undefined, causing broken legacy alias class rendering. This sets implementer expectations for intermediate state during the CSS rewrite."
+    },
+    {
+      "id": 5,
+      "severity": "NIT",
+      "location": "§10 SignatureModal",
+      "summary": "Header transformation description does not explicitly instruct removal of the gradient icon box (PenLine icon) inside the old header.",
+      "fix": "Add explicit instruction: remove the gradient icon <div> (PenLine) and render only plain white text 'Electronic Signature' inside .modal-header."
+    },
+    {
+      "id": 6,
+      "severity": "NIT",
+      "location": "§1 CSS (pc-seg-tabs block) vs §8 RecordDetailPage",
+      "summary": "CSS defines both pc-seg-tabs/pc-seg-tab and tab-bar/tab-btn as identical underline-style tabs. §8 renames pc-seg-tabs to tab-bar in RecordDetailPage, leaving pc-seg-tabs CSS as dead code.",
+      "fix": "State the choice explicitly: either keep pc-seg-tabs in RecordDetailPage (no rename needed; CSS already converts it to underline style) and remove the redundant tab-bar/tab-btn definition, or rename as planned and remove the pc-seg-tabs CSS block."
+    },
+    {
+      "id": 7,
+      "severity": "NIT",
+      "location": "§2 AppShell — import removal list",
+      "summary": "Import removal list says 'Remove LayoutDashboard, FileText, ClipboardList, Users, UserCheck, Building2, LogOut' but the summary text says 'Remove imports no longer used: LayoutDashboard, FileText, ClipboardList, Users, UserCheck, Building2.' LogOut is mentioned separately. The two lists should be consistent.",
+      "fix": "Consolidate into a single list of 7 imports to remove: LayoutDashboard, FileText, ClipboardList, Users, UserCheck, Building2, LogOut."
+    },
+    {
+      "id": 8,
+      "severity": "NIT",
+      "location": "§6 LogDetailPage — drt-table rename ambiguity",
+      "summary": "§6 says 'drt-table → results-table (cosmetic rename)' but the CSS comment says 'JSX pages using drt-table don't need JSX class rename.' These two statements contradict each other for LogDetailPage.",
+      "fix": "Clarify in §6: no JSX rename required. The .drt-table CSS is updated to the navy-header style. The className in LogDetailPage stays 'drt-table'."
+    }
+  ]
+}

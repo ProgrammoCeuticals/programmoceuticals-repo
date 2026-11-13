@@ -1,0 +1,6361 @@
+[
+  {
+    "id": "dap-001",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Diclofenac, Paracetamol",
+    "canonicalIngredientIds": [
+      "diclofenac",
+      "paracetamol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-002",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Aceclofenac, Paracetamol, Chlorzoxazone",
+    "canonicalIngredientIds": [
+      "aceclofenac",
+      "paracetamol",
+      "chlorzoxazone"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-003",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Diclofenac, Paracetamol, Chlorzoxazone",
+    "canonicalIngredientIds": [
+      "diclofenac",
+      "paracetamol",
+      "chlorzoxazone"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-004",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Ibuprofen, Paracetamol, Caffeine",
+    "canonicalIngredientIds": [
+      "ibuprofen",
+      "paracetamol",
+      "caffeine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-005",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Aceclofenac, Paracetamol",
+    "canonicalIngredientIds": [
+      "aceclofenac",
+      "paracetamol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-006",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Aceclofenac, Paracetamol, Serratiopeptidase",
+    "canonicalIngredientIds": [
+      "aceclofenac",
+      "paracetamol",
+      "serratiopeptidase"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-007",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Aceclofenac, Serratiopeptidase",
+    "canonicalIngredientIds": [
+      "aceclofenac",
+      "serratiopeptidase"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-008",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Ibuprofen, Paracetamol",
+    "canonicalIngredientIds": [
+      "ibuprofen",
+      "paracetamol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-009",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Aceclofenac (SR) + Paracetamol",
+    "canonicalIngredientIds": [
+      "aceclofenac",
+      "paracetamol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-010",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Aceclofenac + Paracetamol + Famotidine",
+    "canonicalIngredientIds": [
+      "aceclofenac",
+      "paracetamol",
+      "famotidine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-011",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Aceclofenac + Paracetamol + Rabeprazole",
+    "canonicalIngredientIds": [
+      "aceclofenac",
+      "paracetamol",
+      "rabeprazole"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-012",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Aceclofenac + Zinc Carnosine",
+    "canonicalIngredientIds": [
+      "aceclofenac",
+      "zinc carnosine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-013",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Acetaminophen + Guaifenesin + Dextromethorphan + Chlorpheniramine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "guaifenesin",
+      "dextromethorphan",
+      "chlorpheniramine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-014",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Acetaminophen + Loratadine + Ambroxol + Phenylephrine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "loratadine",
+      "ambroxol",
+      "phenylephrine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-015",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Acriflavine + Thymol + Cetrimide",
+    "canonicalIngredientIds": [
+      "acriflavine",
+      "thymol",
+      "cetrimide"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-016",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Acrivastine + Paracetamol + Caffeine + Phenylephrine",
+    "canonicalIngredientIds": [
+      "acrivastine",
+      "paracetamol",
+      "caffeine",
+      "phenylephrine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-017",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Albuterol + Bromhexine + Theophylline",
+    "canonicalIngredientIds": [
+      "salbutamol",
+      "bromhexine",
+      "theophylline"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-018",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Albuterol + Etofylline + Bromhexine + Menthol",
+    "canonicalIngredientIds": [
+      "salbutamol",
+      "theophylline",
+      "bromhexine",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-019",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Alginic Acid + Sodium Bicarbonate + Dried Aluminium Hydroxide + Magnesium Hydroxide",
+    "canonicalIngredientIds": [
+      "alginic acid",
+      "sodium bicarbonate",
+      "aluminium hydroxide",
+      "magnesium hydroxide"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-020",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Ambroxol + Levocetirizine + Phenylephrine + Guaiphenesin + Menthol",
+    "canonicalIngredientIds": [
+      "ambroxol",
+      "levocetirizine",
+      "phenylephrine",
+      "guaifenesin",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-021",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Ambroxol + Guaifenesin + Phenylephrine + Chlorpheniramine",
+    "canonicalIngredientIds": [
+      "ambroxol",
+      "guaifenesin",
+      "phenylephrine",
+      "chlorpheniramine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-022",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Ambroxol + Salbutamol + Choline Theophyllinate + Menthol",
+    "canonicalIngredientIds": [
+      "ambroxol",
+      "salbutamol",
+      "theophylline",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-023",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Ambroxol + Salbutamol + Theophylline",
+    "canonicalIngredientIds": [
+      "ambroxol",
+      "salbutamol",
+      "theophylline"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-024",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Ambroxol + Terbutaline + Dextromethorphan",
+    "canonicalIngredientIds": [
+      "ambroxol",
+      "terbutaline",
+      "dextromethorphan"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-025",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Ammonium Chloride + Dextromethorphan + Cetirizine + Menthol",
+    "canonicalIngredientIds": [
+      "ammonium chloride",
+      "dextromethorphan",
+      "cetirizine",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-026",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Ammonium Chloride + Sodium Citrate + Chlorpheniramine Maleate + Menthol",
+    "canonicalIngredientIds": [
+      "ammonium chloride",
+      "sodium citrate",
+      "chlorpheniramine",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-027",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Amoxicillin + Cefixime + Potassium Clavulanic Acid",
+    "canonicalIngredientIds": [
+      "amoxicillin",
+      "cefixime",
+      "clavulanic acid"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-028",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Amoxicillin + Dicloxacillin",
+    "canonicalIngredientIds": [
+      "amoxicillin",
+      "cloxacillin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-029",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Amoxycillin + Tinidazole",
+    "canonicalIngredientIds": [
+      "amoxicillin",
+      "tinidazole"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-030",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Atorvastatin + Vitamin D3 + Folic Acid + Vitamin B12 + Pyridoxine",
+    "canonicalIngredientIds": [
+      "atorvastatin",
+      "vitamin d",
+      "folic acid",
+      "vitamin b12",
+      "vitamin b6"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-031",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Azithromycin + Ambroxol",
+    "canonicalIngredientIds": [
+      "azithromycin",
+      "ambroxol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-032",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Azithromycin + Cefixime",
+    "canonicalIngredientIds": [
+      "azithromycin",
+      "cefixime"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-033",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Azithromycin + Levofloxacin",
+    "canonicalIngredientIds": [
+      "azithromycin",
+      "levofloxacin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-034",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Azithromycin + Ofloxacin",
+    "canonicalIngredientIds": [
+      "azithromycin",
+      "ofloxacin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-035",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Benfotiamine + Metformin",
+    "canonicalIngredientIds": [
+      "benfotiamine",
+      "metformin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-036",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Bromhexine + Dextromethorphan",
+    "canonicalIngredientIds": [
+      "bromhexine",
+      "dextromethorphan"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-037",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Bromhexine + Dextromethorphan + Phenylephrine + Menthol",
+    "canonicalIngredientIds": [
+      "bromhexine",
+      "dextromethorphan",
+      "phenylephrine",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-038",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Caffeine + Paracetamol + Chlorpheniramine",
+    "canonicalIngredientIds": [
+      "caffeine",
+      "paracetamol",
+      "chlorpheniramine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-039",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Caffeine + Paracetamol + Phenylephrine + Cetirizine",
+    "canonicalIngredientIds": [
+      "caffeine",
+      "paracetamol",
+      "phenylephrine",
+      "cetirizine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-040",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Cefixime + Levofloxacin",
+    "canonicalIngredientIds": [
+      "cefixime",
+      "levofloxacin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-041",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Chlorpheniramine + Ammonium Chloride + Noscapine + Sodium Citrate",
+    "canonicalIngredientIds": [
+      "chlorpheniramine",
+      "ammonium chloride",
+      "noscapine",
+      "sodium citrate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-042",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Chlorpheniramine + Codeine + Sodium Citrate + Menthol",
+    "canonicalIngredientIds": [
+      "chlorpheniramine",
+      "codeine",
+      "sodium citrate",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-043",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Chlorpheniramine + Dextromethorphan + Phenylephrine + Paracetamol",
+    "canonicalIngredientIds": [
+      "chlorpheniramine",
+      "dextromethorphan",
+      "phenylephrine",
+      "paracetamol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-044",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Chlorpheniramine + Paracetamol + Pseudoephedrine + Caffeine",
+    "canonicalIngredientIds": [
+      "chlorpheniramine",
+      "paracetamol",
+      "pseudoephedrine",
+      "caffeine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-045",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Chlorpheniramine + Phenylephrine + Caffeine",
+    "canonicalIngredientIds": [
+      "chlorpheniramine",
+      "phenylephrine",
+      "caffeine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-046",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Chlorpheniramine + Phenylephrine + Paracetamol + Zinc Gluconate",
+    "canonicalIngredientIds": [
+      "chlorpheniramine",
+      "phenylephrine",
+      "paracetamol",
+      "zinc"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-047",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Chlorpheniramine + Vitamin C",
+    "canonicalIngredientIds": [
+      "chlorpheniramine",
+      "ascorbic acid"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-048",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Chlorpromazine + Trihexyphenidyl",
+    "canonicalIngredientIds": [
+      "chlorpromazine",
+      "trihexyphenidyl"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-049",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Ciprofloxacin + Phenazopyridine",
+    "canonicalIngredientIds": [
+      "ciprofloxacin",
+      "phenazopyridine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-050",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Codeine + Chlorpheniramine + Alcohol Syrup",
+    "canonicalIngredientIds": [
+      "codeine",
+      "chlorpheniramine"
+    ],
+    "strength": null,
+    "dosageForm": "Syrup",
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-051",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Cyproheptadine + Thiamine",
+    "canonicalIngredientIds": [
+      "cyproheptadine",
+      "thiamine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-052",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Dextromethorphan + Ambroxol + Guaifenesin + Phenylephrine + Chlorpheniramine",
+    "canonicalIngredientIds": [
+      "dextromethorphan",
+      "ambroxol",
+      "guaifenesin",
+      "phenylephrine",
+      "chlorpheniramine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-053",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Dextromethorphan + Bromhexine + Guaiphenesin",
+    "canonicalIngredientIds": [
+      "dextromethorphan",
+      "bromhexine",
+      "guaifenesin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-054",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Dextromethorphan + Cetirizine",
+    "canonicalIngredientIds": [
+      "dextromethorphan",
+      "cetirizine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-055",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Dextromethorphan + Chlorpheniramine + Guaiphenesin",
+    "canonicalIngredientIds": [
+      "dextromethorphan",
+      "chlorpheniramine",
+      "guaifenesin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-056",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Dextromethorphan + Levocetirizine + Phenylephrine + Zinc",
+    "canonicalIngredientIds": [
+      "dextromethorphan",
+      "levocetirizine",
+      "phenylephrine",
+      "zinc"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-057",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Dextromethorphan + Paracetamol + Cetirizine + Phenylephrine",
+    "canonicalIngredientIds": [
+      "dextromethorphan",
+      "paracetamol",
+      "cetirizine",
+      "phenylephrine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-058",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Dextromethorphan + Phenylephrine + Ammonium Chloride + Menthol",
+    "canonicalIngredientIds": [
+      "dextromethorphan",
+      "phenylephrine",
+      "ammonium chloride",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-059",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Dextromethorphan + Phenylephrine + Cetirizine + Paracetamol + Caffeine",
+    "canonicalIngredientIds": [
+      "dextromethorphan",
+      "phenylephrine",
+      "cetirizine",
+      "paracetamol",
+      "caffeine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-060",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Dextromethorphan + Phenylephrine + Guaifenesin + Triprolidine",
+    "canonicalIngredientIds": [
+      "dextromethorphan",
+      "phenylephrine",
+      "guaifenesin",
+      "triprolidine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-061",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Diclofenac + Paracetamol + Chlorzoxazone + Famotidine",
+    "canonicalIngredientIds": [
+      "diclofenac",
+      "paracetamol",
+      "chlorzoxazone",
+      "famotidine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-062",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Diclofenac + Tramadol + Chlorzoxazone",
+    "canonicalIngredientIds": [
+      "diclofenac",
+      "tramadol",
+      "chlorzoxazone"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-063",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Diclofenac + Tramadol + Paracetamol",
+    "canonicalIngredientIds": [
+      "diclofenac",
+      "tramadol",
+      "paracetamol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-064",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Diclofenac + Zinc Carnosine",
+    "canonicalIngredientIds": [
+      "diclofenac",
+      "zinc carnosine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-065",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Dicyclomine + Paracetamol + Domperidone",
+    "canonicalIngredientIds": [
+      "dicyclomine",
+      "paracetamol",
+      "domperidone"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-066",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Diethylcarbamazine + Cetirizine + Ambroxol",
+    "canonicalIngredientIds": [
+      "diethylcarbamazine",
+      "cetirizine",
+      "ambroxol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-067",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Diphenhydramine + Guaifenesin + Bromhexine + Ammonium Chloride + Menthol",
+    "canonicalIngredientIds": [
+      "diphenhydramine",
+      "guaifenesin",
+      "bromhexine",
+      "ammonium chloride",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-068",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Disodium Hydrogen Citrate + Paracetamol",
+    "canonicalIngredientIds": [
+      "disodium hydrogen citrate",
+      "paracetamol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-069",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Doxycycline + Serratiopeptidase",
+    "canonicalIngredientIds": [
+      "doxycycline",
+      "serratiopeptidase"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-070",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Doxylamine + Pyridoxine + Mefenamic Acid + Paracetamol",
+    "canonicalIngredientIds": [
+      "doxylamine",
+      "pyridoxine",
+      "mefenamic acid",
+      "paracetamol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-071",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Famotidine + Oxetacaine + Magaldrate",
+    "canonicalIngredientIds": [
+      "famotidine",
+      "oxetacaine",
+      "magaldrate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-072",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Flupentixol + Escitalopram",
+    "canonicalIngredientIds": [
+      "flupentixol",
+      "escitalopram"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-073",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Furazolidone + Metronidazole + Loperamide",
+    "canonicalIngredientIds": [
+      "furazolidone",
+      "metronidazole",
+      "loperamide"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-074",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Gabapentin + Mecobalamin + Pyridoxine + Thiamine",
+    "canonicalIngredientIds": [
+      "gabapentin",
+      "vitamin b12",
+      "vitamin b6",
+      "thiamine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-075",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Glibenclamide + Metformin (SR) + Pioglitazone",
+    "canonicalIngredientIds": [
+      "glibenclamide",
+      "metformin",
+      "pioglitazone"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-076",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Glimepiride + Pioglitazone + Metformin",
+    "canonicalIngredientIds": [
+      "glimepiride",
+      "pioglitazone",
+      "metformin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-077",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Guaifenesin + Bromhexine + Chlorpheniramine + Paracetamol",
+    "canonicalIngredientIds": [
+      "guaifenesin",
+      "bromhexine",
+      "chlorpheniramine",
+      "paracetamol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-078",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Guaifenesin + Dextromethorphan",
+    "canonicalIngredientIds": [
+      "guaifenesin",
+      "dextromethorphan"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-079",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Heparin + Diclofenac",
+    "canonicalIngredientIds": [
+      "heparin",
+      "diclofenac"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-080",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Ketotifen + Cetirizine",
+    "canonicalIngredientIds": [
+      "ketotifen",
+      "cetirizine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-081",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Ketotifen + Theophylline",
+    "canonicalIngredientIds": [
+      "ketotifen",
+      "theophylline"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-082",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "L-Arginine + Sildenafil",
+    "canonicalIngredientIds": [
+      "l-arginine",
+      "sildenafil"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-083",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Levocetirizine + Ambroxol + Phenylephrine + Guaiphenesin",
+    "canonicalIngredientIds": [
+      "levocetirizine",
+      "ambroxol",
+      "phenylephrine",
+      "guaifenesin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-084",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Levocetirizine + Ambroxol + Phenylephrine + Paracetamol",
+    "canonicalIngredientIds": [
+      "levocetirizine",
+      "ambroxol",
+      "phenylephrine",
+      "paracetamol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-085",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Levocetirizine + Dextromethorphan + Zinc",
+    "canonicalIngredientIds": [
+      "levocetirizine",
+      "dextromethorphan",
+      "zinc"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-086",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Levocetirizine + Montelukast + Acebrophylline",
+    "canonicalIngredientIds": [
+      "levocetirizine",
+      "montelukast",
+      "acebrophylline"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-087",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Levocetirizine + Paracetamol + Phenylephrine + Caffeine",
+    "canonicalIngredientIds": [
+      "levocetirizine",
+      "paracetamol",
+      "phenylephrine",
+      "caffeine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-088",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Levocetirizine + Ranitidine",
+    "canonicalIngredientIds": [
+      "levocetirizine",
+      "ranitidine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-089",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Levofloxacin + Bromhexine",
+    "canonicalIngredientIds": [
+      "levofloxacin",
+      "bromhexine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-090",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Levofloxacin + Ornidazole + Alpha Tocopherol Acetate",
+    "canonicalIngredientIds": [
+      "levofloxacin",
+      "ornidazole",
+      "tocopherol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-091",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Lornoxicam + Paracetamol + Serratiopeptidase",
+    "canonicalIngredientIds": [
+      "lornoxicam",
+      "paracetamol",
+      "serratiopeptidase"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-092",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Lornoxicam + Paracetamol + Tramadol",
+    "canonicalIngredientIds": [
+      "lornoxicam",
+      "paracetamol",
+      "tramadol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-093",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Magaldrate + Famotidine + Simethicone",
+    "canonicalIngredientIds": [
+      "magaldrate",
+      "famotidine",
+      "simethicone"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-094",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Magaldrate + Ranitidine + Pancreatin + Domperidone",
+    "canonicalIngredientIds": [
+      "magaldrate",
+      "ranitidine",
+      "pancreatin",
+      "domperidone"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-095",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Metformin + Atorvastatin",
+    "canonicalIngredientIds": [
+      "metformin",
+      "atorvastatin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-096",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Metformin + Bromocriptine",
+    "canonicalIngredientIds": [
+      "metformin",
+      "bromocriptine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-097",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Metformin + Glimepiride + Methylcobalamin",
+    "canonicalIngredientIds": [
+      "metformin",
+      "glimepiride",
+      "vitamin b12"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-098",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Metronidazole + Norfloxacin",
+    "canonicalIngredientIds": [
+      "metronidazole",
+      "norfloxacin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-099",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Metronidazole + Tetracycline",
+    "canonicalIngredientIds": [
+      "metronidazole",
+      "tetracycline"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-100",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Nimesulide + Cetirizine + Phenylephrine",
+    "canonicalIngredientIds": [
+      "nimesulide",
+      "cetirizine",
+      "phenylephrine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-101",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Nimesulide + Diclofenac",
+    "canonicalIngredientIds": [
+      "nimesulide",
+      "diclofenac"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-102",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Nimesulide + Paracetamol + Cetirizine + Phenylephrine",
+    "canonicalIngredientIds": [
+      "nimesulide",
+      "paracetamol",
+      "cetirizine",
+      "phenylephrine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-103",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Nimesulide + Paracetamol + Levocetirizine + Phenylephrine + Caffeine",
+    "canonicalIngredientIds": [
+      "nimesulide",
+      "paracetamol",
+      "levocetirizine",
+      "phenylephrine",
+      "caffeine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-104",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Nimesulide + Serratiopeptidase",
+    "canonicalIngredientIds": [
+      "nimesulide",
+      "serratiopeptidase"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-105",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Nimesulide + Tizanidine",
+    "canonicalIngredientIds": [
+      "nimesulide",
+      "tizanidine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-106",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Norfloxacin + Metronidazole + Zinc Acetate",
+    "canonicalIngredientIds": [
+      "norfloxacin",
+      "metronidazole",
+      "zinc"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-107",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Ofloxacin + Metronidazole + Zinc Acetate",
+    "canonicalIngredientIds": [
+      "ofloxacin",
+      "metronidazole",
+      "zinc"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-108",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Ofloxacin + Ornidazole + Zinc Bisglycinate",
+    "canonicalIngredientIds": [
+      "ofloxacin",
+      "ornidazole",
+      "zinc"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-109",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Olmesartan + Hydrochlorothiazide + Chlorthalidone",
+    "canonicalIngredientIds": [
+      "olmesartan",
+      "hydrochlorothiazide",
+      "chlorthalidone"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-110",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Omeprazole + Paracetamol + Diclofenac",
+    "canonicalIngredientIds": [
+      "omeprazole",
+      "paracetamol",
+      "diclofenac"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-111",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + Ambroxol + Phenylephrine + Chlorpheniramine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "ambroxol",
+      "phenylephrine",
+      "chlorpheniramine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-112",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + Caffeine + Codeine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "caffeine",
+      "codeine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-113",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + Chlorpheniramine + Ambroxol + Guaifenesin + Phenylephrine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "chlorpheniramine",
+      "ambroxol",
+      "guaifenesin",
+      "phenylephrine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-114",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + Codeine + Chlorpheniramine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "codeine",
+      "chlorpheniramine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-115",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + Dextromethorphan + Chlorpheniramine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "dextromethorphan",
+      "chlorpheniramine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-116",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + Diclofenac + Famotidine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "diclofenac",
+      "famotidine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-117",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + Domperidone + Caffeine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "domperidone",
+      "caffeine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-118",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + Levocetirizine + Pseudoephedrine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "levocetirizine",
+      "pseudoephedrine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-119",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + Loratadine + Phenylephrine + Dextromethorphan + Caffeine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "loratadine",
+      "phenylephrine",
+      "dextromethorphan",
+      "caffeine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-120",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + Phenylephrine + Chlorpheniramine + Zinc Gluconate",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "phenylephrine",
+      "chlorpheniramine",
+      "zinc"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-121",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + Phenylephrine + Desloratadine + Zinc Gluconate + Ambroxol",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "phenylephrine",
+      "loratadine",
+      "zinc",
+      "ambroxol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-122",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + Phenylephrine + Levocetirizine + Caffeine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "phenylephrine",
+      "levocetirizine",
+      "caffeine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-123",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + Phenylephrine + Triprolidine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "phenylephrine",
+      "triprolidine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-124",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + Promethazine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "promethazine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-125",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + Pseudoephedrine + Cetirizine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "pseudoephedrine",
+      "cetirizine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-126",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + Pseudoephedrine + Dextromethorphan + Cetirizine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "pseudoephedrine",
+      "dextromethorphan",
+      "cetirizine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-127",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + Tapentadol",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "tapentadol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-128",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Pioglitazone + Metformin",
+    "canonicalIngredientIds": [
+      "pioglitazone",
+      "metformin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-129",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Pseudoephedrine + Bromhexine",
+    "canonicalIngredientIds": [
+      "pseudoephedrine",
+      "bromhexine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-130",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Pseudoephedrine + Cetirizine",
+    "canonicalIngredientIds": [
+      "pseudoephedrine",
+      "cetirizine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-131",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Pseudoephedrine + Dextromethorphan + Cetirizine",
+    "canonicalIngredientIds": [
+      "pseudoephedrine",
+      "dextromethorphan",
+      "cetirizine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-132",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Rabeprazole + Diclofenac + Paracetamol",
+    "canonicalIngredientIds": [
+      "rabeprazole",
+      "diclofenac",
+      "paracetamol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-133",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Ranitidine + Domperidone + Simethicone",
+    "canonicalIngredientIds": [
+      "ranitidine",
+      "domperidone",
+      "simethicone"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-134",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Ranitidine + Magaldrate",
+    "canonicalIngredientIds": [
+      "ranitidine",
+      "magaldrate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-135",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Roxithromycin + Serratiopeptidase",
+    "canonicalIngredientIds": [
+      "roxithromycin",
+      "serratiopeptidase"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-136",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Salbutamol + Bromhexine + Guaiphenesin + Menthol",
+    "canonicalIngredientIds": [
+      "salbutamol",
+      "bromhexine",
+      "guaifenesin",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-137",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Salbutamol + Choline Theophyllinate + Ambroxol",
+    "canonicalIngredientIds": [
+      "salbutamol",
+      "theophylline",
+      "ambroxol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-138",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Salbutamol + Theophylline + Bromhexine",
+    "canonicalIngredientIds": [
+      "salbutamol",
+      "theophylline",
+      "bromhexine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-139",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Sildenafil + Estradiol Valerate",
+    "canonicalIngredientIds": [
+      "sildenafil",
+      "estradiol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-140",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Tamsulosin + Diclofenac",
+    "canonicalIngredientIds": [
+      "tamsulosin",
+      "diclofenac"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-141",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Telmisartan + Metformin",
+    "canonicalIngredientIds": [
+      "telmisartan",
+      "metformin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-142",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Terbutaline + Ambroxol + Guaiphenesin + Zinc + Menthol",
+    "canonicalIngredientIds": [
+      "terbutaline",
+      "ambroxol",
+      "guaifenesin",
+      "zinc",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-143",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Terbutaline + Bromhexine + Etofylline",
+    "canonicalIngredientIds": [
+      "terbutaline",
+      "bromhexine",
+      "theophylline"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-144",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Terbutaline + Bromhexine + Guaiphenesin + Dextromethorphan",
+    "canonicalIngredientIds": [
+      "terbutaline",
+      "bromhexine",
+      "guaifenesin",
+      "dextromethorphan"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-145",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Terbutaline + Etofylline + Ambroxol",
+    "canonicalIngredientIds": [
+      "terbutaline",
+      "theophylline",
+      "ambroxol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-146",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Tranexamic Acid + Proanthocyanidin",
+    "canonicalIngredientIds": [
+      "tranexamic acid",
+      "proanthocyanidin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-147",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Ursodeoxycholic Acid + Silymarin",
+    "canonicalIngredientIds": [
+      "ursodeoxycholic acid",
+      "silymarin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-148",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Voglibose + Pioglitazone + Metformin",
+    "canonicalIngredientIds": [
+      "voglibose",
+      "pioglitazone",
+      "metformin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-149",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Zinc Carnosine + Magnesium Hydroxide + Dried Aluminium Hydroxide + Simethicone",
+    "canonicalIngredientIds": [
+      "zinc carnosine",
+      "magnesium hydroxide",
+      "aluminium hydroxide",
+      "simethicone"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-150",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Zinc Carnosine + Sucralfate",
+    "canonicalIngredientIds": [
+      "zinc carnosine",
+      "sucralfate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-151",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Artesunate + Arteether + Artemether",
+    "canonicalIngredientIds": [
+      "artesunate",
+      "artemether"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-vq-001",
+    "directiveId": "nafdac-cyproheptadine-multivitamin-directive-2024",
+    "subjectType": "combination",
+    "subjectName": "Cyproheptadine (2mg & 4mg) in Combination with Multivitamin",
+    "canonicalIngredientIds": [
+      "cyproheptadine"
+    ],
+    "strength": "2mg & 4mg",
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": "V1 entry 339 — source attribution pending. Not part of NAFDAC-RDD-030-00.",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "dap-vq-002",
+    "directiveId": "nafdac-halofantrine-directive-2024",
+    "subjectType": "ingredient",
+    "subjectName": "Halofantrine",
+    "canonicalIngredientIds": [
+      "halofantrine"
+    ],
+    "strength": null,
+    "dosageForm": "Tablet",
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": "V1 entry 340 — source attribution pending.",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "dap-vq-003",
+    "directiveId": "nafdac-multidose-antimalarial-directive-2024",
+    "subjectType": "product_class",
+    "subjectName": "Multi-Dose Anti-Malaria Oral Suspensions",
+    "canonicalIngredientIds": [],
+    "strength": null,
+    "dosageForm": "Oral Suspension",
+    "route": "oral",
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": "V1 entry 341 — source attribution pending.",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "dap-vq-004",
+    "directiveId": "nafdac-ketoconazole-tablet-directive-2024",
+    "subjectType": "ingredient",
+    "subjectName": "Ketoconazole Tablet",
+    "canonicalIngredientIds": [
+      "ketoconazole"
+    ],
+    "strength": null,
+    "dosageForm": "Tablet",
+    "route": "oral",
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": "Oral tablet only; topical (cream/shampoo) forms excluded",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "dap-vq-005",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Diclofenac Sodium 50mg + Paracetamol 325mg + Chlorzoxazone 250mg",
+    "canonicalIngredientIds": [
+      "diclofenac",
+      "paracetamol",
+      "chlorzoxazone"
+    ],
+    "strength": "Diclofenac 50mg + Paracetamol 325mg + Chlorzoxazone 250mg",
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": "V1 entry 343 — source attribution pending.",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "dap-vq-006",
+    "directiveId": "nafdac-diclofenac-potassium-100mg-directive-2024",
+    "subjectType": "ingredient",
+    "subjectName": "Diclofenac Potassium 100mg",
+    "canonicalIngredientIds": [
+      "diclofenac"
+    ],
+    "strength": "100mg",
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": "V1 entry 344 — source attribution pending.",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "dap-vq-007",
+    "directiveId": "nafdac-chloroquine-injection-directive-2024",
+    "subjectType": "ingredient",
+    "subjectName": "Chloroquine Injection",
+    "canonicalIngredientIds": [
+      "chloroquine"
+    ],
+    "strength": null,
+    "dosageForm": "Injection",
+    "route": "parenteral",
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": "V1 entry 345 — source attribution pending.",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "dap-vq-008",
+    "directiveId": "nafdac-analgin-metamizole-directive-2024",
+    "subjectType": "ingredient",
+    "subjectName": "Analgin (Metamizole) / Novalgin (Dipyrone)",
+    "canonicalIngredientIds": [
+      "metamizole"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": "V1 entry 346 — source attribution pending.",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "dap-vq-009",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Aceclofenac Sodium 100mg + Paracetamol 500mg + Chlorzoxazone 250mg",
+    "canonicalIngredientIds": [
+      "aceclofenac",
+      "paracetamol",
+      "chlorzoxazone"
+    ],
+    "strength": "Aceclofenac 100mg + Paracetamol 500mg + Chlorzoxazone 250mg",
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": "V1 entry 347 — source attribution pending.",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "dap-vq-010",
+    "directiveId": "nafdac-ddvp-directive-2025",
+    "subjectType": "ingredient",
+    "subjectName": "Dichlorvos (DDVP)",
+    "canonicalIngredientIds": [
+      "dichlorvos"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": "100ml or less",
+    "actionOverride": null,
+    "evidence": "V1 entry 348 — source attribution pending.",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "dap-vq-011",
+    "directiveId": "nafdac-antibiotics-growth-promoters-directive-2025",
+    "subjectType": "product_class",
+    "subjectName": "Antibiotics as Growth Promoters in Livestock",
+    "canonicalIngredientIds": [],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": "V1 entry 349 — source attribution pending.",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "dap-vq-012",
+    "directiveId": "nafdac-banned-vet-drugs-directive-2025",
+    "subjectType": "product_class",
+    "subjectName": "Banned Veterinary Pharmaceuticals in Food-Producing Animals",
+    "canonicalIngredientIds": [],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": "V1 entry 350 — source attribution pending.",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "dap-vq-013",
+    "directiveId": "nafdac-colistin-coccidiostat-directive-2025",
+    "subjectType": "ingredient",
+    "subjectName": "Colistin as Coccidiostat",
+    "canonicalIngredientIds": [
+      "colistin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": "V1 entry 351 — source attribution pending.",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "dap-vq-014",
+    "directiveId": "nafdac-ethoxyquin-directive-2025",
+    "subjectType": "ingredient",
+    "subjectName": "Ethoxyquin in Feed for Food-Producing Animals",
+    "canonicalIngredientIds": [
+      "ethoxyquin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": "V1 entry 352 — source attribution pending.",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "dap-vq-015",
+    "directiveId": "nafdac-paraquat-directive",
+    "subjectType": "ingredient",
+    "subjectName": "Paraquat",
+    "canonicalIngredientIds": [
+      "paraquat"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": "Ban",
+    "evidence": "V1 entry 353. Official NAFDAC Paraquat ban directive exists — linked to nafdac-paraquat-directive."
+  },
+  {
+    "id": "dap-152",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Allantoin + Dimethieone + Urea + Propylene + Glycerin + Liquid Paraffin",
+    "canonicalIngredientIds": [
+      "allantoin",
+      "dimethieone",
+      "urea",
+      "propylene",
+      "glycerin",
+      "liquid paraffin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-153",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Ambroxol+ Guaiphenesin + Ammonium Chloride + Phenylephrine + Chlorpheniramine Maleate + Menthol",
+    "canonicalIngredientIds": [
+      "ambroxol",
+      "guaiphenesin",
+      "ammonium chloride",
+      "phenylephrine",
+      "chlorpheniramine maleate",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-154",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Ammonium Citrate + Vitamin B 12 + Folic Acid + Zinc Sulphate",
+    "canonicalIngredientIds": [
+      "ammonium citrate",
+      "vitamin b 12",
+      "folic acid",
+      "zinc sulphate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-155",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Amoxicillin 250 mg + Potassium Clavulanate Diluted 62.5",
+    "canonicalIngredientIds": [
+      "amoxicillin",
+      "potassium clavulanate diluted 625"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-156",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Amoxycillin + Dicloxacillin + Serratiopeptidase",
+    "canonicalIngredientIds": [
+      "amoxycillin",
+      "dicloxacillin",
+      "serratiopeptidase"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-157",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Ascorbic Acid + Manadione Sodium Bisulphate + Rutin + Dibasic Calcium Phosphate + Adrenochrome mono Se",
+    "canonicalIngredientIds": [
+      "ascorbic acid",
+      "manadione sodium bisulphate",
+      "rutin",
+      "dibasic calcium phosphate",
+      "adrenochrome mono se"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-158",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Azithromycin + Acebrophylline",
+    "canonicalIngredientIds": [
+      "azithromycin",
+      "acebrophylline"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-159",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Azithromycin + Cefpodoxime",
+    "canonicalIngredientIds": [
+      "azithromycin",
+      "cefpodoxime"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-160",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Becloemthasone + Clotrimazole + Chloramphenicol + Gentamycin + Lignocaine Ear drops",
+    "canonicalIngredientIds": [
+      "becloemthasone",
+      "clotrimazole",
+      "chloramphenicol",
+      "gentamycin",
+      "lignocaine ear drops"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-161",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Beclomethasone + Clotimazole + Neomycin + lodochlorohydroxyquinone",
+    "canonicalIngredientIds": [
+      "beclomethasone",
+      "clotimazole",
+      "neomycin",
+      "lodochlorohydroxyquinone"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-162",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Beclomethasone + Clotrimazole + Gentamicin + lodochlorhydroxyquinoline",
+    "canonicalIngredientIds": [
+      "beclomethasone",
+      "clotrimazole",
+      "gentamicin",
+      "lodochlorhydroxyquinoline"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-163",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Beclomethasone Diproprionate + Neomycin + Tolnaftate + lodochlorhydroxyquinoline +Chlorocresol",
+    "canonicalIngredientIds": [
+      "beclomethasone diproprionate",
+      "neomycin",
+      "tolnaftate",
+      "lodochlorhydroxyquinoline",
+      "chlorocresol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-164",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Benzoxonium Chloride + Lidocaine",
+    "canonicalIngredientIds": [
+      "benzoxonium chloride",
+      "lidocaine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-165",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Betahistine + Ginkgo Biloba Extract + Vinpocetine + Piracetam",
+    "canonicalIngredientIds": [
+      "betahistine",
+      "ginkgo biloba extract",
+      "vinpocetine",
+      "piracetam"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-166",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Betamethasone + Fusidic Acid + Gentamycin + Tolnaftate + lodochlorhydroxyquinoline (ICHQ)",
+    "canonicalIngredientIds": [
+      "betamethasone",
+      "fusidic acid",
+      "gentamycin",
+      "tolnaftate",
+      "lodochlorhydroxyquinoline"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-167",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Betamethasone + Gentamicin + Tolnaftate + lodochlorhydroxyquinoline",
+    "canonicalIngredientIds": [
+      "betamethasone",
+      "gentamicin",
+      "tolnaftate",
+      "lodochlorhydroxyquinoline"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-168",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Betamethasone + Gentamycin + Zinc Sulphate + Clotrimoazole + Chlorocresol",
+    "canonicalIngredientIds": [
+      "betamethasone",
+      "gentamycin",
+      "zinc sulphate",
+      "clotrimoazole",
+      "chlorocresol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-169",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Betamethasone + Neomycin + Tolnaftate + lodochlorohydroxyquinoline + Cholorocresol",
+    "canonicalIngredientIds": [
+      "betamethasone",
+      "neomycin",
+      "tolnaftate",
+      "lodochlorohydroxyquinoline",
+      "cholorocresol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-170",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Borax + Boric Acid + Naphazoline + Menthol + Camphor + Methyl Hydroxy Benzoate",
+    "canonicalIngredientIds": [
+      "borax",
+      "boric acid",
+      "naphazoline",
+      "menthol",
+      "camphor",
+      "methyl hydroxy benzoate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-171",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Bromhenxine + Phenylephrine + Chlorpheniramine + Paracetamol",
+    "canonicalIngredientIds": [
+      "bromhenxine",
+      "phenylephrine",
+      "chlorpheniramine",
+      "paracetamol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-172",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Bromhexine + Cetrizine + Phenylephrine IP+Guaifenesin + Menthol",
+    "canonicalIngredientIds": [
+      "bromhexine",
+      "cetrizine",
+      "phenylephrine ip",
+      "guaifenesin",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-173",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Bromhexine + Phenylephrine + Chlorepheniramine Maleate",
+    "canonicalIngredientIds": [
+      "bromhexine",
+      "phenylephrine",
+      "chlorepheniramine maleate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-174",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Calcium Gluconate + Chlorpheniramine + Vitamin C",
+    "canonicalIngredientIds": [
+      "calcium gluconate",
+      "chlorpheniramine",
+      "vitamin c"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-175",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Calcium Gluconate + Levocetirizine",
+    "canonicalIngredientIds": [
+      "calcium gluconate",
+      "levocetirizine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-176",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Cefixime + Linezolid",
+    "canonicalIngredientIds": [
+      "cefixime",
+      "linezolid"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-177",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Cefpodoxime Proxetil + Levofloxacin",
+    "canonicalIngredientIds": [
+      "cefpodoxime proxetil",
+      "levofloxacin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-178",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Cefuroxime + Linezolid",
+    "canonicalIngredientIds": [
+      "cefuroxime",
+      "linezolid"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-179",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Cephalexin + Neomycin + Prednisolone",
+    "canonicalIngredientIds": [
+      "cephalexin",
+      "neomycin",
+      "prednisolone"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-180",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Certirizine + Phenylephrine + Paracetamol + Caffeine + Nimesulide",
+    "canonicalIngredientIds": [
+      "certirizine",
+      "phenylephrine",
+      "paracetamol",
+      "caffeine",
+      "nimesulide"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-181",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Cetirizine + Acetaminophen + Dextromethorphan + Phenyephrine + Zinc Gluconate",
+    "canonicalIngredientIds": [
+      "cetirizine",
+      "acetaminophen",
+      "dextromethorphan",
+      "phenyephrine",
+      "zinc gluconate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-182",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Cetirizine + Ambroxol + Guaiphenesin + Ammonium Chloride + Phenylephrine + Menthol",
+    "canonicalIngredientIds": [
+      "cetirizine",
+      "ambroxol",
+      "guaiphenesin",
+      "ammonium chloride",
+      "phenylephrine",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-183",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Cetirizine + Dextromethorphan + Ambroxol",
+    "canonicalIngredientIds": [
+      "cetirizine",
+      "dextromethorphan",
+      "ambroxol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-184",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Cetirizine + Dextromethorphan + Bromhexine + Guaifenesin",
+    "canonicalIngredientIds": [
+      "cetirizine",
+      "dextromethorphan",
+      "bromhexine",
+      "guaifenesin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-185",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Cetirizine + Dextromethorphan + Phenylephrine + Tulsi",
+    "canonicalIngredientIds": [
+      "cetirizine",
+      "dextromethorphan",
+      "phenylephrine",
+      "tulsi"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-186",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Cetirizine + Dextromethorphan + Phenylephrine + Zinc Gluconate + Paracetamol + Menthol",
+    "canonicalIngredientIds": [
+      "cetirizine",
+      "dextromethorphan",
+      "phenylephrine",
+      "zinc gluconate",
+      "paracetamol",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-187",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Cetirizine + Dextromethorphan + Zinc Gluconate + Menthol",
+    "canonicalIngredientIds": [
+      "cetirizine",
+      "dextromethorphan",
+      "zinc gluconate",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-188",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Cetirizine + Diethyl Carbamazine",
+    "canonicalIngredientIds": [
+      "cetirizine",
+      "diethyl carbamazine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-189",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Cetirizine + Phenylephrine + Dextromethorphan + Menthol",
+    "canonicalIngredientIds": [
+      "cetirizine",
+      "phenylephrine",
+      "dextromethorphan",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-190",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Cetirizine + Phenylephrine + Paracetamol + Ambroxol + Caffeine",
+    "canonicalIngredientIds": [
+      "cetirizine",
+      "phenylephrine",
+      "paracetamol",
+      "ambroxol",
+      "caffeine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-191",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Cetirizine + Phenylephrine + Paracetamol + Zinc Gluconate",
+    "canonicalIngredientIds": [
+      "cetirizine",
+      "phenylephrine",
+      "paracetamol",
+      "zinc gluconate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-192",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Cetririzine + Nimesulide + Phenylephrine",
+    "canonicalIngredientIds": [
+      "cetririzine",
+      "nimesulide",
+      "phenylephrine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-193",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Chlopheniramine Maleate + Dextromethorphan + Guaiphensin + Phenylephrine",
+    "canonicalIngredientIds": [
+      "chlopheniramine maleate",
+      "dextromethorphan",
+      "guaiphensin",
+      "phenylephrine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-194",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Chloramphenicol + Beclomethasone + Clomitrimazole + Lignocaine",
+    "canonicalIngredientIds": [
+      "chloramphenicol",
+      "beclomethasone",
+      "clomitrimazole",
+      "lignocaine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-195",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Chloramphennicol + Lignocaine + Betamethasone + Clotrimazole + Ofloxacin + Antipyrine",
+    "canonicalIngredientIds": [
+      "chloramphennicol",
+      "lignocaine",
+      "betamethasone",
+      "clotrimazole",
+      "ofloxacin",
+      "antipyrine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-196",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Chlorphaniramine + Ammonium Chloride + Sodium Chloride",
+    "canonicalIngredientIds": [
+      "chlorphaniramine",
+      "ammonium chloride",
+      "sodium chloride"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-197",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Chlorpheniramine + Ammonium Chloride + Chloroform + Menthol",
+    "canonicalIngredientIds": [
+      "chlorpheniramine",
+      "ammonium chloride",
+      "chloroform",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-198",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Chlorpheniramine + Codeine + Sodium Citrate + Menthol Syrup",
+    "canonicalIngredientIds": [
+      "chlorpheniramine",
+      "codeine",
+      "sodium citrate",
+      "menthol syrup"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-199",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Chlorpheniramine + Phenylephrine + Dextromethophan + Menthol",
+    "canonicalIngredientIds": [
+      "chlorpheniramine",
+      "phenylephrine",
+      "dextromethophan",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-200",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Chlorpheniramine + Phenylephrine + Paracetamol + Zink Gluconate",
+    "canonicalIngredientIds": [
+      "chlorpheniramine",
+      "phenylephrine",
+      "paracetamol",
+      "zink gluconate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-201",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Chlorpheniramine + Terpin + Antimony Potassium Tartrate + Ammonium Chloride + SodiumCitrate + Menthol",
+    "canonicalIngredientIds": [
+      "chlorpheniramine",
+      "terpin",
+      "antimony potassium tartrate",
+      "ammonium chloride",
+      "sodiumcitrate",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-202",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Chlorpheniramine + Vasaka + Tolubalsm + Ammonium Chloride + Sodium Citrate + Menthol",
+    "canonicalIngredientIds": [
+      "chlorpheniramine",
+      "vasaka",
+      "tolubalsm",
+      "ammonium chloride",
+      "sodium citrate",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-203",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Chlorpheniramine Maleate + Ammonium Chloride + Sodium Citrate",
+    "canonicalIngredientIds": [
+      "chlorpheniramine maleate",
+      "ammonium chloride",
+      "sodium citrate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-204",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Chlorpheniramine+Ammonium Chloride + Menthol",
+    "canonicalIngredientIds": [
+      "chlorpheniramine",
+      "ammonium chloride",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-205",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Chromium Polynicotinate + Metformin",
+    "canonicalIngredientIds": [
+      "chromium polynicotinate",
+      "metformin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-206",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Cilnidipine + Metoprolol Succinate + Metoprolol Tartrate",
+    "canonicalIngredientIds": [
+      "cilnidipine",
+      "metoprolol succinate",
+      "metoprolol tartrate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-207",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Ciprofloxacin + Fluocinolone + Clotrimazole + Neomycin + Chlorocresol",
+    "canonicalIngredientIds": [
+      "ciprofloxacin",
+      "fluocinolone",
+      "clotrimazole",
+      "neomycin",
+      "chlorocresol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-208",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Ciprofloxacin + Fluticasone + Clotrimazole + Neomycin",
+    "canonicalIngredientIds": [
+      "ciprofloxacin",
+      "fluticasone",
+      "clotrimazole",
+      "neomycin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-209",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Clidinium + Paracetamol + Dicyclomine + Activated Dimethicone",
+    "canonicalIngredientIds": [
+      "clidinium",
+      "paracetamol",
+      "dicyclomine",
+      "activated dimethicone"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-210",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Clindamycin + Clotrimazole + Lactic Acid Bacillus",
+    "canonicalIngredientIds": [
+      "clindamycin",
+      "clotrimazole",
+      "lactic acid bacillus"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-211",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Clindamycin + Telmisartan",
+    "canonicalIngredientIds": [
+      "clindamycin",
+      "telmisartan"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-212",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Clobetasol + Gentamicin + Tolnaftate + lodochlorhydroxyquinone + Ketoconazole",
+    "canonicalIngredientIds": [
+      "clobetasol",
+      "gentamicin",
+      "tolnaftate",
+      "lodochlorhydroxyquinone",
+      "ketoconazole"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-213",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Clobetasol + Neomycin + Miconazole + Clotrimazole",
+    "canonicalIngredientIds": [
+      "clobetasol",
+      "neomycin",
+      "miconazole",
+      "clotrimazole"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-214",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Clobetasol + Neomycin + Miconazole + Zinc Sulphate",
+    "canonicalIngredientIds": [
+      "clobetasol",
+      "neomycin",
+      "miconazole",
+      "zinc sulphate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-215",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Clobetasol + Ofloxacin + Ketoconazol + Zinc Sulphate",
+    "canonicalIngredientIds": [
+      "clobetasol",
+      "ofloxacin",
+      "ketoconazol",
+      "zinc sulphate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-216",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Clobetasol + Ofloxacin + Miconazole + Zinc Sulphate",
+    "canonicalIngredientIds": [
+      "clobetasol",
+      "ofloxacin",
+      "miconazole",
+      "zinc sulphate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-217",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Clobetasol Propionate + Ofloxacin + Ornidazole + Terbinafine",
+    "canonicalIngredientIds": [
+      "clobetasol propionate",
+      "ofloxacin",
+      "ornidazole",
+      "terbinafine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-218",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Clobetasole + Gentamicin + Miconazole + Zinc Sulphate",
+    "canonicalIngredientIds": [
+      "clobetasole",
+      "gentamicin",
+      "miconazole",
+      "zinc sulphate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-219",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Clomifene Citrate + Ubidecarenone + Zinc + Folic Acid + Methylcobalamin + Pyridoxine + Lycopene + Selenium + Levocarnitine Tartrate + L-Arginine",
+    "canonicalIngredientIds": [
+      "clomifene citrate",
+      "ubidecarenone",
+      "zinc",
+      "folic acid",
+      "methylcobalamin",
+      "pyridoxine",
+      "lycopene",
+      "selenium",
+      "levocarnitine tartrate",
+      "larginine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-220",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Clotrimazole + Beclomethasone + Lignocaine + Ofloxacin + Acetic Aicd + Sodium Methyl Paraben +Propyl Paraben",
+    "canonicalIngredientIds": [
+      "clotrimazole",
+      "beclomethasone",
+      "lignocaine",
+      "ofloxacin",
+      "acetic aicd",
+      "sodium methyl paraben",
+      "propyl paraben"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-221",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Clotrimazole + Beclomethasone + Ofloxacin + Lignocaine",
+    "canonicalIngredientIds": [
+      "clotrimazole",
+      "beclomethasone",
+      "ofloxacin",
+      "lignocaine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-222",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Clotrimazole + Ofloxaxin + Lignocaine + Glycerine and Propylene Glycol",
+    "canonicalIngredientIds": [
+      "clotrimazole",
+      "ofloxaxin",
+      "lignocaine",
+      "glycerine and propylene glycol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-223",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Codeine + Levocetirizine + Menthol",
+    "canonicalIngredientIds": [
+      "codeine",
+      "levocetirizine",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-224",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Combikit of 3 tablets of Serratiopeptidase (enteric coated 20000 units) + Diclofenac Potassium & 2 tablets of D",
+    "canonicalIngredientIds": [
+      "combikit of 3 tablets of serratiopeptidase",
+      "diclofenac potassium 2 tablets of d"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-225",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Combikit of Azithromycin, Secnidazole and Fluconazole",
+    "canonicalIngredientIds": [
+      "combikit of azithromycin",
+      "secnidazole and fluconazole"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-226",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Combikit of Fluconazole Tablet, Azithromycin Tablet and Ornidazole Tablets",
+    "canonicalIngredientIds": [
+      "combikit of fluconazole tablet",
+      "azithromycin tablet and ornidazole tablets"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-227",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Dextrometharphan + Chlopheniramine + Ammonium Chloride+ Menthol",
+    "canonicalIngredientIds": [
+      "dextrometharphan",
+      "chlopheniramine",
+      "ammonium chloride",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-228",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Dextrometharphan + Chlopheniramine + Ammonium + Sodium Citrate + Menthol",
+    "canonicalIngredientIds": [
+      "dextrometharphan",
+      "chlopheniramine",
+      "ammonium",
+      "sodium citrate",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-229",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Dextrometharphan + Phenylephrine + Guaiphenesin",
+    "canonicalIngredientIds": [
+      "dextrometharphan",
+      "phenylephrine",
+      "guaiphenesin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-230",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Dextromethophan + Chlopheniramine + Bromhexine",
+    "canonicalIngredientIds": [
+      "dextromethophan",
+      "chlopheniramine",
+      "bromhexine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-231",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Dextromethorphan + Ambroxol + Ammonium Chloride + Chlorpheniramine + Menthol",
+    "canonicalIngredientIds": [
+      "dextromethorphan",
+      "ambroxol",
+      "ammonium chloride",
+      "chlorpheniramine",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-232",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Dextromethorphan + Bromhexine + Guaiphenesin + Menthol",
+    "canonicalIngredientIds": [
+      "dextromethorphan",
+      "bromhexine",
+      "guaiphenesin",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-233",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Dextromethorphan + Cetirizine + Guaifenesin + Ammonium Chloride",
+    "canonicalIngredientIds": [
+      "dextromethorphan",
+      "cetirizine",
+      "guaifenesin",
+      "ammonium chloride"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-234",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Dextromethorphan + Chlorpheniramine + Chlorpheniramine Maleate",
+    "canonicalIngredientIds": [
+      "dextromethorphan",
+      "chlorpheniramine",
+      "chlorpheniramine maleate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-235",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Dextromethorphan + Phenylephrine + Bromhexine + Guaifenesin + Chlorpheniramine",
+    "canonicalIngredientIds": [
+      "dextromethorphan",
+      "phenylephrine",
+      "bromhexine",
+      "guaifenesin",
+      "chlorpheniramine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-236",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Dextromethorphan + Phenylephrine + Cetirizine + Zinc + Menthol",
+    "canonicalIngredientIds": [
+      "dextromethorphan",
+      "phenylephrine",
+      "cetirizine",
+      "zinc",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-237",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Dextromethorphan + Phenylephrine + Guaifenesin + Certirizine + Acetaminophen",
+    "canonicalIngredientIds": [
+      "dextromethorphan",
+      "phenylephrine",
+      "guaifenesin",
+      "certirizine",
+      "acetaminophen"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-238",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Dextromethorphan + Phenylephrine + Tripolidine + Menthol",
+    "canonicalIngredientIds": [
+      "dextromethorphan",
+      "phenylephrine",
+      "tripolidine",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-239",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Dextromethorphan + Phenylephrine + Zinc Gluconate + Menthol",
+    "canonicalIngredientIds": [
+      "dextromethorphan",
+      "phenylephrine",
+      "zinc gluconate",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-240",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Dextromethorphan + Tripolidine + Phenylephirine",
+    "canonicalIngredientIds": [
+      "dextromethorphan",
+      "tripolidine",
+      "phenylephirine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-241",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Dextromethorphan + Triprolidine + Phenylephrine",
+    "canonicalIngredientIds": [
+      "dextromethorphan",
+      "triprolidine",
+      "phenylephrine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-242",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Dextromethorphen + Bromhexine + Chlorpheniramine Maleate + Guaiphenesin",
+    "canonicalIngredientIds": [
+      "dextromethorphen",
+      "bromhexine",
+      "chlorpheniramine maleate",
+      "guaiphenesin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-243",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Dextromethorphen + Promethazine",
+    "canonicalIngredientIds": [
+      "dextromethorphen",
+      "promethazine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-244",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Diclofenac + paracetamol + chlorpheniramine maleate + mgnesium Trisillicate",
+    "canonicalIngredientIds": [
+      "diclofenac",
+      "paracetamol",
+      "chlorpheniramine maleate",
+      "mgnesium trisillicate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-245",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Diclofenac + paracetamol + magnesium Trisilicate",
+    "canonicalIngredientIds": [
+      "diclofenac",
+      "paracetamol",
+      "magnesium trisilicate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-246",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Diclofenac + Paracetamol injection",
+    "canonicalIngredientIds": [
+      "diclofenac",
+      "paracetamol injection"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-247",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Diethyl Carbamazine + Chlorpheniramine + Guaifenesin",
+    "canonicalIngredientIds": [
+      "diethyl carbamazine",
+      "chlorpheniramine",
+      "guaifenesin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-248",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Diethylcabamazine Citrate + Cetirizine + Guaiphenesin",
+    "canonicalIngredientIds": [
+      "diethylcabamazine citrate",
+      "cetirizine",
+      "guaiphenesin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-249",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Diphenhydramine + Guaiphenesin + Ammonium Chloride + Bromhexine",
+    "canonicalIngredientIds": [
+      "diphenhydramine",
+      "guaiphenesin",
+      "ammonium chloride",
+      "bromhexine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-250",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Diphenhydramine + Terpine + Ammonium Chloride + Sodium Chloride + Menthol",
+    "canonicalIngredientIds": [
+      "diphenhydramine",
+      "terpine",
+      "ammonium chloride",
+      "sodium chloride",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-251",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Diphenoxylate + Atropine + Furazolidonee",
+    "canonicalIngredientIds": [
+      "diphenoxylate",
+      "atropine",
+      "furazolidonee"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-252",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Dried Alumnium Hydroxie Gel + Prophantheline + Diazepam",
+    "canonicalIngredientIds": [
+      "dried alumnium hydroxie gel",
+      "prophantheline",
+      "diazepam"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-253",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Drotaverine + Clidinium + Chlordiazepoxide",
+    "canonicalIngredientIds": [
+      "drotaverine",
+      "clidinium",
+      "chlordiazepoxide"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-254",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Enrofloxacin + Bromhexin",
+    "canonicalIngredientIds": [
+      "enrofloxacin",
+      "bromhexin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-255",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Ergotamine Tartrate + Belladona Dry Extarct+Caffeine + Paracetamol",
+    "canonicalIngredientIds": [
+      "ergotamine tartrate",
+      "belladona dry extarct",
+      "caffeine",
+      "paracetamol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-256",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Ethylmorphine + Noscapine + Chlorpheniramine",
+    "canonicalIngredientIds": [
+      "ethylmorphine",
+      "noscapine",
+      "chlorpheniramine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-257",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Famotidine + Oxytacaine + Magaldrate",
+    "canonicalIngredientIds": [
+      "famotidine",
+      "oxytacaine",
+      "magaldrate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-258",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Flunarizine + Paracetamole + Domperidone",
+    "canonicalIngredientIds": [
+      "flunarizine",
+      "paracetamole",
+      "domperidone"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-259",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Gentamicin Sulphate + Clotrimazole + Betamethasone + Lignocaine",
+    "canonicalIngredientIds": [
+      "gentamicin sulphate",
+      "clotrimazole",
+      "betamethasone",
+      "lignocaine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-260",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Gentamycin + Dexamethasone + Chloramphenicol + Tobramycin + Ofloxacin",
+    "canonicalIngredientIds": [
+      "gentamycin",
+      "dexamethasone",
+      "chloramphenicol",
+      "tobramycin",
+      "ofloxacin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-261",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Glibenclamide + Metformin (SR)+ Pioglitazone",
+    "canonicalIngredientIds": [
+      "glibenclamide",
+      "metformin",
+      "pioglitazone"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-262",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Gliclazide 40mg + Metformin 400mg",
+    "canonicalIngredientIds": [
+      "gliclazide",
+      "metformin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-263",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Gliclazide 80 mg + Metformin 325 mg",
+    "canonicalIngredientIds": [
+      "gliclazide",
+      "metformin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-264",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Glimepiride 1mg/2mg/3mg + Pioglitazone 15mg/15mg/15mg + Metformin 1000mg/1000mg/1000mg",
+    "canonicalIngredientIds": [
+      "glimepiride",
+      "pioglitazone",
+      "metformin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-265",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Glimepiride 1mg/2mg+ Pioglitazone 15mg/15mg + Metformin 850mg/850mg",
+    "canonicalIngredientIds": [
+      "glimepiride",
+      "pioglitazone",
+      "metformin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-266",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Glipizide 2.5mg + Metformin 400 mg",
+    "canonicalIngredientIds": [
+      "glipizide 2",
+      "metformin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-267",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Glucosamine + Methyl Sullfonyl Methane + Vitamin D3 + Manganese + Boron + Copper + Zinc",
+    "canonicalIngredientIds": [
+      "glucosamine",
+      "methyl sullfonyl methane",
+      "vitamin d3",
+      "manganese",
+      "boron",
+      "copper",
+      "zinc"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-268",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Guaifenesin + Bromhexine + Chlorpheniramine + Phenylephrine + Paracetamol + Serratiopeptidase(as enteric coated granules) 10000 SP Units",
+    "canonicalIngredientIds": [
+      "guaifenesin",
+      "bromhexine",
+      "chlorpheniramine",
+      "phenylephrine",
+      "paracetamol",
+      "serratiopeptidase 10000 sp units"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-269",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Guaifenesin + Diphenhydramine + Bromhexine + Phenylephrine",
+    "canonicalIngredientIds": [
+      "guaifenesin",
+      "diphenhydramine",
+      "bromhexine",
+      "phenylephrine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-270",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Imipramine + Chlordiazepoxide + Trifluoperazine + Trihexyphenidyl",
+    "canonicalIngredientIds": [
+      "imipramine",
+      "chlordiazepoxide",
+      "trifluoperazine",
+      "trihexyphenidyl"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-271",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Ketoconazole + Tea Tree oil + Allantion + Zinc Oxide + Aloe Vera + Jojoba oil + Lavander oil + Soa noodels",
+    "canonicalIngredientIds": [
+      "ketoconazole",
+      "tea tree oil",
+      "allantion",
+      "zinc oxide",
+      "aloe vera",
+      "jojoba oil",
+      "lavander oil",
+      "soa noodels"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-272",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Ketotifen + Levocetrizine",
+    "canonicalIngredientIds": [
+      "ketotifen",
+      "levocetrizine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-273",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "L-5-Methyltetrahydrofolate Calcium + Escitalopram",
+    "canonicalIngredientIds": [
+      "l5methyltetrahydrofolate calcium",
+      "escitalopram"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-274",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Levocetirizine + Paracetamol + Phenylephirine + Caffeine",
+    "canonicalIngredientIds": [
+      "levocetirizine",
+      "paracetamol",
+      "phenylephirine",
+      "caffeine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-275",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Levocetirizine + Phenylephrine + Ambroxol + Guaiphenesin + Paracetamol",
+    "canonicalIngredientIds": [
+      "levocetirizine",
+      "phenylephrine",
+      "ambroxol",
+      "guaiphenesin",
+      "paracetamol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-276",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Levothyroxine + Phyridoxine + Nicotinamide",
+    "canonicalIngredientIds": [
+      "levothyroxine",
+      "phyridoxine",
+      "nicotinamide"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-277",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Lignocaine + Clotrimazole + Ofloxacin + Beclomethasone",
+    "canonicalIngredientIds": [
+      "lignocaine",
+      "clotrimazole",
+      "ofloxacin",
+      "beclomethasone"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-278",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Lornoxicam + Paracetamol + serratiopeptidase",
+    "canonicalIngredientIds": [
+      "lornoxicam",
+      "paracetamol",
+      "serratiopeptidase"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-279",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Lornoxicam + paracetamol + Tramadol",
+    "canonicalIngredientIds": [
+      "lornoxicam",
+      "paracetamol",
+      "tramadol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-280",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Lornoxicam + paracetamol + trypsin",
+    "canonicalIngredientIds": [
+      "lornoxicam",
+      "paracetamol",
+      "trypsin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-281",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Magaldrate + Papain + Fungul Diastase + Simethicone",
+    "canonicalIngredientIds": [
+      "magaldrate",
+      "papain",
+      "fungul diastase",
+      "simethicone"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-282",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Mebeverine & Inner HPMC capsule (Streptococcus Faecalis + Clostridium butyricum + Bacillusmesentricus + Lactic Acid Bacillus)",
+    "canonicalIngredientIds": [
+      "mebeverine inner hpmc capsule streptococcus faecalis",
+      "clostridium butyricum",
+      "bacillusmesentricus",
+      "lactic acid bacillus"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-283",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Menthol + Anesthetic Ether",
+    "canonicalIngredientIds": [
+      "menthol",
+      "anesthetic ether"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-284",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Metformin (SR) 500mg + Pioglitazone 5mg",
+    "canonicalIngredientIds": [
+      "metformin",
+      "pioglitazone"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-285",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Metformin (Sustainded Release) 500mg + Pioglitazone 15 mg + Glimepiride 3mg",
+    "canonicalIngredientIds": [
+      "metformin",
+      "pioglitazone",
+      "glimepiride"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-286",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Metformin + Gliclazide + Chromium Polynicotinate",
+    "canonicalIngredientIds": [
+      "metformin",
+      "gliclazide",
+      "chromium polynicotinate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-287",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Metformin + Gliclazide + Piogllitazone + Chromium Polynicotinate",
+    "canonicalIngredientIds": [
+      "metformin",
+      "gliclazide",
+      "piogllitazone",
+      "chromium polynicotinate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-288",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Metformin 1000/1000/500/500mg + Pioglitazone 7.5/7.5/7.5/7.5mg + Glimepiride 1/2/1/2mg",
+    "canonicalIngredientIds": [
+      "metformin 1000",
+      "1000",
+      "500",
+      "pioglitazone 75",
+      "glimepiride 1"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-289",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Metformin 500mg/500mg+Gliclazide SR 30mg/60mg + Pioglitazone 7.5mg/7.5mg",
+    "canonicalIngredientIds": [
+      "metformin",
+      "gliclazide",
+      "pioglitazone 7"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-290",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Metformin 850mg + Pioglitazone 7.5 mg + Glimepiride 1mg",
+    "canonicalIngredientIds": [
+      "metformin",
+      "pioglitazone 7",
+      "glimepiride"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-291",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Metformin 850mg + Pioglitazone 7.5 mg + Glimepiride 2mg",
+    "canonicalIngredientIds": [
+      "metformin",
+      "pioglitazone 7",
+      "glimepiride"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-292",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Metformin ER + Gliclazide MR + Voglibose",
+    "canonicalIngredientIds": [
+      "metformin",
+      "gliclazide mr",
+      "voglibose"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-293",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "N-Acetyl Cysteine + Ambroxol + Phenylephrine + Levocertirizine",
+    "canonicalIngredientIds": [
+      "nacetyl cysteine",
+      "ambroxol",
+      "phenylephrine",
+      "levocertirizine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-294",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Naphazoline + Carboxy Methyl Cellulose + Menthol + Camphor + Phenylephrine",
+    "canonicalIngredientIds": [
+      "naphazoline",
+      "carboxy methyl cellulose",
+      "menthol",
+      "camphor",
+      "phenylephrine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-295",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Naphazoline + Chlorpheniramine + Zinc Sulphate + Boric Acid + Sodium Chloride + Chlorobutol",
+    "canonicalIngredientIds": [
+      "naphazoline",
+      "chlorpheniramine",
+      "zinc sulphate",
+      "boric acid",
+      "sodium chloride",
+      "chlorobutol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-296",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Naproxen + Paracetamol",
+    "canonicalIngredientIds": [
+      "naproxen",
+      "paracetamol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-297",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Neomycin + Doxycycline",
+    "canonicalIngredientIds": [
+      "neomycin",
+      "doxycycline"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-298",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Nimesulide + Certirizine + Phenylephrine",
+    "canonicalIngredientIds": [
+      "nimesulide",
+      "certirizine",
+      "phenylephrine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-299",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Nimesulide + Cetrizine + Caffeine",
+    "canonicalIngredientIds": [
+      "nimesulide",
+      "cetrizine",
+      "caffeine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-300",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Nimesulide + Dicyclomine",
+    "canonicalIngredientIds": [
+      "nimesulide",
+      "dicyclomine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-301",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Nimesulide + Loratadine + Phenylephrine + Ambroxol",
+    "canonicalIngredientIds": [
+      "nimesulide",
+      "loratadine",
+      "phenylephrine",
+      "ambroxol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-302",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Nimesulide + paracetamol Injection",
+    "canonicalIngredientIds": [
+      "nimesulide",
+      "paracetamol injection"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-303",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Nimesulide + Paracetamol Suspension",
+    "canonicalIngredientIds": [
+      "nimesulide",
+      "paracetamol suspension"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-304",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Nimesulide + Phenylephrine + Caffeine + Levocetirizine",
+    "canonicalIngredientIds": [
+      "nimesulide",
+      "phenylephrine",
+      "caffeine",
+      "levocetirizine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-305",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Nimesulide + Pitofenone + Fenpiverinium + Benzyl Alcohol",
+    "canonicalIngredientIds": [
+      "nimesulide",
+      "pitofenone",
+      "fenpiverinium",
+      "benzyl alcohol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-306",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Nimorazole + Ofloxacin",
+    "canonicalIngredientIds": [
+      "nimorazole",
+      "ofloxacin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-307",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Norfloxacin+ Metronidazole + Zinc Acetate",
+    "canonicalIngredientIds": [
+      "norfloxacin",
+      "metronidazole",
+      "zinc acetate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-308",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Oflaxacin + Ornidazole Suspension",
+    "canonicalIngredientIds": [
+      "oflaxacin",
+      "ornidazole suspension"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-309",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Ofloxacin + Clotrimazole + Betamethasone + Lignocaine",
+    "canonicalIngredientIds": [
+      "ofloxacin",
+      "clotrimazole",
+      "betamethasone",
+      "lignocaine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-310",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Ofloxacin + Nitazoxanide",
+    "canonicalIngredientIds": [
+      "ofloxacin",
+      "nitazoxanide"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-311",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Omepraozle + Paracetmaol+ Diclofenac",
+    "canonicalIngredientIds": [
+      "omepraozle",
+      "paracetmaol",
+      "diclofenac"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-312",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Oxetacaine + Magaldrate + Famotidine",
+    "canonicalIngredientIds": [
+      "oxetacaine",
+      "magaldrate",
+      "famotidine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-313",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Pantoprazole (as Enteric Coated Tablet) + Zinc Carnosine (as Film Coated Tablets",
+    "canonicalIngredientIds": [
+      "pantoprazole",
+      "zinc carnosine as film coated tablets"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-314",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + Caffine + Phenylephrine + Chlorpheniramine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "caffine",
+      "phenylephrine",
+      "chlorpheniramine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-315",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + Cetrizine + Caffeine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "cetrizine",
+      "caffeine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-316",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + Dextromethorphan + Bromhexine + Phenylephrine + Diphenhydramine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "dextromethorphan",
+      "bromhexine",
+      "phenylephrine",
+      "diphenhydramine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-317",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + Diclofenac + famotidine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "diclofenac",
+      "famotidine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-318",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + Disodium Hydrogen Citrate + Caffeine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "disodium hydrogen citrate",
+      "caffeine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-319",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + DL Methionine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "dl methionine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-320",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + domperidone + Caffeine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "domperidone",
+      "caffeine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-321",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + Levocetirizine + Phenylephirine + Zink Gluconate",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "levocetirizine",
+      "phenylephirine",
+      "zink gluconate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-322",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + Loratadine + Dextromethophan + Pseudoepheridine + Caffeine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "loratadine",
+      "dextromethophan",
+      "pseudoepheridine",
+      "caffeine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-323",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + mefenamic Acid + ranitidine + Dicyclomine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "mefenamic acid",
+      "ranitidine",
+      "dicyclomine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-324",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + Pheniramine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "pheniramine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-325",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + Phenylephrine + Chlorpheneramine + Dextromethorphan + caffeine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "phenylephrine",
+      "chlorpheneramine",
+      "dextromethorphan",
+      "caffeine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-326",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + Phenylephrine + Triprolidine + Caffeine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "phenylephrine",
+      "triprolidine",
+      "caffeine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-327",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + Prochloperazine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "prochloperazine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-328",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + Prochlorperazine Maleate",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "prochlorperazine maleate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-329",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + Propyphenazone + Caffeine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "propyphenazone",
+      "caffeine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-330",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol + Pseudoephedrine + Cetrizine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "pseudoephedrine",
+      "cetrizine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-331",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol+Phenylephrine+Levocetirizine+Sodium Citrate",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "phenylephrine",
+      "levocetirizine",
+      "sodium citrate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-332",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Paracetamol+Pseudoephedrine+Certirizine+Caffeine",
+    "canonicalIngredientIds": [
+      "paracetamol",
+      "pseudoephedrine",
+      "certirizine",
+      "caffeine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-333",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Permethrin + Cetrimide + Menthol",
+    "canonicalIngredientIds": [
+      "permethrin",
+      "cetrimide",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-334",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "phenylbutazone + sodium salicylate",
+    "canonicalIngredientIds": [
+      "phenylbutazone",
+      "sodium salicylate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-335",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Phenylephrine + Chlorpheniramine + Paracetamol + Bromhexine + Caffeine",
+    "canonicalIngredientIds": [
+      "phenylephrine",
+      "chlorpheniramine",
+      "paracetamol",
+      "bromhexine",
+      "caffeine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-336",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Pholcodine + Phenylephrine + Promethazine",
+    "canonicalIngredientIds": [
+      "pholcodine",
+      "phenylephrine",
+      "promethazine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-337",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Pioglitazone 15mg + Metformin 850 mg",
+    "canonicalIngredientIds": [
+      "pioglitazone",
+      "metformin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-338",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Pioglitazone 30 mg + Metformin 500 mg",
+    "canonicalIngredientIds": [
+      "pioglitazone",
+      "metformin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-339",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Pioglitazone 7.5/7.5mg + Metformin 500/1000mg",
+    "canonicalIngredientIds": [
+      "pioglitazone 75",
+      "metformin 500"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-340",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Rabeprazole + Zinc + Domperidone",
+    "canonicalIngredientIds": [
+      "rabeprazole",
+      "zinc",
+      "domperidone"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-341",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Rabeprazole + Zinc Carnosine",
+    "canonicalIngredientIds": [
+      "rabeprazole",
+      "zinc carnosine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-342",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Ranitidine + Magaldrate + Simethicone",
+    "canonicalIngredientIds": [
+      "ranitidine",
+      "magaldrate",
+      "simethicone"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-343",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Salbutamol + Aminophylline + Guaiphensin",
+    "canonicalIngredientIds": [
+      "salbutamol",
+      "aminophylline",
+      "guaiphensin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-344",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Salbutamol + Certirizine + Ambroxol",
+    "canonicalIngredientIds": [
+      "salbutamol",
+      "certirizine",
+      "ambroxol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-345",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Salbutamol + Choline Theophylinate + Ambroxol",
+    "canonicalIngredientIds": [
+      "salbutamol",
+      "choline theophylinate",
+      "ambroxol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-346",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Salbutamol + Choline Theophylinate + Carbocisteine",
+    "canonicalIngredientIds": [
+      "salbutamol",
+      "choline theophylinate",
+      "carbocisteine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-347",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Salbutamol+Hydroxyethyltheophylline (Etofylline) + Bromhexine",
+    "canonicalIngredientIds": [
+      "salbutamol",
+      "hydroxyethyltheophylline",
+      "bromhexine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-348",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Terbutaline + N-Acetyl L-Cysteine + Guaifenesin",
+    "canonicalIngredientIds": [
+      "terbutaline",
+      "nacetyl lcysteine",
+      "guaifenesin"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-349",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Terpinhydrate + Dextromethorphan + Menthol",
+    "canonicalIngredientIds": [
+      "terpinhydrate",
+      "dextromethorphan",
+      "menthol"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-350",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Thyroid + Thiamine + Riboflavin + Phyridoxine + Calcium Pantothenate + Tocopheryl Acetate +Nicotinamide",
+    "canonicalIngredientIds": [
+      "thyroid",
+      "thiamine",
+      "riboflavin",
+      "phyridoxine",
+      "calcium pantothenate",
+      "tocopheryl acetate",
+      "nicotinamide"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-351",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Thyroxine + Pyridoxine + Folic Acid",
+    "canonicalIngredientIds": [
+      "thyroxine",
+      "pyridoxine",
+      "folic acid"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-352",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Voglibose+ Metformin + Chromium Picolinate",
+    "canonicalIngredientIds": [
+      "voglibose",
+      "metformin",
+      "chromium picolinate"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  },
+  {
+    "id": "dap-353",
+    "directiveId": "nafdac-rdd-030-00",
+    "subjectType": "combination",
+    "subjectName": "Zinc Carnosine + Oxetacaine",
+    "canonicalIngredientIds": [
+      "zinc carnosine",
+      "oxetacaine"
+    ],
+    "strength": null,
+    "dosageForm": null,
+    "route": null,
+    "packSize": null,
+    "actionOverride": null,
+    "evidence": null
+  }
+]

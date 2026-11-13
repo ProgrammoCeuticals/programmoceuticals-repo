@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply font-sans text-slate-900 bg-surface-subtle;
+    /* GLSI --bg equivalent */
+    background-color: #f7f8fa;
+  }
+
+  /* Default all borders to the GLSI --border tone */
+  * {
+    border-color: #e2e8f0;
+  }
+}
+
+@layer utilities {
+  /* ── Thin scrollbar — GLSI-toned ── */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: #c5d8e3 transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 5px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: #c5d8e3;
+    border-radius: 0;
+  }
+
+  /* ── Section title — GLSI .section-title pattern ── */
+  /* Usage: <p className="section-title">...</p> */
+  .section-title {
+    @apply text-[11px] font-bold uppercase tracking-[0.06em] text-brand-600;
+    border-bottom: 2px solid #193441;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+  }
+
+  /* ── Monospaced data values ── */
+  .font-data {
+    font-family: "Courier New", Courier, ui-monospace, monospace;
+  }
+
+  /* ── Progress bar — no radius, GLSI style ── */
+  .progress-track {
+    @apply w-full h-[7px] bg-[#e2e8f0] overflow-hidden;
+  }
+  .progress-fill {
+    @apply h-full bg-brand-600 transition-[width] duration-300;
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@ectd/worker-inspection",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/main.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@prisma/client": "5.22.0",
+    "bullmq": "5.13.2",
+    "ioredis": "5.4.1"
+  },
+  "devDependencies": {
+    "typescript": "5.7.2",
+    "ts-node": "10.9.2"
+  }
+}

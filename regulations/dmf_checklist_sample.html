@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DMF Checklist Sample</title>
+<style>
+    @page {
+        size: A4;
+        margin: 15mm 12mm;
+        background-color: #ffffff;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        font-size: 10pt;
+        line-height: 1.4;
+        color: #000000;
+        margin: 0;
+        padding: 0;
+    }
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+    .container {
+        width: 100%;
+    }
+    .info-block {
+        margin-bottom: 15px;
+        font-size: 10.5pt;
+    }
+    .info-row {
+        margin-bottom: 6px;
+    }
+    .label {
+        font-weight: bold;
+        display: inline-block;
+        width: 250px;
+    }
+    .value {
+        display: inline-block;
+    }
+    .checkbox-container {
+        margin: 12px 0;
+    }
+    .checkbox-item {
+        display: inline-block;
+        margin-right: 25px;
+    }
+    .checkbox {
+        font-family: "MS Gothic", "Arial", sans-serif;
+        font-size: 11pt;
+        margin-right: 4px;
+        vertical-align: middle;
+    }
+    .reviewer-block {
+        margin: 20px 0;
+        border: 1px solid #000000;
+        padding: 10px;
+        background-color: #f9f9f9;
+    }
+    .reviewer-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 10px;
+    }
+    .reviewer-table td {
+        padding: 4px 0;
+        vertical-align: middle;
+    }
+    .policy-box {
+        border: 1px solid #000000;
+        padding: 8px 12px;
+        margin: 15px 0;
+        font-style: italic;
+        background-color: #fcfcfc;
+    }
+    .comment-box {
+        margin: 15px 0 25px 0;
+    }
+    .comment-title {
+        font-weight: bold;
+        text-decoration: underline;
+        margin-bottom: 5px;
+    }
+    .comment-text {
+        border-bottom: 1px solid #000000;
+        padding-bottom: 4px;
+        min-height: 20px;
+    }
+    .section-title {
+        font-weight: bold;
+        font-size: 12pt;
+        text-transform: uppercase;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #000000;
+        padding-bottom: 2px;
+    }
+    .subsection-title {
+        font-weight: bold;
+        font-size: 11pt;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+    
+    /* Checklist Table Styles */
+    .checklist-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        font-size: 9.5pt;
+    }
+    .checklist-table th, .checklist-table td {
+        border: 1px solid #000000;
+        padding: 6px;
+        vertical-align: top;
+    }
+    .checklist-table th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        text-align: left;
+    }
+    .col-section {
+        width: 12%;
+        font-weight: bold;
+    }
+    .col-requirement {
+        width: 43%;
+    }
+    .col-status {
+        width: 18%;
+        text-align: left;
+    }
+    .col-notes {
+        width: 27%;
+        font-size: 8.5pt;
+        color: #333333;
+        background-color: #fafafa;
+    }
+    .nested-info {
+        padding-left: 15px;
+        margin-top: 4px;
+        font-size: 9pt;
+    }
+    tr {
+        page-break-inside: avoid;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header Info Block 1 -->
+    <div class="info-block">
+        <div class="info-row"><span class="label">NAME OF APPLICANT:</span><span class="value">DRUGFIELD PHARMACEUTICAL LIMITED</span></div>
+        <div class="info-row"><span class="label">DMF NUMBER:</span><span class="value"></span></div>
+        <div class="info-row"><span class="label">DMF HOLDER:</span><span class="value">HERMES CHEMICAL COMPANY PRIVATE LIMITED</span></div>
+        <div class="info-row"><span class="label">DRUG NAME (subject):</span><span class="value">TINIDAZOLE USP</span></div>
+        <div class="info-row"><span class="label">SUBMIT DATE:</span><span class="value">30/03/2026</span></div>
+        <div class="info-row"><span class="label">RECEIVED DATE:</span><span class="value">30/03/2026</span></div>
+        <div class="info-row"><span class="label">Electronic or paper submission:</span><span class="value">PAPER.</span></div>
+        <div class="checkbox-container">
+            <span class="checkbox-item"><span class="checkbox">☐</span> <strong>EXPEDITED SCREENING REQUEST</strong> by: (requestor name here) if applicable</span>
+        </div>
+    </div>
+
+    <!-- Duplicate Header Block per Document Content -->
+    <div class="info-block" style="border-top: 1px dashed #ccc; padding-top: 15px;">
+        <div class="info-row"><span class="label">NAME OF APPLICANT:</span><span class="value">DRUGFIELD PHARMACEUTICAL LIMITED</span></div>
+        <div class="info-row"><span class="label">DMF NUMBER:</span><span class="value"></span></div>
+        <div class="info-row"><span class="label">DMF HOLDER:</span><span class="value">HERMES CHEMICAL COMPANY PRIVATE LIMITED</span></div>
+        <div class="info-row"><span class="label">DRUG NAME (subject):</span><span class="value">TINIDAZOLE USP</span></div>
+        <div class="info-row"><span class="label">SUBMIT DATE:</span><span class="value">30/03/2026</span></div>
+        <div class="info-row"><span class="label">RECEIVED DATE:</span><span class="value">30/03/2026</span></div>
+        <div class="info-row"><span class="label">Electronic or paper submission:</span><span class="value">PAPER.</span></div>
+        <div class="checkbox-container">
+            <span class="checkbox-item"><span class="checkbox">☐</span> <strong>EXPEDITED SCREENING REQUEST</strong> by: (requestor name here) if applicable</span>
+        </div>
+    </div>
+
+    <!-- Reviewer Block -->
+    <div class="reviewer-block">
+        <table class="reviewer-table">
+            <tr>
+                <td style="width: 120px;"><strong>Primary reviewer:</strong></td>
+                <td>Onunkwo Chinemerem E.</td>
+                <td style="text-align: right; width: 300px;">
+                    <span class="checkbox-item"><span class="checkbox">☒</span> <strong>COMPLETE</strong></span>
+                    <span class="checkbox-item" style="margin-right:0;"><span class="checkbox">☐</span> <strong>INCOMPLETE</strong></span>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Date :</strong></td>
+                <td colspan="2">06/04/2026</td>
+            </tr>
+        </table>
+        
+        <div class="info-row" style="margin-top: 10px;">
+            <strong>Is the DMF active?</strong>
+        </div>
+        <div class="checkbox-container" style="margin: 5px 0;">
+            <span class="checkbox-item"><span class="checkbox">☒</span> YES</span>
+            <span class="checkbox-item"><span class="checkbox">☐</span> NO</span>
+        </div>
+        <div class="info-row" style="font-size: 9pt; color: #555555; font-style: italic;">
+            If no, DMF is INCOMPLETE per policy. Issue Incomplete Letter to DMF holder.
+        </div>
+
+        <div class="info-row" style="margin-top: 12px;">
+            <strong>Has the DMF been reviewed, previously for chemistry, manufacturing, and controls (CMC) by NAFDAC in the context of a review of a prior application?</strong>
+        </div>
+        <div class="checkbox-container" style="margin: 5px 0;">
+            <span class="checkbox-item"><span class="checkbox">☐</span> YES</span>
+            <span class="checkbox-item"><span class="checkbox">☒</span> NO</span>
+        </div>
+    </div>
+
+    <div class="policy-box">
+        "If “yes,” the DMF is COMPLETE per policy.", "If ”no”, review DMF with checklist."
+    </div>
+
+    <div class="comment-box">
+        <div class="comment-title">ADDITIONAL COMMENTS REGARDING THE DMF:</div>
+        <div class="comment-text">The DMF was mostly adequate.</div>
+    </div>
+
+    <div class="section-title">Checklist Review</div>
+    <div class="subsection-title">GENERAL INFORMATION</div>
+
+    <table class="checklist-table">
+        <thead>
+            <tr>
+                <th class="col-section">Section</th>
+                <th class="col-requirement">Requirement / Item</th>
+                <th class="col-status">Status</th>
+                <th class="col-notes">NOTE(S)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Item 1 & 2 -->
+            <tr>
+                <td class="col-section"></td>
+                <td class="col-requirement">1. Subject of the DMF is a single API produced by one manufacturing process</td>
+                <td class="col-status"><span class="checkbox">☒</span> YES &nbsp; <span class="checkbox">☐</span> NO</td>
+                <td class="col-notes">
+                    <strong>For #1:</strong> The DMF is limited to: (i) one API, although multiple manufacturing sites for a single API are Permitted when the same process is used in each of those sites; (ii) one manufacturing process, although certain process alternatives/changes may be permissible with sufficient supportive information provided.<br><br>
+                    <em>Examples include:</em> validated reprocess/rework procedures; micronization leading to different particle sizes (excluding nano particles); addition of a stabilizing agent for stability purposes; and minor process variation that leaves the chemical transformation the same, with little risk to the impurity profile.<br><br>
+                    A separate DMF should be filed for: different salt form; different synthetic route; and significant process variation resulting in a different impurity profile and requiring a different control strategy.
+                </td>
+            </tr>
+            <tr>
+                <td class="col-section"></td>
+                <td class="col-requirement">2. For previously submitted DMFs, the DMF holder has submitted a complete update.</td>
+                <td class="col-status"><span class="checkbox">☐</span> YES &nbsp; <span class="checkbox">☒</span> NO</td>
+                <td class="col-notes">
+                    <strong>For #2: Update on DMF:</strong> The complete update should reflect the current state of the process and not require reference to any previous submission for information.<br><br>
+                    The requirement for a complete update does not apply to the DMF if the entire DMF is in electronic common technical document (eCTD) format, which always presents the DMF in its current state. We highly encourage DMF holders to convert the entire DMF into an eCTD submission, which does not require reference to any previous paper submission.
+                </td>
+            </tr>
+            <!-- Item 3 -->
+            <tr>
+                <td class="col-section"></td>
+                <td class="col-requirement">3. Provides current Good Manufacturing Practice (cGMP) Statement of Commitment.</td>
+                <td class="col-status"><span class="checkbox">☒</span> YES &nbsp; <span class="checkbox">☐</span> NO</td>
+                <td class="col-notes">This is not seen in the attached DMF</td>
+            </tr>
+            <!-- Item 4 -->
+            <tr>
+                <td class="col-section"></td>
+                <td class="col-requirement">4. Provides complete name, address, and contact information for holder.</td>
+                <td class="col-status"><span class="checkbox">☐</span> YES &nbsp; <span class="checkbox">☒</span> NO</td>
+                <td class="col-notes"></td>
+            </tr>
+            <!-- Item 5 -->
+            <tr>
+                <td class="col-section"></td>
+                <td class="col-requirement">5. Contains label with storage conditions and expiry date.</td>
+                <td class="col-status"><span class="checkbox">☐</span> YES &nbsp; <span class="checkbox">☒</span> NO</td>
+                <td class="col-notes"></td>
+            </tr>
+            <!-- Item 6 -->
+            <tr>
+                <td class="col-section"></td>
+                <td class="col-requirement">6. Contains bovine spongiform encephalopathy (BSE)/ transmissible spongiform encephalopathy (TSE) certification if animal sourced.</td>
+                <td class="col-status"><span class="checkbox">☐</span> YES &nbsp; <span class="checkbox">☒</span> NO &nbsp; <span class="checkbox">☐</span> NA</td>
+                <td class="col-notes"><strong>For #6:</strong> if not included, should be submitted separately (uploaded)</td>
+            </tr>
+            <!-- Item 7 -->
+            <tr>
+                <td class="col-section"></td>
+                <td class="col-requirement">7. Contains information on presence of pesticides if plant-sourced.</td>
+                <td class="col-status"><span class="checkbox">☐</span> YES &nbsp; <span class="checkbox">☒</span> NO<br><span class="checkbox">☒</span> NA</td>
+                <td class="col-notes"></td>
+            </tr>
+
+            <!-- MODULE 3: QUALITY -->
+            <tr style="background-color: #f9f9f9; font-weight: bold;">
+                <td colspan="4">MODULE 3: QUALITY <br> 3.2 Body of Data <br> 3.2.S API [name, manufacturer]</td>
+            </tr>
+
+            <!-- 3.2.S.1 -->
+            <tr>
+                <td class="col-section">3.2. S.1</td>
+                <td class="col-requirement">
+                    <strong>General Information</strong><br>
+                    Contains complete General Information on the following:<br>
+                    <div class="nested-info">
+                        8. Nomenclature.<br>
+                        9. Structure.<br>
+                        10. General Properties: basic information regarding the general properties of the API.
+                    </div>
+                </td>
+                <td class="col-status">
+                    <br><br>
+                    <span class="checkbox">☒</span> Yes &nbsp; <span class="checkbox">☐</span> No<br>
+                    <span class="checkbox">☒</span> Yes &nbsp; <span class="checkbox">☐</span> No<br>
+                    <span class="checkbox">☒</span> Yes &nbsp; <span class="checkbox">☐</span> No
+                </td>
+                <td class="col-notes"></td>
+            </tr>
+
+            <!-- 3.2.S.2 Manufacture -->
+            <tr>
+                <td class="col-section">3.2. S.2</td>
+                <td class="col-requirement">
+                    <strong>Manufacture</strong><br>
+                    <strong>3.2.S.2.1</strong> Contains complete Manufacturer Information on the following on each site:<br>
+                    <div class="nested-info">
+                        11. Name and full address(es) of the manufacturing facility(ies), contact name of on-site Individual, phone and fax numbers, and e-mail address.
+                    </div>
+                </td>
+                <td class="col-status">
+                    <br><br><br>
+                    <span class="checkbox">☒</span> Yes &nbsp; <span class="checkbox">☐</span> No
+                </td>
+                <td class="col-notes">
+                    <strong>For #11:</strong> Separate facilities used for release testing of the API and for additional processing (e.g., micronization) should also be listed.<br><br>
+                    Central File Number (CFN), Facility Establishment Identifier (FEI), and Data Universal Numbering System (DUNS) numbers should be provided if available.
+                </td>
+            </tr>
+
+            <!-- Process Controls -->
+            <tr>
+                <td class="col-section"></td>
+                <td class="col-requirement">
+                    <strong>3.2.S.2.2</strong> Contains Description of Manufacturing Process and Process Controls addressing the following:<br>
+                    <div class="nested-info">
+                        12. Flow chart for every stage.<br>
+                        13. Description of the manufacturing process.
+                    </div>
+                </td>
+                <td class="col-status">
+                    <br>
+                    <span class="checkbox">☒</span> Yes &nbsp; <span class="checkbox">☐</span> No<br>
+                    <span class="checkbox">☒</span> Yes &nbsp; <span class="checkbox">☐</span> No
+                </td>
+                <td class="col-notes"></td>
+            </tr>
+
+            <!-- Control of Materials -->
+            <tr>
+                <td class="col-section"></td>
+                <td class="col-requirement">
+                    <strong>3.2.S.2.3</strong> Contains information on the Control of Materials, as follows:<br>
+                    <strong>Starting Material:</strong><br>
+                    <div class="nested-info">
+                        14. Starting material, clearly designated, with appropriate justification.<br>
+                        15. Name of each manufacturer.<br>
+                        16. Specification.<br>
+                        17. Analytical method.<br>
+                        18. Certificate of Analysis (CoA) from manufacturer.<br>
+                        19. CoAs from the DMF holder.
+                    </div>
+                </td>
+                <td class="col-status">
+                    <br><br><br>
+                    <span class="checkbox">☒</span> Yes &nbsp; <span class="checkbox">☐</span> No<br>
+                    <span class="checkbox">☐</span> Yes &nbsp; <span class="checkbox">☒</span> No<br>
+                    <span class="checkbox">☒</span> Yes &nbsp; <span class="checkbox">☐</span> No<br>
+                    <span class="checkbox">☒</span> Yes &nbsp; <span class="checkbox">☐</span> No<br>
+                    <span class="checkbox">☒</span> Yes &nbsp; <span class="checkbox">☐</span> No<br>
+                    <span class="checkbox">☒</span> Yes &nbsp; <span class="checkbox">☐</span> No
+                </td>
+                <td class="col-notes">
+                    <strong>For #14:</strong> Justification for designation of each starting material should be in agreement with the general principle outlined in International Conference on Harmonisation (ICH) Q11. This can include information, if applicable, on:<br>
+                    - Name, address, and contact information of the manufacturer(s) of each proposed starting material.<br>
+                    - A flow diagram and description outlining the synthetic route and conditions of each proposed starting material.<br><br>
+                    Stated to be in the closed part of the DMF
+                </td>
+            </tr>
+
+            <!-- Reagents/Solvents -->
+            <tr>
+                <td class="col-section"></td>
+                <td class="col-requirement">
+                    <strong>Reagents/Solvents</strong><br>
+                    <div class="nested-info">
+                        20. Specifications.<br>
+                        21. Representative CoAs.
+                    </div>
+                </td>
+                <td class="col-status">
+                    <br>
+                    <span class="checkbox">☒</span> Yes &nbsp; <span class="checkbox">☐</span> No<br>
+                    <span class="checkbox">☒</span> Yes &nbsp; <span class="checkbox">☐</span> No
+                </td>
+                <td class="col-notes">
+                    <strong>For #20:</strong> Specifications should clearly identify the test methods. For non-compendial methods, the method description should be provided.<br><br>
+                    Stated to be in the closed part of the DMF
+                </td>
+            </tr>
+
+            <!-- Process Validation -->
+            <tr>
+                <td class="col-section">3.2. S.2.5</td>
+                <td class="col-requirement">
+                    <strong>Process Validation and/or Evaluation</strong><br>
+                    <div class="nested-info">
+                        22. Contains a summary of Process Validation and/or Evaluation information.<br>
+                        23. Provides sterility assurance data for sterile API.
+                    </div>
+                </td>
+                <td class="col-status">
+                    <br>
+                    <span class="checkbox">☒</span> Yes &nbsp; <span class="checkbox">☐</span> No<br><br>
+                    <span class="checkbox">☐</span> Yes &nbsp; <span class="checkbox">☐</span> No &nbsp; <span class="checkbox">☒</span> Na
+                </td>
+                <td class="col-notes">
+                    <strong>For #22:</strong> If the validation has been performed, the DMF holder should provide a validation summary, including batch descriptions with traceability among steps/stages, and analytical test results for the starting materials, intermediates, in-process controls, and final API, preferably in a tabular format.<br><br>
+                    <strong>For #23:</strong> The full sterilization process validation and the method validation of sterility tests for the sterilized API should be provided.
+                </td>
+            </tr>
+
+            <!-- Manufacturing Process Development -->
+            <tr>
+                <td class="col-section">3.2. S.2.6</td>
+                <td class="col-requirement">
+                    <strong>Manufacturing Process Development</strong><br>
+                    <div class="nested-info">
+                        24. Contains a summary of Manufacturing Process Development.
+                    </div>
+                </td>
+                <td class="col-status">
+                    <br>
+                    <span class="checkbox">☒</span> Yes &nbsp; <span class="checkbox">☐</span> No
+                </td>
+                <td class="col-notes"></td>
+            </tr>
+
+            <!-- Characterization & Impurities -->
+            <tr>
+                <td class="col-section">3.2. S.3</td>
+                <td class="col-requirement">
+                    <strong>Characterization</strong><br>
+                    <strong>3.2.S.3.2</strong> Provides information on Impurities, as follows:<br>
+                    <div class="nested-info">
+                        25. A table including the name(s), structure(s), origin (degradant, process impurity) of observed/potential organic impurities.<br>
+                        26. Information on potential inorganic impurities (inorganic) (e.g., metal catalysts, reagents).<br>
+                        27. Potential residual solvents.
+                    </div>
+                </td>
+                <td class="col-status">
+                    <br><br>
+                    <span class="checkbox">☒</span> Yes &nbsp; <span class="checkbox">☐</span> No<br><br>
+                    <span class="checkbox">☐</span> Yes &nbsp; <span class="checkbox">☐</span> No<br><br>
+                    <span class="checkbox">☐</span> Yes &nbsp; <span class="checkbox">☒</span> No
+                </td>
+                <td class="col-notes">
+                    <strong>For #25:</strong> Potential genotoxic impurities can be included in this table or summarized in a separate table.
+                </td>
+            </tr>
+
+            <!-- Control of the API -->
+            <tr>
+                <td class="col-section">3.2. S.4</td>
+                <td class="col-requirement">
+                    Provides information to support the <strong>Control of the API</strong>, as follows:<br>
+                    <div class="nested-info">
+                        28. Full test specification.<br>
+                        29. Description of the analytical methods.<br>
+                        30. Method validation and/or method verification reports.<br>
+                        31. CoAs for representative batches (batch analysis).
+                    </div>
+                </td>
+                <td class="col-status">
+                    <br>
+                    <span class="checkbox">☒</span> Yes &nbsp; <span class="checkbox">☐</span> No<br>
+                    <span class="checkbox">☒</span> Yes &nbsp; <span class="checkbox">☐</span> No<br>
+                    <span class="checkbox">☒</span> Yes &nbsp; <span class="checkbox">☐</span> No<br>
+                    <span class="checkbox">☒</span> Yes &nbsp; <span class="checkbox">☐</span> No
+                </td>
+                <td class="col-notes">
+                    <strong>For #30:</strong> Method verification reports should be provided for compendial methods, such as assay or related substance by high-performance liquid chromatography (HPLC); the method equivalency study should be provided when an in-house method is used in lieu of a compendial method.<br><br>
+                    Stated to be in the closed part of the DMF
+                </td>
+            </tr>
+
+            <!-- Container/Closure System -->
+            <tr>
+                <td class="col-section">3.2. S.6</td>
+                <td class="col-requirement">
+                    Provides information to support the <strong>Container/Closure System</strong>, as follows:<br>
+                    <div class="nested-info">
+                        32. Description of container/ closure system (including contact material and secondary material).<br>
+                        33. Certification statements for contact materials for use in food and drugs.<br>
+                        34. Manufacturer, specifications, and representative CoA for primary contact material and functional secondary packaging component.
+                    </div>
+                </td>
+                <td class="col-status">
+                    <br>
+                    <span class="checkbox">☒</span> Yes &nbsp; <span class="checkbox">☐</span> No<br><br>
+                    <span class="checkbox">☐</span> Yes &nbsp; <span class="checkbox">☒</span> No<br><br>
+                    <span class="checkbox">☒</span> Yes &nbsp; <span class="checkbox">☐</span> No
+                </td>
+                <td class="col-notes">
+                    <strong>For #33:</strong> The certification statement from the supplier should state that each primary packaging material for the DS is safe to use in contact with food.
+                </td>
+            </tr>
+
+            <!-- Stability of the API -->
+            <tr>
+                <td class="col-section">3.2.S.7</td>
+                <td class="col-requirement">
+                    Provides information to support the <strong>Stability of the API</strong>, as follows:<br><br>
+                    <strong>3.2.S.7.1 Stability Summary and Conclusions</strong><br>
+                    <div class="nested-info">
+                        35. Clearly indicates the retest date or expiration date of API.
+                    </div>
+                    <br>
+                    <strong>3.2.S.7.3 Stability Data</strong><br>
+                    <div class="nested-info">
+                        36. Provides Stability Data.
+                    </div>
+                </td>
+                <td class="col-status">
+                    <br><br><br>
+                    <span class="checkbox">☒</span> Yes &nbsp; <span class="checkbox">☐</span> No<br><br><br><br>
+                    <span class="checkbox">☒</span> Yes &nbsp; <span class="checkbox">☐</span> No
+                </td>
+                <td class="col-notes"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

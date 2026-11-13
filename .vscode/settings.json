@@ -1,0 +1,5 @@
+{
+  "amazonQ.telemetry": false,
+  "amazonQ.showCodeWithReferences": false,
+  "python.terminal.useEnvFile": true
+}
