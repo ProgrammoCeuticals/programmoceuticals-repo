@@ -1,1 +1,29 @@
-node_modules
+node_modules/
+
+# Build caches
+.next/
+.angular/
+dist/
+build/
+out/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# TypeScript
+*.tsbuildinfo
+
+# Turbo
+.turbo/
+
+# Coverage
+coverage/
